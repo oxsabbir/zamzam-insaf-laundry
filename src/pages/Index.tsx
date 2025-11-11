@@ -27,8 +27,8 @@ const Index = () => {
       <Testimonials />
       <FinalCTO />
       <PickupManager />
-      <Contact />
-      <Footer />
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </main>
   );
 };

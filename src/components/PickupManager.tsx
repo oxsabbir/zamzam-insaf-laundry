@@ -27,7 +27,7 @@ export default function PickupManager() {
               every customer in Makkah.
             </p>
           </header>
-          <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-2xl border-2 border-accent/30 bg-gradient-to-br from-background to-muted/30">
+          <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-2xl border-2 border-primary/50 bg-gradient-to-br from-background to-muted/30">
             <div className="p-6 sm:p-8">
               <div className="text-center mb-6">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -226,7 +226,7 @@ export default function PickupManager() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               <div className="bg-background rounded-lg p-4">
-                <div className="text-2xl font-bold text-primary">247</div>
+                <div className="text-2xl font-bold text-primary">237</div>
                 <div className="text-xs text-muted-foreground">
                   Happy Customers
                 </div>

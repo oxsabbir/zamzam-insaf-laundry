@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, MessageCircleMore } from "lucide-react";
 import { Input } from "./ui/input";
 
 const areas = [
@@ -110,42 +110,29 @@ const AreaCoverage = () => {
             </div>
           ))}
         </div>
-
-        {/* CTA Box */}
-        <div className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white rounded-2xl p-6 md:p-10 text-center max-w-4xl mx-auto shadow-xl">
-          <h3 className=" text-xl md:text-3xl font-bold  ">
-            Not Sure About Your Area?
-          </h3>
-          <p className=" text-lg mt-1.5 text-slate-100">
-            Get Instant Confirmation!
-          </p>
-          <div className="max-w-xl mx-auto mt-5">
-            <Input
-              type="text"
-              placeholder="Enter your hotel/location"
-              className="p-5 text-lg font-medium text-black"
-            />
-          </div>
-
-          <Button
-            size="lg"
-            onClick={handleCheckArea}
-            className=" bg-green-500 text-white text-lg px-8 py-6 mt-4"
-          >
-            Check My Pickup Time - FREE
-          </Button>
-          <div className="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm">
-            <span className="flex items-center gap-1.5">
-              <Check size={20} /> <span>Instant response</span>
-            </span>
-            <span>|</span>
-            <span className="flex items-center gap-1.5">
-              <Check size={20} /> No commitment needed
-            </span>
-            <span>|</span>
-            <span className="flex items-center gap-1.5">
-              <Check size={20} /> Available 24/7
-            </span>
+        <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/50 bg-gradient-to-r from-primary/5 to-accent/5">
+          <div className="p-4 py-6 sm:p-6 text-center">
+            <h3 className="text-lg md:text-xl font-bold mb-5 text-primary">
+              Not Sure About Your Area? Get Instant Confirmation!
+            </h3>
+            <div className="space-y-4 ">
+              <input
+                className="flex w-full border-input bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-12 sm:h-14 text-base border-2 focus:border-accent rounded-xl"
+                placeholder="Enter your hotel/location name"
+              />
+              <a
+                href="https://wa.me/+966539529624?text=Hi! I want to check pickup time for my location in Makkah."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-accent/90 shadow-primary px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
+              >
+                <MessageCircleMore size={20} />
+                Check My Pickup Time - FREE
+              </a>
+            </div>
+            <p className="text-xs sm:text-sm text-muted-foreground mt-3">
+              ✅ Instant response | ✅ No commitment needed | ✅ Available 24/7
+            </p>
           </div>
         </div>
       </div>
