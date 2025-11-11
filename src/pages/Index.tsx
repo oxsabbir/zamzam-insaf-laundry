@@ -12,6 +12,7 @@ import UrgentService from "@/components/UrgentService";
 import PricingSection from "@/components/PricingSection";
 import FinalCTO from "@/components/FinalCTO";
 import PilgrimGuide from "@/components/PilgrimGuide";
+import Faq from "@/components/Faq";
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
       <PricingSection />
       <PilgrimGuide />
       <Testimonials />
+      <Faq />
       <FinalCTO />
       <PickupManager />
     </main>
