@@ -5,7 +5,8 @@ const areas = [
   {
     emoji: "🕌",
     title: "Haram Area & Abraj Al Bait",
-    description: "Lightning-fast service for hotels closest to Masjid al-Haram. Specializing in pilgrim laundry needs.",
+    description:
+      "Lightning-fast service for hotels closest to Masjid al-Haram. Specializing in pilgrim laundry needs.",
     locations: [
       { name: "Clock Tower Hotels", time: "5-10 min" },
       { name: "Al Safwah Towers", time: "5-10 min" },
@@ -15,7 +16,8 @@ const areas = [
   {
     emoji: "🏨",
     title: "Jabal Omar & Aziziyah",
-    description: "Premium service for luxury hotel districts with 24/7 pickup availability.",
+    description:
+      "Premium service for luxury hotel districts with 24/7 pickup availability.",
     locations: [
       { name: "Jabal Omar Towers", time: "10-15 min" },
       { name: "Swissotel Makkah", time: "10-15 min" },
@@ -25,7 +27,8 @@ const areas = [
   {
     emoji: "🌆",
     title: "Kudai & Misfalah",
-    description: "Fast service for mid-range accommodation areas with competitive pricing.",
+    description:
+      "Fast service for mid-range accommodation areas with competitive pricing.",
     locations: [
       { name: "Kudai Area Hotels", time: "15-20 min" },
       { name: "Misfalah District", time: "15-20 min" },
@@ -34,7 +37,8 @@ const areas = [
   {
     emoji: "🏘️",
     title: "Maabda, Al Rusaifah & Al Awali",
-    description: "Reliable service for all Makkah neighborhoods with same-day delivery guarantee.",
+    description:
+      "Reliable service for all Makkah neighborhoods with same-day delivery guarantee.",
     locations: [
       { name: "Maabda Area", time: "15-25 min" },
       { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
@@ -44,25 +48,36 @@ const areas = [
 
 const AreaCoverage = () => {
   const handleCheckArea = () => {
-    const message = encodeURIComponent("Hi! I want to check pickup time for my location in Makkah.");
-    window.open(`https://wa.me/+966539529624?text=${message}`, '_blank');
+    const message = encodeURIComponent(
+      "Hi! I want to check pickup time for my location in Makkah."
+    );
+    window.open(`https://wa.me/+966539529624?text=${message}`, "_blank");
   };
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20  bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            📍 Coverage Areas in Makkah
+        <div className="text-center mb-6 sm:mb-12">
+          <h2
+            id="areas-heading"
+            className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
+          >
+            Laundry Service Near Me - All Makkah Areas Covered
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Fast pickup service across all major areas in Makkah
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
+            No matter where you're staying in Makkah - our{" "}
+            <strong>makkahlaundryservice</strong> comes to YOU!
+            <span className="text-primary font-semibold">
+              {" "}
+              Our express pickup service covers every hotel, apartment, and area
+              near the Haram.
+            </span>
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
           {areas.map((area, index) => (
-            <div 
+            <div
               key={index}
               className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-border"
             >
@@ -77,11 +92,13 @@ const AreaCoverage = () => {
               </div>
               <div className="space-y-3 mt-6">
                 {area.locations.map((location, idx) => (
-                  <div 
+                  <div
                     key={idx}
                     className="flex items-center justify-between bg-muted/50 rounded-lg p-3"
                   >
-                    <span className="font-medium text-foreground">{location.name}</span>
+                    <span className="font-medium text-foreground">
+                      {location.name}
+                    </span>
                     <Badge className="bg-success text-white">
                       ⚡ {location.time}
                     </Badge>
@@ -97,7 +114,7 @@ const AreaCoverage = () => {
           <h3 className="text-3xl font-bold mb-4">
             📍 Not Sure About Your Area? Get Instant Confirmation!
           </h3>
-          <Button 
+          <Button
             size="lg"
             onClick={handleCheckArea}
             className="bg-success hover:bg-success/90 text-white text-lg px-8 py-6 mt-4"

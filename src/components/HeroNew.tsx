@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, Phone } from "lucide-react";
-import heroImage from "@/assets/hero.png";
+import heroImage from "@/assets/hero-laundry.webp";
 
 const HeroNew = () => {
   const handleWhatsApp = () => {
@@ -44,7 +44,7 @@ const HeroNew = () => {
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
-              Makkah Laundry Service
+              Clock Tower Laundry Service <br /> <span>Makkah</span>
             </span>
             <span className="text-accent">15 Minutes</span> Express Pickup -
             Best Laundry Near Haram!

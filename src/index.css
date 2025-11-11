@@ -5,11 +5,10 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
-
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 160 45% 20%;
+    --foreground: 0 3% 6%;
 
     --card: 0 0% 100%;
     --card-foreground: 160 45% 20%;
@@ -31,10 +30,10 @@ All colors MUST be HSL.
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    
+
     --success: 142 76% 45%;
     --success-foreground: 0 0% 100%;
-    
+
     --urgent: 0 100% 65%;
     --urgent-foreground: 0 0% 100%;
 
@@ -43,9 +42,13 @@ All colors MUST be HSL.
     --ring: 160 65% 45%;
 
     --radius: 0.75rem;
-    
+
     /* Hero gradient - green teal theme */
-    --hero-gradient: linear-gradient(135deg, hsl(160 50% 35%) 0%, hsl(165 45% 40%) 100%);
+    --hero-gradient: linear-gradient(
+      135deg,
+      hsl(160 50% 35%) 0%,
+      hsl(165 45% 40%) 100%
+    );
     --shadow-soft: 0 4px 20px -2px hsl(160 65% 45% / 0.15);
     --shadow-glow: 0 0 40px hsl(160 65% 45% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,7 +109,7 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground font-inter;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -116,23 +119,23 @@ All colors MUST be HSL.
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
   }
-  
+
   .animate-slide-up {
     animation: slideUp 0.6s ease-out forwards;
   }
-  
+
   .animate-delay-100 {
     animation-delay: 0.1s;
   }
-  
+
   .animate-delay-200 {
     animation-delay: 0.2s;
   }
-  
+
   .animate-delay-300 {
     animation-delay: 0.3s;
   }
-  
+
   .animate-delay-400 {
     animation-delay: 0.4s;
   }
