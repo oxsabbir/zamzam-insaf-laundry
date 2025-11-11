@@ -11,6 +11,7 @@ import PickupManager from "@/components/PickupManager";
 import UrgentService from "@/components/UrgentService";
 import PricingSection from "@/components/PricingSection";
 import FinalCTO from "@/components/FinalCTO";
+import PilgrimGuide from "@/components/PilgrimGuide";
 
 const Index = () => {
   return (
@@ -19,16 +20,13 @@ const Index = () => {
       <UrgentService />
       <AreaCoverage />
       <Comparison />
-      {/* <WhyChoose /> */}
       <PricingGrid />
       <HowItWorks />
       <PricingSection />
-
+      <PilgrimGuide />
       <Testimonials />
       <FinalCTO />
       <PickupManager />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
     </main>
   );
 };
