@@ -9,6 +9,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import PickupManager from "@/components/PickupManager";
 import UrgentService from "@/components/UrgentService";
+import PricingSection from "@/components/PricingSection";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       {/* <WhyChoose /> */}
       <PricingGrid />
       <HowItWorks />
+      <PricingSection />
       <PickupManager />
       <Testimonials />
       <Contact />
