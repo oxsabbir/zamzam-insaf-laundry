@@ -18,6 +18,7 @@ const testimonials = [
     location: "Clock Tower Hotel, Makkah",
     country: "Saudi Arabia",
     rating: 5,
+    service: "Irham Cleaning",
     review:
       "Perfect for pilgrims! Clean clothes in just 15 minutes. Exactly what we needed in Makkah! The team was professional and the service was incredibly fast. Highly recommended!",
     avatar: "AR",
@@ -28,6 +29,8 @@ const testimonials = [
     location: "Hilton Makkah",
     country: "Egypt",
     rating: 5,
+    service: "Regular Customer",
+
     review:
       "Amazing service! They picked up my laundry within 10 minutes and returned everything perfectly clean and pressed. The prices are much better than hotel laundry. Will use again!",
     avatar: "FH",
@@ -37,6 +40,8 @@ const testimonials = [
     name: "Muhammad Khan",
     location: "Jabal Omar Towers",
     country: "Pakistan",
+    service: "Formal Wear",
+
     rating: 5,
     review:
       "Best laundry service in Makkah! They understand pilgrims' needs and work around prayer times. My Ihram clothes were treated with care and returned spotless. 5 stars!",
@@ -47,6 +52,7 @@ const testimonials = [
     name: "Aisha Abdullah",
     location: "Swissotel Makkah",
     country: "UAE",
+    service: "Heavy Items",
     rating: 5,
     review:
       "Exceptional service! Available 24/7 and they speak English perfectly. I needed emergency laundry at 2 AM and they delivered. Saved my trip! Thank you so much.",
@@ -57,6 +63,7 @@ const testimonials = [
     name: "Ibrahim Yusuf",
     location: "Aziziyah District",
     country: "Indonesia",
+    service: "Regular Customer",
     rating: 5,
     review:
       "Very reliable and affordable! Half the price of hotel laundry with better quality. The WhatsApp booking is so convenient. I recommend this to all pilgrims!",
@@ -67,31 +74,13 @@ const testimonials = [
     name: "Mariam Ali",
     location: "Al Safwah Towers",
     country: "Malaysia",
+    service: "Irham Cleaning",
+
     rating: 5,
     review:
       "Outstanding experience! They handled my delicate abayas with great care. Fast pickup, professional service, and reasonable prices. This is the only laundry service you need in Makkah!",
     avatar: "MA",
     flag: "🇲🇾",
-  },
-  {
-    name: "Hassan Mahmoud",
-    location: "Kudai Area",
-    country: "Turkey",
-    rating: 5,
-    review:
-      "Quick, efficient and trustworthy! They tracked everything and sent updates on WhatsApp. My clothes came back fresher than new. Excellent service for the price!",
-    avatar: "HM",
-    flag: "🇹🇷",
-  },
-  {
-    name: "Khadija Rahman",
-    location: "Misfalah District",
-    country: "Bangladesh",
-    rating: 5,
-    review:
-      "Finally found a reliable laundry service in Makkah! They speak Urdu which made communication easy. Same day service as promised and my formal wear was perfectly pressed!",
-    avatar: "KR",
-    flag: "🇧🇩",
   },
 ];
 
@@ -158,87 +147,38 @@ const Testimonials = () => {
         </motion.div>
 
         <div className="max-w-6xl mx-auto">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            plugins={plugin.current ? [plugin.current] : []}
-            className="w-full"
-          >
-            <CarouselContent>
-              {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <motion.div
-                    className="p-2 h-full"
-                    initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
-                    animate={
-                      isInView
-                        ? { opacity: 1, y: 0, filter: "blur(0px)" }
-                        : { opacity: 0, y: 50, filter: "blur(10px)" }
-                    }
-                    transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-                  >
-                    <Card className="relative overflow-hidden border-0 bg-gradient-to-br from-card via-card to-card/50 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full group">
-                      <div className="absolute inset-0 bg-gradient-to-br from-success/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      <CardContent className="p-6 relative z-10">
-                        {/* Quote Icon with gradient background */}
-                        <div className="mb-4 relative">
-                          <div className="absolute inset-0 bg-gradient-to-br from-success/20 to-primary/20 rounded-full blur-xl" />
-                          <Quote className="w-10 h-10 text-success relative z-10" />
-                        </div>
-
-                        {/* Rating with glow effect */}
-                        <div className="flex gap-1 mb-4">
-                          {[1, 2, 3, 4, 5].map((star) => (
-                            <Star
-                              key={star}
-                              className={`w-5 h-5 transition-all duration-300 ${
-                                star <= testimonial.rating
-                                  ? "fill-accent text-accent drop-shadow-[0_0_8px_hsl(var(--accent))]"
-                                  : "text-muted"
-                              }`}
-                            />
-                          ))}
-                        </div>
-
-                        {/* Review Text with better typography */}
-                        <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
-                          "{testimonial.review}"
-                        </p>
-
-                        {/* Customer Info with enhanced styling */}
-                        <div className="flex items-start gap-3 pt-4 border-t border-border/50">
-                          <Avatar className="w-12 h-12 border-2 border-success/50 shadow-lg ring-2 ring-success/10">
-                            <AvatarImage src="" />
-                            <AvatarFallback className="bg-gradient-to-br from-success/20 to-primary/20 text-success font-bold text-sm">
-                              {testimonial.avatar}
-                            </AvatarFallback>
-                          </Avatar>
-                          <div className="flex-1 min-w-0">
-                            <div className="font-semibold text-foreground flex items-center gap-2 text-sm">
-                              {testimonial.name}
-                              <span className="text-lg">
-                                {testimonial.flag}
-                              </span>
-                            </div>
-                            <div className="text-xs text-muted-foreground font-medium">
-                              {testimonial.location}
-                            </div>
-                            <div className="text-xs text-muted-foreground/70">
-                              {testimonial.country}
-                            </div>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
-          </Carousel>
+          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+            {testimonials.map((review, i) => (
+              <div
+                key={i}
+                className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20"
+              >
+                <div className="mb-3">
+                  <div className="flex text-yellow-400  mb-2">
+                    <Star fill="rgb(250, 204, 21)" size={24} />
+                    <Star fill="rgb(250, 204, 21)" size={24} />
+                    <Star fill="rgb(250, 204, 21)" size={24} />
+                    <Star fill="rgb(250, 204, 21)" size={24} />
+                    <Star fill="rgb(250, 204, 21)" size={24} />
+                  </div>
+                  <p className="text-sm sm:text-base text-muted-foreground italic mb-3">
+                    {review.review}
+                  </p>
+                </div>
+                <div className="border-t pt-3">
+                  <div className="font-semibold text-foreground">
+                    {review.name}
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    {review.flag} {review.location}
+                  </div>
+                  <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mt-1 text-xs bg-primary/10 text-primary">
+                    {review.service}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA */}
