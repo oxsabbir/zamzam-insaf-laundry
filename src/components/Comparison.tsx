@@ -50,7 +50,7 @@ const Comparison = () => {
                   Others
                 </div>
                 {comparisonData.map((item, i) => (
-                  <div key={i}>
+                  <>
                     <div className="text-xs font-semibold sm:text-sm font-mediumbaktext-white text-[#E7E7E7] p-2">
                       {item.feature}
                     </div>
@@ -60,7 +60,7 @@ const Comparison = () => {
                     <div className="text-xs sm:text-sm text-red-600 bg-red-100 dark:bg-red-900/20 rounded-lg p-2">
                       {item.others}
                     </div>
-                  </div>
+                  </>
                 ))}
               </div>
             </div>

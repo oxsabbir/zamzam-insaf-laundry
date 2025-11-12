@@ -15,6 +15,7 @@ import { useToast } from "@/hooks/use-toast";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { motion } from "motion/react";
 import brandLogo from "@/assets/logo_light.png";
+import { managerInfo } from "@/constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -61,7 +62,10 @@ const Footer = () => {
     const message = encodeURIComponent(
       `New Message from Website:\n\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
     );
-    window.open(`https://wa.me/+966539529624?text=${message}`, "_blank");
+    window.open(
+      `https://wa.me/+${managerInfo.onlyNumber.whatsApp}?text=${message}`,
+      "_blank"
+    );
 
     toast({
       title: "Message Sent!",
@@ -162,7 +166,7 @@ const Footer = () => {
                 <Twitter className="w-4 h-4 text-muted-foreground group-hover:text-success transition-colors" />
               </a>
               <a
-                href="https://wa.me/+966539529624"
+                href={`https://wa.me/+${managerInfo.onlyNumber.whatsApp}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-success hover:bg-success/90 rounded-lg flex items-center justify-center transition-all shadow-lg"
@@ -254,10 +258,10 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-success mt-0.5 flex-shrink-0" />
                 <a
-                  href="tel:+966539529624"
+                  href={`tel:+${managerInfo.onlyNumber.whatsApp}`}
                   className="text-sm text-muted-foreground hover:text-success transition-colors"
                 >
-                  +966 53 952 9624
+                  {managerInfo.whatsApp}
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -266,7 +270,7 @@ const Footer = () => {
                   href="mailto:info@clocktowerlaundry.com"
                   className="text-sm text-muted-foreground hover:text-success transition-colors"
                 >
-                  info@clocktowerlaundry.com
+                  info@clocktowerlaundryservice.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
