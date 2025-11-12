@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 import PickupManager from "@/components/PickupManager";
 import UrgentService from "@/components/UrgentService";
 import PricingSection from "@/components/PricingSection";
-import FinalCTO from "@/components/FinalCTO";
+import FinalCTO from "@/components/FinalCTA";
 import PilgrimGuide from "@/components/PilgrimGuide";
 import Faq from "@/components/Faq";
 import EmergencyService from "@/components/EmergencyService";

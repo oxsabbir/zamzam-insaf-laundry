@@ -12,7 +12,7 @@ export const handleWhatsApp = (message?: string) => {
   );
 
   const number = Number(managerInfo.onlyNumber.whatsApp);
-  window.open(`https://wa.me/${number}?text=${defaul}`, "_blank");
+  window.open(`https://wa.me/${number}?text=${message}`, "_blank");
 };
 
 export const handleCall = () => {

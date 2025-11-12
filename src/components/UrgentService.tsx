@@ -1,4 +1,15 @@
+import { whatsappMessages } from "@/constants/messages";
+import { handleWhatsApp } from "@/lib/utils";
+
 export default function UrgentService() {
+  const handleBooking = (hourDetails: string) => {
+    const message = whatsappMessages.booking.replace(
+      "<bookingDetail>",
+      hourDetails
+    );
+    console.log(message);
+    handleWhatsApp(message);
+  };
   return (
     <section
       className="py-8 sm:py-16 bg-muted/50"
@@ -32,7 +43,10 @@ export default function UrgentService() {
             <p className="text-sm text-muted-foreground mb-4">
               For urgent situations
             </p>
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-10 px-4 py-2 w-full">
+            <button
+              onClick={() => handleBooking("1 Hour")}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-10 px-4 py-2 w-full"
+            >
               Book Now
             </button>
           </div>

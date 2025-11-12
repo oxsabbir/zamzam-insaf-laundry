@@ -52,7 +52,7 @@ Thank you.
 `,
 
   booking: `🚨 Hi! 👋  
-I would like to book the **<bookingHOur> Emergency Service** for urgent laundry pickup.  
+I would like to book the **<bookingDetail> Emergency Service** for urgent laundry pickup.  
 Please share the pickup details and confirm the schedule.  
 
 Thank you.`,

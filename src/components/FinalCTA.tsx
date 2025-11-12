@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { managerInfo } from "@/constants";
 import WhatsAppIcon from "./icons/Whatsapp";
 
-export default function FinalCTO() {
+export default function FinalCTA() {
   return (
     <section className="py-8 sm:py-16 bg-gradient-to-r from-gray-900 via-green-600 to-gray-900  relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
