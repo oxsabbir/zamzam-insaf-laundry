@@ -2,6 +2,7 @@ import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
 import heroImage from "@/assets/hero_background.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
+import { handleWhatsApp } from "@/lib/utils";
 
 const HeroNew = () => {
   const [displayedText, setDisplayedText] = useState("");
@@ -20,13 +21,6 @@ const HeroNew = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  const handleWhatsApp = () => {
-    const message = encodeURIComponent(
-      "Hi! I need laundry service in Makkah. Please send pickup details."
-    );
-    window.open(`https://wa.me/+966539529624?text=${message}`, "_blank");
-  };
 
   return (
     <section className="relative overflow-hidden bg-green-950 min-h-screen flex items-center pt-16">
@@ -168,15 +162,15 @@ const HeroNew = () => {
             </div>
           </div>
           <div className="space-y-3 sm:space-y-4 px-2">
-            <a
-              href="https://wa.me/+966539529624?text=Hi! I need laundry service in Makkah. Please send pickup details."
-              target="_blank"
+            <button
+              onClick={() => handleWhatsApp()}
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
               <WhatsAppIcon size={24} />
               WhatsApp NOW - 15 Min Pickup!
-            </a>
+            </button>
+
             <div className="text-primary-foreground/90 flex items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
                 <Clock size={18} /> 24/7 Service
