@@ -1,21 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-  MessageCircleMore,
-  Zap,
-  Clock,
-  Quote,
-  CircleDollarSign,
-} from "lucide-react";
+import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
 import heroImage from "@/assets/hero-laundry.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const HeroNew = () => {
   const [displayedText, setDisplayedText] = useState("");
   const fullText = "15 Minutes";
-  
+
   useEffect(() => {
     let currentIndex = 0;
     const interval = setInterval(() => {
@@ -26,7 +19,7 @@ const HeroNew = () => {
         clearInterval(interval);
       }
     }, 100);
-    
+
     return () => clearInterval(interval);
   }, []);
 
@@ -61,8 +54,8 @@ const HeroNew = () => {
             <span className="text-accent inline-block min-w-[200px] sm:min-w-[280px]">
               {displayedText}
               <span className="animate-pulse">|</span>
-            </span> Express Pickup -
-            Best Laundry Near Haram!
+            </span>{" "}
+            Express Pickup - Best Laundry Near Haram!
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center justify-center mb-2 sm:mb-3">

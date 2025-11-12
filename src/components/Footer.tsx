@@ -1,11 +1,19 @@
 import { useState } from "react";
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import WhatsAppIcon from "./icons/Whatsapp";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,7 +30,11 @@ const Footer = () => {
     setIsSubmitting(true);
 
     // Validate inputs
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.message.trim()
+    ) {
       toast({
         title: "Error",
         description: "Please fill in all fields",
@@ -110,7 +122,9 @@ const Footer = () => {
                   <MapPin className="w-5 h-5 text-success" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground text-sm mb-1">Location</h4>
+                  <h4 className="font-semibold text-foreground text-sm mb-1">
+                    Location
+                  </h4>
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     Clock Tower Area, Makkah, Saudi Arabia
                   </p>
@@ -122,7 +136,9 @@ const Footer = () => {
                   <Phone className="w-5 h-5 text-success" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground text-sm mb-1">Phone</h4>
+                  <h4 className="font-semibold text-foreground text-sm mb-1">
+                    Phone
+                  </h4>
                   <a
                     href="tel:+966539529624"
                     className="text-xs text-muted-foreground hover:text-success transition-colors"
@@ -137,7 +153,9 @@ const Footer = () => {
                   <Clock className="w-5 h-5 text-success" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground text-sm mb-1">Hours</h4>
+                  <h4 className="font-semibold text-foreground text-sm mb-1">
+                    Hours
+                  </h4>
                   <p className="text-xs text-muted-foreground">
                     24/7 Service Available
                   </p>
@@ -149,7 +167,9 @@ const Footer = () => {
                   <Mail className="w-5 h-5 text-success" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground text-sm mb-1">Email</h4>
+                  <h4 className="font-semibold text-foreground text-sm mb-1">
+                    Email
+                  </h4>
                   <a
                     href="mailto:info@clocktowerlaundry.com"
                     className="text-xs text-muted-foreground hover:text-success transition-colors"
@@ -187,7 +207,8 @@ const Footer = () => {
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  Professional laundry service in Makkah with 15-minute express pickup and 24/7 availability.
+                  Professional laundry service in Makkah with 15-minute express
+                  pickup and 24/7 availability.
                 </p>
                 {/* Social Links */}
                 <div className="flex gap-2">
@@ -232,7 +253,9 @@ const Footer = () => {
 
               {/* Quick Links */}
               <div>
-                <h4 className="text-base font-bold mb-4 text-foreground">Quick Links</h4>
+                <h4 className="text-base font-bold mb-4 text-foreground">
+                  Quick Links
+                </h4>
                 <ul className="space-y-2.5">
                   <li>
                     <button
@@ -294,7 +317,9 @@ const Footer = () => {
                 <Input
                   placeholder="Your Name"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   maxLength={100}
                   className="bg-background border-border focus:border-success transition-colors"
                 />
@@ -302,14 +327,18 @@ const Footer = () => {
                   type="email"
                   placeholder="Your Email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   maxLength={255}
                   className="bg-background border-border focus:border-success transition-colors"
                 />
                 <Textarea
                   placeholder="Your Message"
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
                   maxLength={1000}
                   rows={3}
                   className="bg-background border-border focus:border-success transition-colors resize-none"
@@ -330,7 +359,9 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <p>© {currentYear} Clock Tower Laundry Service. All rights reserved.</p>
+            <p>
+              © {currentYear} Clock Tower Laundry Service. All rights reserved.
+            </p>
             <div className="flex items-center gap-4">
               <a href="#" className="hover:text-success transition-colors">
                 Privacy Policy

@@ -9,8 +9,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion } from "motion/react";
+import { useInView } from "motion/react";
 
 const testimonials = [
   {
@@ -102,10 +102,10 @@ const Testimonials = () => {
 
   useEffect(() => {
     import("embla-carousel-autoplay").then((AutoplayPlugin) => {
-      plugin.current = AutoplayPlugin.default({ 
-        delay: 3000, 
+      plugin.current = AutoplayPlugin.default({
+        delay: 3000,
         stopOnInteraction: false,
-        stopOnMouseEnter: true 
+        stopOnMouseEnter: true,
       });
     });
   }, []);
@@ -113,21 +113,25 @@ const Testimonials = () => {
   return (
     <section ref={sectionRef} className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
         >
-          <motion.h2 
+          <motion.h2
             className="text-4xl md:text-4xl font-bold mb-4 text-foreground"
             initial={{ opacity: 0, filter: "blur(10px)" }}
-            animate={isInView ? { opacity: 1, filter: "blur(0px)" } : { opacity: 0, filter: "blur(10px)" }}
+            animate={
+              isInView
+                ? { opacity: 1, filter: "blur(0px)" }
+                : { opacity: 0, filter: "blur(10px)" }
+            }
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             What Our Customers Say
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -135,10 +139,12 @@ const Testimonials = () => {
           >
             5000+ happy customers from 50+ countries trust us with their laundry
           </motion.p>
-          <motion.div 
+          <motion.div
             className="flex items-center justify-center gap-2 mt-4"
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+            animate={
+              isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+            }
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <div className="flex gap-1">
@@ -163,10 +169,14 @@ const Testimonials = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <motion.div 
+                  <motion.div
                     className="p-2 h-full"
                     initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
-                    animate={isInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : { opacity: 0, y: 50, filter: "blur(10px)" }}
+                    animate={
+                      isInView
+                        ? { opacity: 1, y: 0, filter: "blur(0px)" }
+                        : { opacity: 0, y: 50, filter: "blur(10px)" }
+                    }
                     transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
                   >
                     <Card className="relative overflow-hidden border-0 bg-gradient-to-br from-card via-card to-card/50 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full group">

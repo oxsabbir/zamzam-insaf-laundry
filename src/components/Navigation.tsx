@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-import { motion, AnimatePresence } from "framer-motion";
+
+import { motion } from "motion/react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
