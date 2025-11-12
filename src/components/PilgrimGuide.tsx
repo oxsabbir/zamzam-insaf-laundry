@@ -1,4 +1,6 @@
+import { handleWhatsApp } from "@/lib/utils";
 import WhatsAppIcon from "./icons/Whatsapp";
+import { whatsappMessages } from "@/constants/messages";
 
 export default function PilgrimGuide() {
   return (
@@ -259,7 +261,10 @@ export default function PilgrimGuide() {
               Our team understands the unique needs of pilgrims. WhatsApp us for
               personalized laundry advice.
             </p>
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all h-10 px-4 py-2 w-full sm:w-auto">
+            <button
+              onClick={() => handleWhatsApp(whatsappMessages.faq)}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all h-10 px-4 py-2 w-full sm:w-auto"
+            >
               <WhatsAppIcon />
               Ask a Laundry Question
             </button>

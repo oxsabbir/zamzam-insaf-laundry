@@ -1,9 +1,11 @@
 import { Check, MessageCircleMore } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
+import { handleWhatsApp } from "@/lib/utils";
+import { whatsappMessages } from "@/constants/messages";
 
 export default function EmergencyService() {
   return (
-    <section className="py-8 sm:py-16 bg-gradient-to-r bg-background">
+    <section className="py-8 sm:py-16 bg-gradient-to-br from-red-50 to-amber-50/10">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-red-500 rounded-full w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 flex items-center justify-center animate-pulse">
@@ -103,7 +105,10 @@ export default function EmergencyService() {
               </div>
             </div>
           </div>
-          <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-destructive text-destructive-foreground hover:bg-destructive/90 h-10 w-full sm:w-auto px-8 py-4 text-lg font-bold">
+          <button
+            onClick={() => handleWhatsApp(whatsappMessages.emergency)}
+            className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-destructive text-destructive-foreground hover:bg-destructive/90 h-10 w-full sm:w-auto px-8 py-4 text-lg font-bold"
+          >
             <WhatsAppIcon size={22} />
             EMERGENCY PICKUP - CALL NOW!
           </button>

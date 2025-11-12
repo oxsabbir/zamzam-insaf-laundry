@@ -1,5 +1,8 @@
 import { MessageCircleMoreIcon, PhoneCallIcon } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
+import { managerInfo } from "@/constants";
+import { handleCall, handleWhatsApp } from "@/lib/utils";
+import { whatsappMessages } from "@/constants/messages";
 
 export default function PickupManager() {
   return (
@@ -187,28 +190,26 @@ export default function PickupManager() {
                 </p>
               </div>
               <div className="space-y-4">
-                <a
-                  href="https://wa.me/+966539529624?text=Hi SOHEL RANA! I need laundry pickup in Makkah. My location is:"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => handleWhatsApp(whatsappMessages.pickup)}
                   className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-[#25D366] text-white hover:bg-[#128C7E] hover:shadow-xl transition-all w-full text-base sm:text-lg px-6 py-4 h-auto rounded-xl font-bold shadow-lg"
                 >
                   <WhatsAppIcon size={24} className="mr-2" />
-                  WhatsApp SOHEL RANA Now
-                </a>
-                <a
-                  href="tel:+966539529624"
+                  WhatsApp {managerInfo.fullName} Now
+                </button>
+                <button
+                  onClick={handleCall}
                   className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  border-input bg-background hover:text-accent-foreground w-full text-base sm:text-lg px-6 py-4 h-auto rounded-xl font-semibold border-2 hover:bg-primary/5"
                 >
                   <PhoneCallIcon size={24} className="mr-2" />
-                  Call Direct: +966 53 952 9624
-                </a>
+                  Call Direct: {managerInfo.phoneNumber}
+                </button>
               </div>
               <div className="mt-6 text-center">
                 <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-3 mb-3">
                   <p className="text-sm font-semibold text-red-600 dark:text-red-400">
-                    🔥 URGENT PICKUP? SOHEL RANA can reach you in just 15
-                    minutes!
+                    🔥 URGENT PICKUP? {managerInfo.fullName} can reach you in
+                    just 15 minutes!
                   </p>
                 </div>
                 <div className="text-xs sm:text-sm text-muted-foreground space-y-1">
@@ -222,7 +223,7 @@ export default function PickupManager() {
           <div className="mt-8 sm:mt-12 bg-muted/30 rounded-2xl p-6 sm:p-8">
             <div className="text-center mb-6">
               <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2">
-                📊 SOHEL RANA's Track Record This Month
+                📊 {managerInfo.fullName}'s Track Record This Month
               </h4>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">

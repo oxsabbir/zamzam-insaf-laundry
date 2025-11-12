@@ -6,6 +6,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { whatsappMessages } from "@/constants/messages";
+import { handleWhatsApp } from "@/lib/utils";
 
 const pricingItems = [
   {
@@ -53,9 +55,12 @@ const pricingItems = [
 ];
 
 const PricingGrid = () => {
-  const handleOrder = () => {
-    const message = encodeURIComponent("Hi! I want to order laundry service.");
-    window.open(`https://wa.me/+966539529624?text=${message}`, "_blank");
+  const handleOrder = (packageName: string, price: string) => {
+    const message = whatsappMessages.package
+      .replace("<package>", packageName)
+      .replace("<price>", price);
+
+    handleWhatsApp(message);
   };
 
   return (
@@ -101,7 +106,7 @@ const PricingGrid = () => {
                   </div>
                 </div>
                 <Button
-                  onClick={handleOrder}
+                  onClick={() => handleOrder(item.title, item.price)}
                   className="w-full bg-success hover:bg-success/90"
                 >
                   Order Now

@@ -1,5 +1,7 @@
 import { Check, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
+import { whatsappMessages } from "@/constants/messages";
+import { handleWhatsApp } from "@/lib/utils";
 
 const pricePlan = {
   basic: {
@@ -40,6 +42,14 @@ const pricePlan = {
 };
 
 export default function PricingSection() {
+  const handlePlanBooking = (price: number, plan: string) => {
+    const message = whatsappMessages.pricePlan
+      .replace("<price>", String(price))
+      .replace("<plan>", plan);
+
+    handleWhatsApp(message);
+  };
+
   return (
     <section className="py-8 sm:py-16 bg-muted">
       <div className="container mx-auto px-3 sm:px-4">
@@ -80,7 +90,15 @@ export default function PricingSection() {
                   </li>
                 ))}
               </ul>
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+              <button
+                onClick={() =>
+                  handlePlanBooking(
+                    pricePlan.basic.price,
+                    pricePlan.basic.title
+                  )
+                }
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full"
+              >
                 Choose Basic
               </button>
             </div>
@@ -113,7 +131,17 @@ export default function PricingSection() {
                 ))}
               </ul>
 
-              <Button className=" bg-primary">Choose Premium</Button>
+              <Button
+                onClick={() =>
+                  handlePlanBooking(
+                    pricePlan.premium.price,
+                    pricePlan.premium.title
+                  )
+                }
+                className=" bg-primary"
+              >
+                Choose Premium
+              </Button>
             </div>
           </div>
           <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 relative hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/80">
@@ -140,7 +168,12 @@ export default function PricingSection() {
                   </li>
                 ))}
               </ul>
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+              <button
+                onClick={() =>
+                  handlePlanBooking(pricePlan.vip.price, pricePlan.vip.title)
+                }
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full"
+              >
                 Choose VIP
               </button>
             </div>

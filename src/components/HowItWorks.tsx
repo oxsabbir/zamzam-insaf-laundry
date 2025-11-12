@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import phone from "@/assets/phone.webp";
 import delivery from "@/assets/delivery.webp";
 import pickup from "@/assets/pickup.webp";
+import { handleWhatsApp } from "@/lib/utils";
+import { whatsappMessages } from "@/constants/messages";
 
 const steps = [
   {
@@ -36,10 +38,7 @@ const steps = [
 
 const HowItWorks = () => {
   const handleStart = () => {
-    const message = encodeURIComponent(
-      "Hi! I want to start my first order with free pickup."
-    );
-    window.open(`https://wa.me/+966539529624?text=${message}`, "_blank");
+    handleWhatsApp(whatsappMessages.firstOrder);
   };
 
   return (

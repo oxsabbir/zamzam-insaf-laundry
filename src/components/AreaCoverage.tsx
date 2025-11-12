@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Check, MessageCircleMore } from "lucide-react";
 import { Input } from "./ui/input";
 import WhatsAppIcon from "./icons/Whatsapp";
+import { useState } from "react";
+import { whatsappMessages } from "@/constants/messages";
+import { handleWhatsApp } from "@/lib/utils";
 
 const areas = [
   {
@@ -50,11 +53,14 @@ const areas = [
 ];
 
 const AreaCoverage = () => {
+  const [location, setLocation] = useState("");
   const handleCheckArea = () => {
-    const message = encodeURIComponent(
-      "Hi! I want to check pickup time for my location in Makkah."
+    const message = whatsappMessages.checkPickUpTime.replace(
+      "<location>",
+      location
     );
-    window.open(`https://wa.me/+966539529624?text=${message}`, "_blank");
+
+    handleWhatsApp(message);
   };
 
   return (
@@ -118,18 +124,20 @@ const AreaCoverage = () => {
             </h3>
             <div className="space-y-4 ">
               <input
+                value={location}
+                type="text"
+                minLength={1}
+                onChange={(e) => setLocation(e.target.value)}
                 className="flex w-full border-input bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-12 sm:h-14 text-base border-2 focus:border-accent rounded-xl"
                 placeholder="Enter your hotel/location name"
               />
-              <a
-                href="https://wa.me/+966539529624?text=Hi! I want to check pickup time for my location in Makkah."
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleCheckArea}
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 shadow-primary px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
               >
                 <WhatsAppIcon size={24} />
                 Check My Pickup Time - FREE
-              </a>
+              </button>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground mt-3">
               ✅ Instant response | ✅ No commitment needed | ✅ Available 24/7
