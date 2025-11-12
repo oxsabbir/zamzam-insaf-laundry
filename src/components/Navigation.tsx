@@ -62,8 +62,8 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-2 group"
           >
-            <div className="hidden sm:block py-1.5">
-              <div className="w-fit h-[60px]">
+            <div className="py-1.5">
+              <div className="w-fit h-[45px] md:h-[60px]">
                 <a href="/">
                   <img
                     src={!isScrolled ? logo_dark : logo_light}
@@ -103,13 +103,14 @@ const Navigation = () => {
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-foreground hover:bg-success/10"
-              >
-                <Menu className="h-6 w-6" />
-              </Button>
+              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  shadow-primary p-1 text-base sm:text-lg font-bold rounded-xl">
+                <Menu
+                  size={24}
+                  className={`${
+                    isScrolled ? "text-foreground" : "text-background"
+                  }`}
+                />
+              </button>
             </SheetTrigger>
             <SheetContent
               side="right"
@@ -117,17 +118,17 @@ const Navigation = () => {
             >
               <div className="flex flex-col gap-6 mt-8">
                 {/* Mobile Logo */}
-                <div className="flex items-center gap-2 pb-4 border-b border-border">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-success to-primary flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">CT</span>
-                  </div>
-                  <div>
-                    <div className="text-foreground font-bold text-base leading-tight">
-                      Clock Tower
-                    </div>
-                    <div className="text-success text-xs font-semibold">
-                      Laundry Service
-                    </div>
+                <div className="py-1.5">
+                  <div className="w-fit h-[60px]">
+                    <a href="/">
+                      <img
+                        src={logo_light}
+                        alt="Clock Tower laundry logo"
+                        width={200}
+                        height={100}
+                        className="w-full h-full object-contain"
+                      />
+                    </a>
                   </div>
                 </div>
 
