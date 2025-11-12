@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/hero-laundry.webp";
+import heroImage from "@/assets/hero_background.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
 
@@ -31,7 +29,7 @@ const HeroNew = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-black/80 min-h-screen flex items-center pt-16">
+    <section className="relative overflow-hidden bg-green-950 min-h-screen flex items-center pt-16">
       <img
         src={heroImage}
         alt="Professional clock tower laundry service  - Express laundry pickup and delivery in Makkah for pilgrims"
