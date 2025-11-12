@@ -76,6 +76,7 @@ const HowItWorks = () => {
                     <div className=" relative">
                       <img
                         src={step.image}
+                        alt={`how-it-work-step-${index + 1}-image`}
                         width={350}
                         height={180}
                         className="object-cover w-full h-[200px] rounded-t-xl"

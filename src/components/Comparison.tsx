@@ -50,7 +50,7 @@ const Comparison = () => {
                   Others
                 </div>
                 {comparisonData.map((item, i) => (
-                  <>
+                  <div key={i}>
                     <div className="text-xs font-semibold sm:text-sm font-mediumbaktext-white text-[#E7E7E7] p-2">
                       {item.feature}
                     </div>
@@ -60,7 +60,7 @@ const Comparison = () => {
                     <div className="text-xs sm:text-sm text-red-600 bg-red-100 dark:bg-red-900/20 rounded-lg p-2">
                       {item.others}
                     </div>
-                  </>
+                  </div>
                 ))}
               </div>
             </div>
@@ -77,9 +77,9 @@ const Comparison = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-zap w-8 h-8 sm:w-10 sm:h-10 text-accent"
                 >
                   <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
@@ -104,9 +104,9 @@ const Comparison = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-dollar-sign w-8 h-8 sm:w-10 sm:h-10 text-green-500"
                 >
                   <line x1="12" x2="12" y1="2" y2="22"></line>
@@ -132,9 +132,9 @@ const Comparison = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-clock w-8 h-8 sm:w-10 sm:h-10 text-primary"
                 >
                   <circle cx="12" cy="12" r="10"></circle>
@@ -160,9 +160,9 @@ const Comparison = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-shield w-8 h-8 sm:w-10 sm:h-10 text-blue-500"
                 >
                   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
@@ -187,9 +187,9 @@ const Comparison = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-users w-8 h-8 sm:w-10 sm:h-10 text-purple-500"
                 >
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -217,9 +217,9 @@ const Comparison = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-award w-8 h-8 sm:w-10 sm:h-10 text-orange-500"
                 >
                   <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
