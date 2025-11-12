@@ -15,10 +15,12 @@ import FinalCTO from "@/components/FinalCTO";
 import PilgrimGuide from "@/components/PilgrimGuide";
 import Faq from "@/components/Faq";
 import EmergencyService from "@/components/EmergencyService";
+import FloatingCTA from "@/components/FloatingCTA";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen relative">
+      <FloatingCTA />
       <Navigation />
       <HeroNew />
       <div id="services">
