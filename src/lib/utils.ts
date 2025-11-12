@@ -7,12 +7,15 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const handleWhatsApp = (message?: string) => {
-  const defaul = encodeURIComponent(
+  const defaultMessage = encodeURIComponent(
     "Hi! I need laundry service in Makkah. Please send pickup details."
   );
 
   const number = Number(managerInfo.onlyNumber.whatsApp);
-  window.open(`https://wa.me/${number}?text=${message}`, "_blank");
+  window.open(
+    `https://wa.me/${number}?text=${message || defaultMessage}`,
+    "_blank"
+  );
 };
 
 export const handleCall = () => {
