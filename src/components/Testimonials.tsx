@@ -1,13 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Star, Quote } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
@@ -88,16 +79,6 @@ const Testimonials = () => {
   const plugin = useRef(null);
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
-
-  useEffect(() => {
-    import("embla-carousel-autoplay").then((AutoplayPlugin) => {
-      plugin.current = AutoplayPlugin.default({
-        delay: 3000,
-        stopOnInteraction: false,
-        stopOnMouseEnter: true,
-      });
-    });
-  }, []);
 
   return (
     <section ref={sectionRef} className="py-20 bg-background">
