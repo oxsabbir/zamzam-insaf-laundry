@@ -69,7 +69,11 @@ const Navigation = () => {
               <span className="text-white font-bold text-lg">CT</span>
             </div>
             <div className="hidden sm:block">
-              <div className="text-foreground font-bold text-lg leading-tight">
+              <div
+                className={`${
+                  isScrolled ? "text-foreground" : "text-white"
+                } font-bold text-lg leading-tight`}
+              >
                 Clock Tower
               </div>
               <div className="text-success text-xs font-semibold">
@@ -85,7 +89,9 @@ const Navigation = () => {
                 key={item.id}
                 variant="ghost"
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-success hover:bg-success/10 transition-all font-medium"
+                className={`hover:text-success hover:bg-success/10 transition-all font-medium ${
+                  isScrolled ? "text-foreground" : "text-white"
+                }`}
               >
                 {item.label}
               </Button>
