@@ -1,4 +1,5 @@
 import { MessageCircleMoreIcon, PhoneCallIcon } from "lucide-react";
+import WhatsAppIcon from "./icons/Whatsapp";
 
 export default function PickupManager() {
   return (
@@ -16,12 +17,12 @@ export default function PickupManager() {
               id="manager-heading"
               className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
             >
-              Meet SOHEN KHAN - Your Personal Pickup Coordinator
+              Meet SOHEL RANA - Your Personal Pickup Coordinator
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
               Why deal with different people every time?{" "}
               <span className="text-primary font-semibold">
-                SOHEN KHAN personally handles your laundry service pickup
+                SOHEL RANA personally handles your laundry service pickup
               </span>{" "}
               - building trust and ensuring consistent, reliable service for
               every customer in Makkah.
@@ -32,11 +33,11 @@ export default function PickupManager() {
               <div className="text-center mb-6">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">
-                    AA
+                    SR
                   </span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
-                  SOHEN KHAN
+                  SOHEL RANA
                 </h3>
                 <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mb-4">
                   Personal Pickup Coordinator
@@ -70,7 +71,7 @@ export default function PickupManager() {
               </div>
               <div className="bg-muted/50 rounded-xl p-4 sm:p-6 mb-6">
                 <h4 className="font-bold text-foreground mb-4 text-center">
-                  🌟 Why Customers Love SOHEN KHAN:
+                  🌟 Why Customers Love SOHEL RANA:
                 </h4>
                 <div className="space-y-3 text-sm sm:text-base">
                   <div className="flex items-start gap-3">
@@ -177,7 +178,7 @@ export default function PickupManager() {
                   </svg>
                 </div>
                 <p className="text-sm sm:text-base text-center text-muted-foreground italic mb-2">
-                  "SOHEN KHAN is amazing! He picked up our laundry within 10
+                  "SOHEL RANA is amazing! He picked up our laundry within 10
                   minutes and even helped us with directions to the Haram. Such
                   personal service - you don't get this anywhere else!"
                 </p>
@@ -187,13 +188,13 @@ export default function PickupManager() {
               </div>
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/+966539529624?text=Hi SOHEN KHAN! I need laundry pickup in Makkah. My location is:"
+                  href="https://wa.me/+966539529624?text=Hi SOHEL RANA! I need laundry pickup in Makkah. My location is:"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-[#25D366] text-white hover:bg-[#128C7E] hover:shadow-xl transition-all w-full text-base sm:text-lg px-6 py-4 h-auto rounded-xl font-bold shadow-lg"
                 >
-                  <MessageCircleMoreIcon size={24} className="mr-2" />
-                  WhatsApp SOHEN KHAN Now
+                  <WhatsAppIcon size={24} className="mr-2" />
+                  WhatsApp SOHEL RANA Now
                 </a>
                 <a
                   href="tel:+966539529624"
@@ -206,7 +207,7 @@ export default function PickupManager() {
               <div className="mt-6 text-center">
                 <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-3 mb-3">
                   <p className="text-sm font-semibold text-red-600 dark:text-red-400">
-                    🔥 URGENT PICKUP? SOHEN KHAN can reach you in just 15
+                    🔥 URGENT PICKUP? SOHEL RANA can reach you in just 15
                     minutes!
                   </p>
                 </div>
@@ -221,7 +222,7 @@ export default function PickupManager() {
           <div className="mt-8 sm:mt-12 bg-muted/30 rounded-2xl p-6 sm:p-8">
             <div className="text-center mb-6">
               <h4 className="text-lg sm:text-xl font-bold text-foreground mb-2">
-                📊 SOHEN KHAN's Track Record This Month
+                📊 SOHEL RANA's Track Record This Month
               </h4>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">

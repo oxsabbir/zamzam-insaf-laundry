@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Check, MessageCircleMore } from "lucide-react";
 import { Input } from "./ui/input";
+import WhatsAppIcon from "./icons/Whatsapp";
 
 const areas = [
   {
@@ -124,9 +125,9 @@ const AreaCoverage = () => {
                 href="https://wa.me/+966539529624?text=Hi! I want to check pickup time for my location in Makkah."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-accent/90 shadow-primary px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 shadow-primary px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
               >
-                <MessageCircleMore size={20} />
+                <WhatsAppIcon size={24} />
                 Check My Pickup Time - FREE
               </a>
             </div>

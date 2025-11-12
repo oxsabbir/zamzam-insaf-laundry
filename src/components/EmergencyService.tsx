@@ -1,4 +1,5 @@
 import { Check, MessageCircleMore } from "lucide-react";
+import WhatsAppIcon from "./icons/Whatsapp";
 
 export default function EmergencyService() {
   return (
@@ -103,7 +104,7 @@ export default function EmergencyService() {
             </div>
           </div>
           <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-destructive text-destructive-foreground hover:bg-destructive/90 h-10 w-full sm:w-auto px-8 py-4 text-lg font-bold">
-            <MessageCircleMore size={20} />
+            <WhatsAppIcon size={22} />
             EMERGENCY PICKUP - CALL NOW!
           </button>
           <p className="text-xs sm:text-sm text-red-600 dark:text-red-400 mt-3">

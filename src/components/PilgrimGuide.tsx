@@ -1,3 +1,5 @@
+import WhatsAppIcon from "./icons/Whatsapp";
+
 export default function PilgrimGuide() {
   return (
     <section
@@ -258,20 +260,7 @@ export default function PilgrimGuide() {
               personalized laundry advice.
             </p>
             <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all h-10 px-4 py-2 w-full sm:w-auto">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-message-circle w-4 h-4 mr-2"
-              >
-                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-              </svg>
+              <WhatsAppIcon />
               Ask a Laundry Question
             </button>
           </div>

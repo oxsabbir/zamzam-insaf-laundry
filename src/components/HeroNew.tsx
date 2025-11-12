@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
-  Star,
-  Phone,
   MessageCircleMore,
   Zap,
   Clock,
@@ -10,6 +8,7 @@ import {
   CircleDollarSign,
 } from "lucide-react";
 import heroImage from "@/assets/hero-laundry.webp";
+import WhatsAppIcon from "./icons/Whatsapp";
 
 const HeroNew = () => {
   const handleWhatsApp = () => {
@@ -161,9 +160,9 @@ const HeroNew = () => {
               href="https://wa.me/+966539529624?text=Hi! I need laundry service in Makkah. Please send pickup details."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-orange-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
-              <MessageCircleMore size={24} />
+              <WhatsAppIcon size={24} />
               WhatsApp NOW - 15 Min Pickup!
             </a>
             <div className="text-primary-foreground/90 flex items-center justify-center gap-4 text-xs sm:text-base">
