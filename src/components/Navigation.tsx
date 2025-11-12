@@ -5,6 +5,8 @@ import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 
 import { motion } from "motion/react";
+import { handleWhatsApp } from "@/lib/utils";
+import { whatsappMessages } from "@/constants/messages";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,13 +33,6 @@ const Navigation = () => {
       });
       setIsOpen(false);
     }
-  };
-
-  const handleWhatsApp = () => {
-    const message = encodeURIComponent(
-      "Hi! I need laundry service in Makkah. Please send pickup details."
-    );
-    window.open(`https://wa.me/+966539529624?text=${message}`, "_blank");
   };
 
   const menuItems = [
@@ -97,7 +92,7 @@ const Navigation = () => {
               </Button>
             ))}
             <Button
-              onClick={handleWhatsApp}
+              onClick={() => handleWhatsApp(whatsappMessages.pickup)}
               className="ml-2 bg-success hover:bg-success/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               <WhatsAppIcon size={18} className="mr-2" />
@@ -164,7 +159,7 @@ const Navigation = () => {
                   className="mt-4"
                 >
                   <Button
-                    onClick={handleWhatsApp}
+                    onClick={() => handleWhatsApp(whatsappMessages.pickup)}
                     className="w-full bg-success hover:bg-success/90 text-white font-semibold shadow-lg text-base h-12"
                   >
                     <WhatsAppIcon size={20} className="mr-2" />

@@ -20,7 +20,6 @@ import FloatingCTA from "@/components/FloatingCTA";
 const Index = () => {
   return (
     <main className="min-h-screen relative">
-      <FloatingCTA />
       <Navigation />
       <HeroNew />
       <div id="services">

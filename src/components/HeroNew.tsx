@@ -26,6 +26,8 @@ const HeroNew = () => {
 
   return (
     <section className="relative overflow-hidden bg-green-950 min-h-screen flex items-center pt-16">
+      <FloatingCTA />
+
       <img
         src={heroImage}
         alt="Professional clock tower laundry service  - Express laundry pickup and delivery in Makkah for pilgrims"
