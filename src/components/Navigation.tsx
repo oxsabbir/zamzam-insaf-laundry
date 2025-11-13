@@ -27,7 +27,16 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId: string, url?: string) => {
+    if (url) {
+      navigate(url);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      return;
+    }
+
     const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80;
@@ -53,9 +62,10 @@ const Navigation = () => {
   };
 
   const menuItems = [
-    { label: "Services", id: "services", url: "/#services" },
-    { label: "Pricing", id: "pricing", url: "/#pricing" },
-    { label: "Testimonials", id: "testimonials", url: "/#testimonials" },
+    { label: "Services", id: "services" },
+    { label: "Testimonials", id: "testimonials" },
+    { label: "Pricing", id: "pricing" },
+    { label: "About", id: "contact", url: "/about" },
     { label: "Contact", id: "contact", url: "/contact" },
   ];
 
@@ -98,7 +108,7 @@ const Navigation = () => {
               <Button
                 key={item.id}
                 variant="ghost"
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => scrollToSection(item.id, item?.url)}
                 className={`hover:text-success hover:bg-success/10 transition-all font-medium ${
                   isScrolled ? "text-foreground" : "text-white"
                 }`}

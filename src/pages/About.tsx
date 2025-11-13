@@ -8,9 +8,9 @@ const About = () => {
   return (
     <main className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary/5 to-background">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-primary to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,8 @@ const About = () => {
               About Clock Tower Laundry Service
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Making laundry simple for residents and visitors in Makkah since day one
+              Making laundry simple for residents and visitors in Makkah since
+              day one
             </p>
           </motion.div>
         </div>
@@ -54,13 +55,20 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Clock Tower Laundry Service is Makkah's most trusted laundry pickup and delivery service, proudly serving pilgrims, residents, and visitors in the holy city.
+                Clock Tower Laundry Service is Makkah's most trusted laundry
+                pickup and delivery service, proudly serving pilgrims,
+                residents, and visitors in the holy city.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Located in the heart of Makkah near the iconic Clock Tower, we understand the unique needs of those visiting or living near Masjid al-Haram. Whether you're here for Umrah, Hajj, or calling Makkah home, we're here to make your life easier.
+                Located in the heart of Makkah near the iconic Clock Tower, we
+                understand the unique needs of those visiting or living near
+                Masjid al-Haram. Whether you're here for Umrah, Hajj, or calling
+                Makkah home, we're here to make your life easier.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                With our 15-minute express pickup service and 24/7 availability, we ensure your laundry is never a burden during your sacred journey.
+                With our 15-minute express pickup service and 24/7 availability,
+                we ensure your laundry is never a burden during your sacred
+                journey.
               </p>
             </motion.div>
           </div>
@@ -81,7 +89,9 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To provide exceptional laundry care that respects your time, your garments, and the environment — allowing you to focus on what truly matters during your time in Makkah.
+              To provide exceptional laundry care that respects your time, your
+              garments, and the environment — allowing you to focus on what
+              truly matters during your time in Makkah.
             </p>
           </motion.div>
 
@@ -96,9 +106,12 @@ const About = () => {
               <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-6">
                 <Clock className="w-7 h-7 text-success" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Speed & Convenience</h3>
+              <h3 className="text-xl font-bold text-foreground mb-3">
+                Speed & Convenience
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                15-minute pickup guaranteed, with express turnaround options as fast as 1 hour for urgent needs.
+                15-minute pickup guaranteed, with express turnaround options as
+                fast as 1 hour for urgent needs.
               </p>
             </motion.div>
 
@@ -112,9 +125,12 @@ const About = () => {
               <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-6">
                 <Heart className="w-7 h-7 text-success" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Premium Care</h3>
+              <h3 className="text-xl font-bold text-foreground mb-3">
+                Premium Care
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Every garment receives gentle, professional treatment using quality detergents and modern equipment.
+                Every garment receives gentle, professional treatment using
+                quality detergents and modern equipment.
               </p>
             </motion.div>
 
@@ -128,9 +144,12 @@ const About = () => {
               <div className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mb-6">
                 <Leaf className="w-7 h-7 text-success" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Eco-Friendly</h3>
+              <h3 className="text-xl font-bold text-foreground mb-3">
+                Eco-Friendly
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We use environmentally safe cleaning products that are gentle on fabrics and kind to our planet.
+                We use environmentally safe cleaning products that are gentle on
+                fabrics and kind to our planet.
               </p>
             </motion.div>
           </div>
@@ -152,7 +171,9 @@ const About = () => {
                 Experienced Team, Customer-First Service
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Our dedicated team consists of trained professionals who understand the importance of trust, especially when handling your personal belongings during your spiritual journey.
+                Our dedicated team consists of trained professionals who
+                understand the importance of trust, especially when handling
+                your personal belongings during your spiritual journey.
               </p>
             </motion.div>
 
@@ -165,9 +186,12 @@ const About = () => {
                 className="bg-gradient-to-br from-primary/5 to-success/5 p-8 rounded-2xl border border-border"
               >
                 <Users className="w-10 h-10 text-success mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-4">Trained Professionals</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Trained Professionals
+                </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Every member of our team is carefully trained in fabric care, stain removal, and customer service excellence.
+                  Every member of our team is carefully trained in fabric care,
+                  stain removal, and customer service excellence.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
@@ -193,9 +217,12 @@ const About = () => {
                 className="bg-gradient-to-br from-success/5 to-primary/5 p-8 rounded-2xl border border-border"
               >
                 <Award className="w-10 h-10 text-success mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-4">Quality Guarantee</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Quality Guarantee
+                </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We stand behind our work with a complete satisfaction guarantee on every order.
+                  We stand behind our work with a complete satisfaction
+                  guarantee on every order.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
@@ -232,7 +259,9 @@ const About = () => {
               Ready to Experience the Difference?
             </h2>
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Join thousands of satisfied customers who trust us with their laundry needs in Makkah. Let us take care of your clothes while you focus on your spiritual journey.
+              Join thousands of satisfied customers who trust us with their
+              laundry needs in Makkah. Let us take care of your clothes while
+              you focus on your spiritual journey.
             </p>
             <a
               href="https://wa.me/966535934992"

@@ -217,21 +217,21 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("contact")}
+                <a
+                  href="/contact"
                   className="text-sm text-muted-foreground hover:text-success transition-colors hover:translate-x-1 inline-flex items-center gap-2"
                 >
                   <span className="w-1 h-1 rounded-full bg-success"></span>
                   Contact Us
-                </button>
+                </a>
               </li>
               <li>
                 <a
-                  href="tel:+966539529624"
+                  href="/about"
                   className="text-sm text-muted-foreground hover:text-success transition-colors hover:translate-x-1 inline-flex items-center gap-2"
                 >
                   <span className="w-1 h-1 rounded-full bg-success"></span>
-                  Emergency Pickup
+                  About us
                 </a>
               </li>
             </ul>
