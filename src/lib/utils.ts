@@ -22,7 +22,15 @@ export const handleWhatsApp = (message?: string, isBooking?: boolean) => {
   const number = Number(managerInfo.onlyNumber.whatsApp);
 
   if (isBooking) {
-    sendBookingEvent(message || defaultMessage);
+    // sendBookingEvent(message || defaultMessage);
+    const btn = document.createElement("button");
+    btn.id = "generate_lead";
+    btn.type = "button";
+    btn.textContent = "Generate Leads";
+    btn.onclick = () => {
+      sendBookingEvent(message || defaultMessage);
+    };
+    btn.click();
   }
   window.open(
     `https://wa.me/${number}?text=${message || defaultMessage}`,
