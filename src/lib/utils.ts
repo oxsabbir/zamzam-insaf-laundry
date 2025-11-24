@@ -22,15 +22,7 @@ export const handleWhatsApp = (message?: string, isBooking?: boolean) => {
   const number = Number(managerInfo.onlyNumber.whatsApp);
 
   if (isBooking) {
-    // sendBookingEvent(message || defaultMessage);
-    const btn = document.createElement("button");
-    btn.id = "generate_lead";
-    btn.type = "button";
-    btn.textContent = "Generate Leads";
-    btn.onclick = () => {
-      sendBookingEvent(message || defaultMessage);
-    };
-    btn.click();
+    sendBookingEvent(message || defaultMessage);
   }
   window.open(
     `https://wa.me/${number}?text=${message || defaultMessage}`,
@@ -48,8 +40,6 @@ export const sendBookingEvent = (message: string) => {
   window.dataLayer.push({
     event: "generate_lead",
     lead_type: "whatsapp_booking",
-    data: {
-      message,
-    },
+    message: message,
   });
 };

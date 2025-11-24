@@ -117,6 +117,7 @@ const Navigation = () => {
               </Button>
             ))}
             <Button
+              id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
               className="ml-2 bg-success hover:bg-success/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
             >
