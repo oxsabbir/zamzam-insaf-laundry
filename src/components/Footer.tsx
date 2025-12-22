@@ -26,8 +26,8 @@ const Footer = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
-    message: "",
+    phone: "",
+    hotel: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -37,8 +37,8 @@ const Footer = () => {
 
     if (
       !formData.name.trim() ||
-      !formData.email.trim() ||
-      !formData.message.trim()
+      !formData.phone.trim() ||
+      !formData.hotel.trim()
     ) {
       toast({
         title: "Missing Information",
@@ -50,7 +50,7 @@ const Footer = () => {
     }
 
     const message = encodeURIComponent(
-      `*New Website Inquiry*\n\n👤 *Name:* ${formData.name}\n📧 *Email:* ${formData.email}\n📝 *Message:* ${formData.message}`
+      `*New Laundry Booking*\n\n *Name:* ${formData.name}\n *Phone:* ${formData.phone}\n *Hotel Name:* ${formData.hotel}`
     );
     window.open(
       `https://wa.me/+${managerInfo.onlyNumber.whatsApp}?text=${message}`,
@@ -62,7 +62,7 @@ const Footer = () => {
       description: "Opening WhatsApp to send your message...",
     });
 
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", phone: "", hotel: "" });
     setIsSubmitting(false);
   };
 
@@ -121,11 +121,11 @@ const Footer = () => {
                 {[
                   {
                     icon: Facebook,
-                    href: "https://www.facebook.com/profile.php?id=61585129567887",
+                    href: "#",
                   },
                   {
                     icon: Instagram,
-                    href: "https://www.instagram.com/laundrymakkah?igsh=dW5sOTY4N2hsaG42",
+                    href: "#",
                   },
                   // {
                   //   icon: TikTokIcon,
@@ -250,11 +250,9 @@ const Footer = () => {
           {/* Form Column (3 Cols) */}
           <div className="lg:col-span-3">
             <div className="bg-gradient-to-r from-slate-900 to-slate-700 p-6 rounded-2xl border border-slate-800 shadow-xl">
-              <h4 className="text-white font-bold text-lg mb-2">
-                Quick Message
-              </h4>
+              <h4 className="text-white font-bold text-lg mb-2">Book Now</h4>
               <p className="text-slate-300 text-sm mb-4">
-                We reply via WhatsApp instantly.
+                Fill This Form To Book Your Laundry Instantly
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -267,21 +265,22 @@ const Footer = () => {
                   className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
                 />
                 <Input
-                  placeholder="Phone or Email"
-                  value={formData.email}
+                  placeholder="Phone Number"
+                  value={formData.phone}
                   onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
+                    setFormData({ ...formData, phone: e.target.value })
                   }
                   className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
                 />
-                <Textarea
-                  placeholder="How can we help?"
-                  value={formData.message}
+                <Input
+                  placeholder="Hotel Name"
+                  value={formData.hotel}
                   onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
+                    setFormData({ ...formData, hotel: e.target.value })
                   }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 min-h-[100px] resize-none"
+                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
                 />
+
                 <Button
                   type="submit"
                   disabled={isSubmitting}
