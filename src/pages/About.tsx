@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Users, Heart, Leaf, Clock, Award, Target } from "lucide-react";
-import aboutServiceImage from "@/assets/about-service.jpg";
+import aboutServiceImage from "@/assets/about_zam.webp";
 
 const About = () => {
   return (
@@ -18,12 +18,11 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              About Clock Tower Laundry Service
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              About ZamZam Insaf Laundry Service
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Making laundry simple for residents and visitors in Makkah since
-              day one
+              Making laundry easy for residents and visitors across Makkah
             </p>
           </motion.div>
         </div>
@@ -55,20 +54,21 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Clock Tower Laundry Service is Makkah's most trusted laundry
-                pickup and delivery service, proudly serving pilgrims,
-                residents, and visitors in the holy city.
+                ZamZam Insaf Laundry Service is a reliable pickup and delivery laundry
+                provider, serving pilgrims, residents, and visitors throughout
+                the holy city with care and consistency.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Located in the heart of Makkah near the iconic Clock Tower, we
-                understand the unique needs of those visiting or living near
-                Masjid al-Haram. Whether you're here for Umrah, Hajj, or calling
-                Makkah home, we're here to make your life easier.
+                Based near the central areas of Makkah, close to Masjid
+                al-Haram, we understand the unique routines and time constraints
+                of Umrah and Hajj visitors, as well as the daily needs of local
+                residents. Our service is designed to fit seamlessly into your
+                schedule, whether you’re here for worship or everyday life.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                With our 15-minute express pickup service and 24/7 availability,
-                we ensure your laundry is never a burden during your sacred
-                journey.
+                With 15-minute express pickup, 24/7 availability, and
+                professional garment care, we take the stress out of laundry so
+                you can focus on what truly matters during your stay in Makkah.
               </p>
             </motion.div>
           </div>

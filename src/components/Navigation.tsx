@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import logo_light from "@/assets/logo_light.png";
 import logo_dark from "@/assets/logo_dark.png";
+import logo from "@/assets/logo_zam_zam.webp";
 
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -87,11 +88,11 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-2 group"
           >
-            <div className="py-1.5">
-              <div className="w-fit h-[45px] md:h-[60px]">
+            <div className="py-2">
+              <div className="w-fit h-[60px] md:h-[75px]">
                 <a href="/">
                   <img
-                    src={!isScrolled ? logo_dark : logo_light}
+                    src={logo}
                     alt="Clock Tower laundry logo"
                     width={200}
                     height={100}
@@ -148,7 +149,7 @@ const Navigation = () => {
                   <div className="w-fit h-[60px]">
                     <a href="/">
                       <img
-                        src={logo_light}
+                        src={logo}
                         alt="Clock Tower laundry logo"
                         width={200}
                         height={100}

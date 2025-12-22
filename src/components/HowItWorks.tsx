@@ -78,7 +78,7 @@ const HowItWorks = () => {
                         alt={`how-it-work-step-${index + 1}-image`}
                         width={350}
                         height={180}
-                        className="object-cover w-full h-[200px] rounded-t-xl"
+                        className="object-cover w-full h-[260px] rounded-t-xl"
                       />
                       <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-primary font-bold text-lg text-white rounded-full flex items-center  justify-center">
                         {step.number}

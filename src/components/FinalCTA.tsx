@@ -4,11 +4,20 @@ import { managerInfo } from "@/constants";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { handleCall, handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
+import ctaBackground from "@/assets/cta-background.webp";
 
 export default function FinalCTA() {
   return (
-    <section className="py-8 sm:py-16 bg-gradient-to-r from-gray-900 via-green-600 to-gray-900  relative overflow-hidden">
-      <div className="absolute inset-0 bg-black/10"></div>
+    <section
+      style={{
+        background: `url("${ctaBackground}")`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+      className="py-10 sm:py-16 relative overflow-hidden"
+    >
+      <div className="absolute inset-0 bg-gradient-to-tl from-blue-500/20 to-black/80 "></div>
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
@@ -28,7 +37,7 @@ export default function FinalCTA() {
             <button
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-gradient-accent text-accent-foreground hover:opacity-90 duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-[#25D366]  text-white hover:bg-orange-500 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-gradient-accent text-accent-foreground hover:opacity-90 duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-[#03be48]  text-white hover:bg-orange-500 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
             >
               <WhatsAppIcon size={32} />
               <div className="text-left ml-2">
@@ -40,7 +49,7 @@ export default function FinalCTA() {
             </button>
             <button
               onClick={handleCall}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-gradient-accent text-accent-foreground hover:opacity-90 duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-blue-500 text-white hover:bg-orange-500 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-gradient-accent text-accent-foreground hover:opacity-90 duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-blue-500 text-white hover:bg-slate-500 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
             >
               <PhoneCallIcon size={32} />
               <div className="text-left ml-2">
@@ -175,7 +184,7 @@ export default function FinalCTA() {
               </div>
             </div>
           </div>
-          <div className="bg-green-500/20 border-2 border-green-600 shadow-primary rounded-xl p-4 sm:p-6 text-center">
+          <div className="rounded-lg border p-6 shadow-sm bg-black/30 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground mb-6 sm:mb-8">
             <div className="flex items-center flex-col gap-2 justify-center mb-3">
               <div className="animate-pulse bg-red-500 rounded-lg p-3 mr-3">
                 <Zap className=" text-white" size={24} />

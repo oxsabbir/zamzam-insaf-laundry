@@ -1,273 +1,156 @@
 import { handleWhatsApp } from "@/lib/utils";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { whatsappMessages } from "@/constants/messages";
+import {
+  Shirt,
+  UserCheck,
+  Clock,
+  Package,
+  DollarSign,
+  Wind,
+  CheckCircle,
+} from "lucide-react";
+import { Button } from "./ui/button";
+
+const guideItems = [
+  {
+    icon: <Shirt className="h-7 w-7 text-primary" />,
+    title: "Caring for Your Ihram",
+    content:
+      "Ihram garments are sacred. To maintain their purity, wash them gently with fragrance-free detergents and air dry them in the shade.",
+    tips: [
+      "Use a gentle machine cycle or hand wash.",
+      "Opt for mild, unscented detergent.",
+      "Avoid direct sunlight to prevent yellowing.",
+    ],
+  },
+  {
+    icon: <UserCheck className="h-7 w-7 text-primary" />,
+    title: "Abaya & Thobe Care",
+    content:
+      "Your traditional garments require special care. We recommend dry cleaning for delicate items and professional pressing for a crisp look.",
+    tips: [
+      "Dry clean embroidered or delicate abayas.",
+      "Machine wash and press thobes professionally.",
+      "Use our express service for urgent needs.",
+    ],
+  },
+  {
+    icon: <Clock className="h-7 w-7 text-primary" />,
+    title: "Smart Laundry Timing",
+    content:
+      "Our flexible services are designed around your worship schedule. Plan your laundry efficiently so you can focus on what matters.",
+    tips: [
+      "Use our same-day service (drop off before 10 AM).",
+      "A 3-hour express option is perfect for between rituals.",
+      "We offer 24/7 pickup and delivery.",
+    ],
+  },
+  {
+    icon: <Package className="h-7 w-7 text-primary" />,
+    title: "Packing for Your Pilgrimage",
+    content:
+      "Packing smart reduces laundry stress. Experienced pilgrims recommend bringing just enough, focusing on lightweight and quick-drying fabrics.",
+    tips: [
+      "Pack 3-4 sets of Ihram.",
+      "Bring 2-3 comfortable thobes or abayas.",
+      "Choose light, quick-drying undergarments.",
+    ],
+  },
+  {
+    icon: <DollarSign className="h-7 w-7 text-primary" />,
+    title: "Understanding Laundry Costs",
+    content:
+      "Our transparent pricing helps you budget effectively. Hotel laundry can be 3x more expensive, so plan ahead to save.",
+    tips: [
+      "Expect to pay around 13-18 SAR per kg.",
+      "An average 3-5 kg load costs about 45-75 SAR.",
+      "Avoid expensive hotel services to save up to 70%.",
+    ],
+  },
+  {
+    icon: <Wind className="h-7 w-7 text-primary" />,
+    title: "Keeping Clothes Fresh",
+    content:
+      "Makkah's heat means frequent washing is essential. Airing out clothes and scheduling timely laundry service makes all the difference.",
+    tips: [
+      "Plan to change Ihram after Tawaf or Sa'i.",
+      "Air-dry garments between wears.",
+      "Schedule pickups before you leave for the Haram.",
+    ],
+  },
+];
 
 export default function PilgrimGuide() {
   return (
     <section
-      className="py-8 sm:py-16 bg-gradient-to-br from-muted/20 to-primary/10"
+      className="py-16 sm:py-20 bg-gradient-to-br from-white to-primary/5"
       aria-labelledby="guide-heading"
     >
-      <div className="container mx-auto px-3 sm:px-4">
-        <header className="text-center mb-8 sm:mb-12">
+      <div className="container mx-auto px-4">
+        <header className="text-center mb-10 sm:mb-16">
           <h2
             id="guide-heading"
-            className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
+            className="text-3xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            📖 Pilgrim's Laundry Guide
+            A Pilgrim's Guide to Hassle-Free Laundry
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Essential laundry tips for Hajj &amp; Umrah visitors - helping you
-            focus on worship, not wardrobe
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+            Focus on your spiritual journey. We'll take care of the laundry with
+            these essential tips for Hajj & Umrah.
           </p>
         </header>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/20">
-            <div className="text-center mb-4">
-              <div className="text-4xl mb-3">🕋</div>
-              <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">
-                How to Wash Ihram Clothes Properly
-              </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-4">
-                Ihram garments require special care to maintain their purity and
-                white appearance. Use gentle detergents, cold water, and avoid
-                harsh chemicals.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Hand wash or gentle machine cycle
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Use mild, fragrance-free detergent
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Air dry in shade to prevent yellowing
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Iron on low heat if needed
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/20">
-            <div className="text-center mb-4">
-              <div className="text-4xl mb-3">👔</div>
-              <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">
-                Abaya &amp; Thobe Care Guide
-              </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-4">
-                Traditional Islamic garments need professional care to maintain
-                their elegance and dignity throughout your pilgrimage.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Dry cleaning recommended for embroidered abayas
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Thobes can be machine washed and pressed
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  5-hour turnaround for urgent needs
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Special pressing for crisp appearance
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/20">
-            <div className="text-center mb-4">
-              <div className="text-4xl mb-3">⏰</div>
-              <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">
-                Laundry Timing for Pilgrims
-              </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-4">
-                Plan your laundry around your worship schedule. We offer
-                flexible timing to fit your Hajj or Umrah itinerary.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Same-day service: Drop before 10 AM
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Express 5-hour: For between rituals
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  1-hour emergency: For urgent needs
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Night pickup available 24/7
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/20">
-            <div className="text-center mb-4">
-              <div className="text-4xl mb-3">🧳</div>
-              <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">
-                What to Pack for Hajj/Umrah
-              </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-4">
-                Smart packing reduces laundry needs. Here's what experienced
-                pilgrims recommend for clothing.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  3-4 sets of Ihram (2 white towels each)
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  2-3 thobes/abayas for regular wear
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Comfortable sandals (easy to remove)
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Light undergarments (quick-dry fabric)
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/20">
-            <div className="text-center mb-4">
-              <div className="text-4xl mb-3">💰</div>
-              <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">
-                Complete Makkah Laundry Price Guide
-              </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-4">
-                Transparent pricing helps you budget. Hotel laundry costs 3x
-                more - here's what you should expect to pay.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Regular wash: 13-15 SAR/kg
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-red-500">✗</span>
-                <span className="text-muted-foreground">
-                  Hotel laundry: 40-60 SAR/kg (avoid!)
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Our service: FREE pickup &amp; delivery
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Average load: 3-5 kg (45-65 SAR total)
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/20">
-            <div className="text-center mb-4">
-              <div className="text-4xl mb-3">🌡️</div>
-              <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">
-                Keeping Clothes Fresh in Makkah
-              </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-4">
-                Makkah's hot climate means clothes need frequent washing. Here's
-                how to stay fresh during your pilgrimage.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Change Ihram after Tawaf (sweating is normal)
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Use hotel hangers to air-dry between wears
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Request pickup before going to Haram
-                </span>
-              </div>
-              <div className="flex items-start gap-2 text-xs sm:text-sm">
-                <span className="text-green-500">✓</span>
-                <span className="text-muted-foreground">
-                  Fresh clothes ready when you return
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="rounded-lg bg-card text-card-foreground shadow-sm mt-8 sm:mt-12 max-w-2xl mx-auto bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/40">
-          <div className="p-6 text-center">
-            <h3 className="text-lg sm:text-xl font-bold mb-3 text-foreground">
-              Need Help with Your Laundry?
-            </h3>
-            <p className="text-sm sm:text-base text-muted-foreground mb-4">
-              Our team understands the unique needs of pilgrims. WhatsApp us for
-              personalized laundry advice.
-            </p>
-            <button
-              onClick={() => handleWhatsApp(whatsappMessages.faq)}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all h-10 px-4 py-2 w-full sm:w-auto"
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {guideItems.map((item, index) => (
+            <div
+              key={index}
+              className="bg-card rounded-2xl shadow-sm overflow-hidden border border-primary/10 transition-all hover:shadow-xl hover:-translate-y-1 duration-300"
             >
-              <WhatsAppIcon />
-              Ask a Laundry Question
-            </button>
+              {/* Card Header */}
+              <div className="bg-primary/5 p-6 border-b border-primary/10">
+                <div className="flex items-center gap-4">
+                  <div className="bg-primary/10 p-3 rounded-full">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground">
+                    {item.title}
+                  </h3>
+                </div>
+              </div>
+
+              {/* Card Body */}
+              <div className="p-6">
+                <p className="text-muted-foreground mb-5">{item.content}</p>
+                <ul className="space-y-3">
+                  {item.tips.map((tip, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">{tip}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="max-w-2xl mx-auto bg-card border rounded-xl p-6 shadow-sm">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 text-foreground">
+              Have More Questions?
+            </h3>
+            <p className="text-base sm:text-lg text-muted-foreground mb-6">
+              Our team understands the unique needs of pilgrims. WhatsApp us
+              anytime for personalized laundry advice.
+            </p>
+            <Button
+              onClick={() => handleWhatsApp(whatsappMessages.faq)}
+              className="bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-semibold"
+            >
+              <WhatsAppIcon className="mr-2" />
+              Ask a Question on WhatsApp
+            </Button>
           </div>
         </div>
       </div>

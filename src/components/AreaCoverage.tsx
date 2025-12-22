@@ -84,7 +84,7 @@ const AreaCoverage = () => {
           {areas.map((area, index) => (
             <div
               key={index}
-              className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all border border-border"
+              className="bg-card flex flex-col  rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all border border-border"
             >
               <div className="flex items-start gap-4 mb-4">
                 <div className="text-4xl sm:text-5xl">{area.emoji}</div>
@@ -109,6 +109,22 @@ const AreaCoverage = () => {
                     </Badge>
                   </div>
                 ))}
+              </div>
+              <div className="text-center mt-auto pt-6">
+                <Button
+                  onClick={() =>
+                    handleWhatsApp(
+                      `Hi I need laundry service in ${encodeURIComponent(
+                        area.title
+                      )}. Could you please share the pickup details and timing? Thank you! `,
+                      true
+                    )
+                  }
+                  id="generate_lead"
+                  className=" bg-success"
+                >
+                  Book Now
+                </Button>
               </div>
             </div>
           ))}

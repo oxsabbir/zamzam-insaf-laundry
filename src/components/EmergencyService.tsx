@@ -1,122 +1,149 @@
-import { Check, MessageCircleMore } from "lucide-react";
+import { Check, Clock, ShieldCheck, Zap } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
 
 export default function EmergencyService() {
   return (
-    <section className="py-8 sm:py-16 bg-gradient-to-br from-red-50 to-amber-50/10">
-      <div className="container mx-auto px-3 sm:px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-red-500 rounded-full w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 flex items-center justify-center animate-pulse">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-zap w-8 h-8 sm:w-10 sm:h-10 text-white"
-            >
-              <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-            </svg>
+    <section className="relative py-12 sm:py-20 overflow-hidden bg-gradient-to-b from-white to-red-50/50">
+      {/* Background Decorator */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-red-100/30 rounded-full blur-3xl -z-10" />
+
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-10 sm:mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-100 border border-red-200 text-red-700 text-sm font-semibold mb-6 animate-fade-in">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+              </span>
+              Live: 24/7 Emergency Response Team
+            </div>
+
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+              Laundry Emergency? <br className="hidden sm:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-500">
+                We're On The Way.
+              </span>
+            </h2>
+
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              Don't panic. Whether it's a spill before a meeting or a flight
+              tomorrow morning, our <strong>Rapid Response Team</strong> handles
+              your garments with speed and precision.
+            </p>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-red-700 dark:text-red-300">
-            🚨 Emergency Laundry Service - 24/7!
-          </h2>
-          <p className="text-base sm:text-lg text-red-600 dark:text-red-400 mb-6 max-w-2xl mx-auto">
-            Spilled something important? Flight tomorrow morning? Wedding
-            emergency?
-            <span className="font-bold">
-              {" "}
-              We've got you covered with 1-hour emergency service!
-            </span>
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8">
-            <div className="rounded-lg border text-card-foreground shadow-sm p-4 bg-white dark:bg-gray-800 border-r-primary/40 border-l-primary/40">
-              <div className="text-center">
-                <div className="text-2xl mb-2">⚡</div>
-                <h3 className="font-bold text-foreground">1-Hour Service</h3>
-                <p className="text-sm text-muted-foreground">
-                  Emergency cleaning &amp; pressing
-                </p>
+
+          {/* Feature Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {/* Card 1 */}
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300">
+              <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-4 text-red-600">
+                <Zap size={24} strokeWidth={2.5} />
               </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                1-Hour Express
+              </h3>
+              <p className="text-slate-600 text-sm">
+                Fast-track cleaning and steam pressing. We prioritize your order
+                above all others instantly.
+              </p>
             </div>
-            <div className="rounded-lg border text-card-foreground shadow-sm p-4 bg-white dark:bg-gray-800 border-r-primary/40 border-l-primary/40">
-              <div className="text-center">
-                <div className="text-2xl mb-2">🌙</div>
-                <h3 className="font-bold text-foreground">3 AM? No Problem</h3>
-                <p className="text-sm text-muted-foreground">
-                  Available 24/7, even holidays
-                </p>
+
+            {/* Card 2 */}
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300">
+              <div className="w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center mb-4 text-indigo-600">
+                <Clock size={24} strokeWidth={2.5} />
               </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                Anytime, Anywhere
+              </h3>
+              <p className="text-slate-600 text-sm">
+                3 AM or Public Holiday? Our emergency lines are open. We pick up
+                and deliver while you sleep.
+              </p>
             </div>
-            <div className="rounded-lg border text-card-foreground shadow-sm p-4 bg-white dark:bg-gray-800 border-r-primary/40 border-l-primary/40">
-              <div className="text-center">
-                <div className="text-2xl mb-2">💯</div>
-                <h3 className="font-bold text-foreground">
-                  Emergency Guarantee
+
+            {/* Card 3 */}
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300">
+              <div className="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center mb-4 text-emerald-600">
+                <ShieldCheck size={24} strokeWidth={2.5} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                Results Guaranteed
+              </h3>
+              <p className="text-slate-600 text-sm">
+                Speed doesn't mean cutting corners. If the stain isn't gone
+                (where possible), you don't pay.
+              </p>
+            </div>
+          </div>
+
+          {/* Checklist & CTA Split */}
+          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+            <div className="grid grid-cols-1 lg:grid-cols-5">
+              {/* Left Side: Checklist */}
+              <div className="lg:col-span-3 p-8 sm:p-10">
+                <h3 className="text-xl font-bold text-slate-900 mb-6">
+                  We Handle All Emergencies:
                 </h3>
-                <p className="text-sm text-muted-foreground">
-                  Perfect results or money back
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-8">
+                  {[
+                    "Flight scheduled tomorrow",
+                    "Wedding outfit rescue",
+                    "Urgent business meeting",
+                    "Tough stain removal",
+                    "Special occasion prep",
+                    "Ihram / Hajj urgency",
+                    "Spills & accidents",
+                    "Last-minute ironing",
+                  ].map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 text-slate-700 font-medium text-sm"
+                    >
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                        <Check size={12} strokeWidth={3} />
+                      </div>
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Side: CTA Action Area */}
+              <div className="lg:col-span-2 bg-slate-900 p-8 sm:p-10 flex flex-col justify-center text-center lg:text-left relative overflow-hidden">
+                {/* Decorative circle */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-10 -mt-10 blur-2xl"></div>
+
+                <h3 className="text-white text-xl font-bold mb-2 relative z-10">
+                  Need Help Right Now?
+                </h3>
+                <p className="text-slate-400 text-sm mb-6 relative z-10">
+                  Tap below to chat with our emergency dispatcher immediately.
+                </p>
+
+                <button
+                  id="generate_lead_emergency"
+                  onClick={() =>
+                    handleWhatsApp(whatsappMessages.emergency, true)
+                  }
+                  className="relative z-10 w-full bg-red-600 hover:bg-red-500 text-white font-bold text-lg py-4 px-6 rounded-xl transition-all duration-200 shadow-lg shadow-red-900/20 active:scale-[0.98] group flex items-center justify-center gap-3"
+                >
+                  <WhatsAppIcon
+                    size={24}
+                    className="text-white group-hover:scale-110 transition-transform"
+                  />
+                  <span>EMERGENCY PICKUP</span>
+                </button>
+
+                <p className="text-xs text-slate-500 mt-4 text-center">
+                  *Premium rates apply for 1-hour rush service.
                 </p>
               </div>
             </div>
           </div>
-          <div className="border  bg-white rounded-xl p-4 sm:p-8 mb-6">
-            <h3 className="text-lg  sm:text-2xl font-bold text-red-700 dark:text-red-300 mb-6">
-              Common Emergency Situations We Handle
-            </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 text-left gap-3 text-sm">
-              <div className="text-green-600 flex items-center gap-2 ">
-                <Check size={20} />
-                Flight tomorrow
-              </div>
-              <div className="text-green-600 flex items-center gap-2 ">
-                <Check size={20} />
-                Wedding emergency
-              </div>
-              <div className="text-green-600 flex items-center gap-2 ">
-                <Check size={20} />
-                Business meeting
-              </div>
-              <div className="text-green-600 flex items-center gap-2 ">
-                <Check size={20} />
-                Stain removal
-              </div>
-              <div className="text-green-600 flex items-center gap-2 ">
-                <Check size={20} />
-                Special occasions
-              </div>
-              <div className="text-green-600 flex items-center gap-2 ">
-                <Check size={20} />
-                Ihram urgency
-              </div>
-              <div className="text-green-600 flex items-center gap-2 ">
-                <Check size={20} />
-                Spills &amp; accidents
-              </div>
-              <div className="text-green-600 flex items-center gap-2 ">
-                <Check size={20} />
-                Last-minute needs
-              </div>
-            </div>
-          </div>
-          <button
-            id="generate_lead"
-            onClick={() => handleWhatsApp(whatsappMessages.emergency, true)}
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-destructive text-destructive-foreground hover:bg-destructive/90 h-10 w-full sm:w-auto px-8 py-4 text-lg font-bold"
-          >
-            <WhatsAppIcon size={22} />
-            EMERGENCY PICKUP - CALL NOW!
-          </button>
-          <p className="text-xs sm:text-sm text-red-600 dark:text-red-400 mt-3">
-            Emergency service available 24/7 | Extra charges apply for 1-hour
-            service
-          </p>
         </div>
       </div>
     </section>

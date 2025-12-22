@@ -25,13 +25,16 @@ const HeroNew = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-green-950 min-h-screen flex items-center pt-16">
+    <section
+      id="hero"
+      className="relative overflow-hidden bg-gradient-to-r from-gray-900  via-green-950  to-gray-900  min-h-screen flex items-center pt-16"
+    >
       <FloatingCTA />
 
       <img
         src={heroImage}
         alt="Professional clock tower laundry service  - Express laundry pickup and delivery in Makkah for pilgrims"
-        className="absolute inset-0 w-full h-full object-cover opacity-25"
+        className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
         height="1080"
@@ -173,7 +176,7 @@ const HeroNew = () => {
               WhatsApp NOW - 15 Min Pickup!
             </button>
 
-            <div className="text-primary-foreground/90 flex items-center justify-center gap-4 text-xs sm:text-base">
+            <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
                 <Clock size={18} /> 24/7 Service
               </span>

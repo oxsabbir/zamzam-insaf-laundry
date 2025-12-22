@@ -17,7 +17,7 @@ export default function Faq() {
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-            <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20">
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                 Q: Do you really pickup in 15 minutes?
               </h3>
@@ -26,7 +26,7 @@ export default function Faq() {
                 Makkah. If we're late, your service is FREE.
               </p>
             </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20">
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                 Q: Is pickup and delivery really free?
               </h3>
@@ -35,7 +35,7 @@ export default function Faq() {
                 and delivery is included in all our services.
               </p>
             </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20">
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                 Q: Do you work 24/7?
               </h3>
@@ -44,7 +44,7 @@ export default function Faq() {
                 Perfect for emergency situations and busy schedules.
               </p>
             </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20">
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                 Q: What if my clothes get damaged?
               </h3>
@@ -53,40 +53,40 @@ export default function Faq() {
                 damaged, we'll compensate you fully or replace the item.
               </p>
             </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20">
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Can you handle special fabrics?
+                Q: What are your prices for thobes and abayas?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes! We handle silk, wool, delicate fabrics, formal wear, and
-                traditional garments with special care and expertise.
+                A: We have special prices for traditional wear. Thobes are SAR
+                15 and abayas are SAR 20, including steam pressing.
               </p>
             </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20">
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: How do I track my laundry?
+                Q: Do you offer carpet and rug cleaning?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We send WhatsApp updates at every step: pickup confirmed,
-                cleaning started, ready for delivery, and delivered.
+                A: Yes, we offer professional cleaning for all types of carpets
+                and rugs. Prices vary by size and material.
               </p>
             </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20">
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What payment methods do you accept?
+                Q: What's your turnaround for large family orders?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Cash on delivery, bank transfers, and all major payment apps.
-                No upfront payment required!
+                A: We prioritize large orders. Most are ready within 24-48
+                hours, depending on the items and services required.
               </p>
             </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/20">
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you clean Ihram clothes?
+                Q: Do you clean delicate items like bishts or shemaghs?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes! We specialize in Ihram and religious garments with
-                respectful handling and same-day service for pilgrims.
+                A: Absolutely. We are experts in cleaning traditional Saudi
+                garments, ensuring they are handled with the utmost care.
               </p>
             </div>
           </div>

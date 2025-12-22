@@ -2,6 +2,7 @@ import { Star, Quote } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
+import { managerInfo } from "@/constants";
 
 const testimonials = [
   {
@@ -72,6 +73,39 @@ const testimonials = [
       "Outstanding experience! They handled my delicate abayas with great care. Fast pickup, professional service, and reasonable prices. This is the only laundry service you need in Makkah!",
     avatar: "MA",
     flag: "🇲🇾",
+  },
+  {
+    name: "Omar Farooq",
+    location: "Elaf Kinda Hotel, Makkah",
+    country: "UK",
+    rating: 5,
+    service: "Ihram Cleaning",
+    review:
+      "During my Umrah, Zamzam Insaf Laundry was a lifesaver! Their prompt service and attention to detail for my Ihram clothes were exceptional. Truly a 5-star experience.",
+    avatar: "OF",
+    flag: "🇬🇧",
+  },
+  {
+    name: "Hajar Bint Abdullah",
+    location: "Makkah Hotel",
+    country: "Jordan",
+    rating: 5,
+    service: "Abaya Cleaning",
+    review:
+      "I was so impressed with Zamzam Insaf Laundry's efficiency. They picked up my abayas and returned them perfectly clean and pressed, allowing me to focus completely on my worship. Highly recommend their services to all pilgrims.",
+    avatar: "HB",
+    flag: "🇯🇴",
+  },
+  {
+    name: "Dr. Faisal Rahman",
+    location: "Hilton Suites Makkah",
+    country: "Bangladesh",
+    rating: 5,
+    service: "Regular Customer",
+    review:
+      "As a frequent visitor for Hajj and Umrah, I've tried many laundry services. Zamzam Insaf Laundry stands out for its quality and reliability. Their 24/7 service is a blessing. Will definitely use them again!",
+    avatar: "FR",
+    flag: "🇧🇩",
   },
 ];
 
@@ -174,7 +208,7 @@ const Testimonials = () => {
                 "Hi! I want to book your 5-star laundry service."
               );
               window.open(
-                `https://wa.me/+966539529624?text=${message}`,
+                `https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`,
                 "_blank"
               );
             }}

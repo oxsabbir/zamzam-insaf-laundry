@@ -1,9 +1,12 @@
 export const managerInfo = {
-  fullName: "Abdullah",
-  phoneNumber: "+966 53 593 4992",
-  whatsApp: "+966 53 593 4992",
+  fullName: "Md Rakibul Hossain",
+  phoneNumber: "+966 50 863 5924",
+  whatsApp: "+966 50 863 5924",
   onlyNumber: {
-    whatsApp: 966535934992,
-    phoneNumber: 966535934992,
+    whatsApp: 966508635924,
+    phoneNumber: 966508635924,
   },
+  address: `Ajyad Street, Near Masjid al-Haram
+Makkah 24231`,
+  email: "info@makkahlaundryservice.com",
 };
