@@ -40,11 +40,11 @@ const HeroNew = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-red-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
-            URGENT LAUNDRY? 15-MIN PICKUP GUARANTEED!
+            PILGRIM'S CHOICE: FAST & FRESH LAUNDRY!
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
-              Clock Tower Laundry Service <br /> <span>Makkah</span>
+              ZamZam Insaf Laundry Service <br /> <span>Makkah</span>
             </span>
             <span className="text-accent inline-block ">15 Minutes</span>{" "}
             Express Pickup - Best Laundry Near Haram!
@@ -124,20 +124,21 @@ const HeroNew = () => {
                 </svg>
               </div>
               <span className="text-primary-foreground ml-2 font-bold text-sm sm:text-base">
-                5000+ Happy Customers
+                Over 7,500+ Pilgrims Served
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              "Perfect for pilgrims! Clean clothes in just 15 minutes.
+              "Incredibly fast service! My clothes were picked up and clean in
+              no time.
               <span className="text-accent font-bold">
                 {" "}
-                Exactly what we needed in Makkah!"
+                A true blessing for any pilgrim in Makkah!"
               </span>
             </p>
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-accent">
-                  13 SAR
+                  12 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
                   Starting/kg
@@ -148,7 +149,7 @@ const HeroNew = () => {
                   15 Min
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Pickup Time
+                  Guaranteed Pickup
                 </div>
               </div>
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
