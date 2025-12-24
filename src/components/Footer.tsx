@@ -158,14 +158,25 @@ const Footer = () => {
             <h4 className="text-white font-bold text-xl mb-6">Company</h4>
             <ul className="space-y-4">
               {[
-                { label: "Our Services", id: "services" },
-                { label: "Pricing Plan", id: "pricing" },
+                { label: "Services", id: "services" },
                 { label: "Testimonials", id: "testimonials" },
-                { label: "About Us", href: "/about" },
-                { label: "Contact", href: "/contact" },
+                { label: "Pricing", id: "pricing" },
+                { label: "About", id: "contact", url: "/about" },
+                { label: "Contact", id: "contact", url: "/contact" },
               ].map((link, idx) => (
                 <li key={idx}>
-                  {link.id ? (
+                  {link?.url ? (
+                    <a
+                      href={link.url}
+                      className="text-slate-00 hover:text-emerald-400 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
+                    >
+                      <ArrowRight
+                        size={14}
+                        className="opacity-0 hover:opacity-100 -ml-4 hover:ml-0 transition-all"
+                      />
+                      {link.label}
+                    </a>
+                  ) : (
                     <button
                       onClick={() => scrollToSection(link.id)}
                       className="text-slate-00 hover:text-emerald-400 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
@@ -176,17 +187,6 @@ const Footer = () => {
                       />
                       {link.label}
                     </button>
-                  ) : (
-                    <a
-                      href={link.href}
-                      className="text-slate-00 hover:text-emerald-400 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
-                    >
-                      <ArrowRight
-                        size={14}
-                        className="opacity-0 hover:opacity-100 -ml-4 hover:ml-0 transition-all"
-                      />
-                      {link.label}
-                    </a>
                   )}
                 </li>
               ))}
