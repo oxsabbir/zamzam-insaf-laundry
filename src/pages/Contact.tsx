@@ -143,6 +143,93 @@ const Contact = () => {
               </a>
             </div>
           </motion.div>
+
+          {/* Location Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-foreground mb-4">
+                Our Service Area
+              </h2>
+              <div className="flex items-center justify-center gap-2 text-muted-foreground">
+                <MapPin className="w-5 h-5 text-success" />
+                <p className="text-lg">
+                  Umm Al Qura, Ash Shubaikah, Makkah 21955, Saudi Arabia
+                </p>
+              </div>
+            </div>
+
+            {/* Map */}
+            <div className="relative h-[400px] rounded-2xl overflow-hidden border border-border shadow-lg group">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1857.0822836720376!2d39.81824474420289!3d21.422775592674554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDI1JzIxLjgiTiAzOcKwNDknMDguMiJF!5e0!3m2!1sen!2sbd!4v1766483505701!5m2!1sen!2sbd"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
+                title="Clock Tower Laundry Location"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+            </div>
+
+            <div className="mt-8 grid md:grid-cols-2 gap-6">
+              <div className="bg-card p-6 rounded-xl border border-border">
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  Coverage Areas
+                </h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    Clock Tower & Abraj Al Bait (5-10 min)
+                  </li>
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    Jabal Omar & Aziziyah (10-15 min)
+                  </li>
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    Kudai & Misfalah (12-18 min)
+                  </li>
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    All areas near Masjid al-Haram
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-card p-6 rounded-xl border border-border">
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  Why Choose Us?
+                </h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    15-minute express pickup guaranteed
+                  </li>
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    Free pickup and delivery
+                  </li>
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    Professional care for all fabrics
+                  </li>
+                  <li className="flex items-start gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
+                    Money-back satisfaction guarantee
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

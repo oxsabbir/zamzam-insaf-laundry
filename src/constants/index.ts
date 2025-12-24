@@ -1,5 +1,5 @@
 export const managerInfo = {
-  fullName: "Md Rakibul Hossain",
+  fullName: "Mohammad Rakibul Hossain",
   phoneNumber: "+966 50 863 5924",
   whatsApp: "+966 50 863 5924",
   onlyNumber: {
