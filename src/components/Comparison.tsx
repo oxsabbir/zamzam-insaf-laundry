@@ -1,4 +1,13 @@
-import { Award, Check, Clock, DollarSign, Shield, Users, X, Zap } from "lucide-react";
+import {
+  Award,
+  Check,
+  Clock,
+  DollarSign,
+  Shield,
+  Users,
+  X,
+  Zap,
+} from "lucide-react";
 
 const comparisonData = [
   {
@@ -13,7 +22,7 @@ const comparisonData = [
   },
   {
     feature: "Starting Price",
-    us: "From 12 SAR/kg",
+    us: "From 15 SAR/kg",
     others: "From 25 SAR/kg",
   },
   {
@@ -103,7 +112,7 @@ const Comparison = () => {
                 Affordable Excellence
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Transparent pricing from 12 SAR/kg and completely free
+                Transparent pricing from 15 SAR/kg and completely free
                 pickup/delivery, offering savings up to 50% over hotels.
               </p>
             </div>

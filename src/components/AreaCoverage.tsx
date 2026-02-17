@@ -21,7 +21,7 @@ const areas = [
   },
   {
     emoji: "🏨",
-    title: "Jabal Omar & Aziziyah",
+    title: "Jabal Omar & Hayatt Regency",
     description:
       "Tailored services for premium hotel districts, offering convenient 24/7 express pickup.",
     locations: [
@@ -68,7 +68,7 @@ const AreaCoverage = () => {
   const handleCheckArea = () => {
     const message = whatsappMessages.checkPickUpTime.replace(
       "<location>",
-      location
+      location,
     );
 
     handleWhatsApp(message, false);
@@ -126,9 +126,9 @@ const AreaCoverage = () => {
                   onClick={() =>
                     handleWhatsApp(
                       `Hi I need laundry service in ${encodeURIComponent(
-                        area.title
+                        area.title,
                       )}. Could you please share the pickup details and timing? Thank you! `,
-                      true
+                      true,
                     )
                   }
                   id="generate_lead"

@@ -14,7 +14,7 @@ const urgentServices = [
     price: "35 Riyals",
     unit: "Kg",
     description:
-      "Urgent wash, dry, and press/ironing service with folding or hanger option. Fast delivery available across Makkah.",
+      "Urgent wash, dry, service with folding or hanger option. Fast delivery available across Makkah.",
     highlight: "Urgent Service – Around Makkah Only",
     deliveryTime: "Within 1 Hour",
   },
@@ -23,7 +23,7 @@ const urgentServices = [
     price: "18 Riyals",
     unit: "Kg",
     description:
-      "Normal wash, dry, press/ironing, and folding or hanger service with delivery within 12 hours.",
+      "Normal wash, dry and folding or hanger service with delivery within 12 hours.",
     highlight: "Free Pickup & Delivery Included",
     deliveryTime: "12 Hours",
   },
@@ -32,7 +32,7 @@ const urgentServices = [
     price: "30 Riyals",
     unit: "Kg",
     description:
-      "Wash, dry, press/ironing, and folding or hanger service with express delivery within 5 hours.",
+      "Wash, dry and folding or hanger service with express delivery within 5 hours.",
     highlight: "Free Pickup & Delivery Included",
     deliveryTime: "5 Hours",
   },
