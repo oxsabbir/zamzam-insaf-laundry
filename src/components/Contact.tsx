@@ -39,7 +39,7 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
-      "Hi, I'd like to book a laundry service."
+      "Hi, I'd like to book a laundry service.",
     );
     window.open(`https://wa.me/1234567890?text=${message}`, "_blank");
   };
@@ -114,7 +114,7 @@ const Contact = () => {
               {/* Google Map */}
               <div className="rounded-xl overflow-hidden shadow-lg h-64">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29836.26280005291!2d39.80666694374991!3d21.42251877905863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b74c5d493d%3A0x4a6c730d85f45e4e!2sMakkah%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1855.312843271923!2d39.8202008857488!3d21.42186292841074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b679347f05%3A0x50f5f4304df897e6!2sHilton%20Suites%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1771903409889!5m2!1sen!2sbd"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
