@@ -22,8 +22,8 @@ const comparisonData = [
   },
   {
     feature: "Starting Price",
-    us: "From 15 SAR/kg",
-    others: "From 25 SAR/kg",
+    us: "From 20 SAR/kg",
+    others: "From 35 SAR/kg",
   },
   {
     feature: "Customer Support",
@@ -112,7 +112,7 @@ const Comparison = () => {
                 Affordable Excellence
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Transparent pricing from 15 SAR/kg and completely free
+                Transparent pricing from 20 SAR/kg and completely free
                 pickup/delivery, offering savings up to 50% over hotels.
               </p>
             </div>

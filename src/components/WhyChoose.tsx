@@ -9,7 +9,7 @@ const reasons = [
   {
     icon: DollarSign,
     title: "Best Prices in Makkah",
-    description: "Starting at just 13 SAR/kg with FREE pickup/delivery. Save up to 50% compared to hotel laundry.",
+    description: "Starting at just 20 SAR/kg with FREE pickup/delivery. Save up to 50% compared to hotel laundry.",
   },
   {
     icon: Clock,

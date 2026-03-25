@@ -14,42 +14,42 @@ const pricingItems = [
     emoji: "👕",
     title: "Regular Clothes",
     subtitle: "Shirts, pants, casual wear",
-    price: "13 SAR/kg",
+    price: "20 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "👔",
     title: "Formal Wear",
     subtitle: "Suits, dress shirts, formal attire",
-    price: "18 SAR/kg",
+    price: "28 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "🕋",
     title: "Ihram Clothes",
     subtitle: "Special care for holy garments",
-    price: "15 SAR/piece",
+    price: "25 SAR/piece",
     time: "3 hours",
   },
   {
     emoji: "🧥",
     title: "Heavy Items",
     subtitle: "Jackets, blankets, curtains",
-    price: "25 SAR/kg",
+    price: "32 SAR/kg",
     time: "Next day",
   },
   {
     emoji: "👟",
     title: "Shoes Cleaning",
     subtitle: "Professional shoe cleaning service",
-    price: "20 SAR/pair",
+    price: "30 SAR/pair",
     time: "4 hours",
   },
   {
     emoji: "🔧",
     title: "Alterations",
     subtitle: "Hemming, repairs, adjustments",
-    price: "From 15 SAR",
+    price: "From 20 SAR",
     time: "Same day",
   },
 ];
@@ -69,7 +69,7 @@ const PricingGrid = () => {
         <div className="text-center mb-8 sm:mb-12">
                                   <h2 id="services-heading" className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">Zamzam Insaf Laundry: Transparent Pricing</h2>          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Clear, competitive pricing for all your laundry needs in Makkah. Quality service starts from{" "}
-            <span className="text-primary ml-1 font-semibold">13 SAR/kg!</span>
+            <span className="text-primary ml-1 font-semibold">20 SAR/kg!</span>
           </p>
         </div>
 

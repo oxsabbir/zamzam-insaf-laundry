@@ -59,7 +59,7 @@ export default function Faq() {
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
                 A: We have special prices for traditional wear. Thobes are SAR
-                15 and abayas are SAR 20, including steam pressing.
+                20 and abayas are SAR 25, including steam pressing.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">

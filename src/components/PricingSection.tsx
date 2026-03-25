@@ -6,7 +6,7 @@ import { handleWhatsApp } from "@/lib/utils";
 const pricePlan = {
   basic: {
     title: "Basic",
-    price: 13,
+    price: 20,
     feature: [
       "Regular clothes wash & dry",
       "FREE pickup & delivery",
@@ -17,7 +17,7 @@ const pricePlan = {
   },
   premium: {
     title: "Premium",
-    price: 18,
+    price: 28,
     feature: [
       "Everything in Basic",
       "Professional pressing",
@@ -29,7 +29,7 @@ const pricePlan = {
   },
   vip: {
     title: "VIP",
-    price: 25,
+    price: 35,
     feature: [
       "Everything in Premium",
       "Premium detergents",

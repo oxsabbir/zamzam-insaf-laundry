@@ -2,7 +2,7 @@ import ServiceCard from "./ServiceCard";
 const urgentServices = [
   {
     title: "Press / Ironing / Folding",
-    price: "13 Riyals",
+    price: "20 Riyals",
     unit: "Kg",
     description:
       "Professional pressing, ironing, and folding service with delivery within 5 hours or as per client’s request.",
@@ -20,7 +20,7 @@ const urgentServices = [
   },
   {
     title: "12 Hours Wash & Delivery",
-    price: "18 Riyals",
+    price: "25 Riyals",
     unit: "Kg",
     description:
       "Normal wash, dry and folding or hanger service with delivery within 12 hours.",
@@ -29,7 +29,7 @@ const urgentServices = [
   },
   {
     title: "5 Hours Wash & Delivery",
-    price: "30 Riyals",
+    price: "32 Riyals",
     unit: "Kg",
     description:
       "Wash, dry and folding or hanger service with express delivery within 5 hours.",
@@ -38,7 +38,7 @@ const urgentServices = [
   },
   {
     title: "Premium Ihram Care",
-    price: "25 Riyals",
+    price: "28 Riyals",
     unit: "Kg",
     description:
       "Specialized washing and care for Ihram garments using gentle processes to maintain purity and fabric quality.",
@@ -47,7 +47,7 @@ const urgentServices = [
   },
   {
     title: "Stain Removal Service",
-    price: "20 Riyals",
+    price: "30 Riyals",
     unit: "Kg",
     description:
       "Advanced stain treatment for tough spots, handled carefully to protect fabric and restore cleanliness.",
