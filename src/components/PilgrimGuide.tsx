@@ -63,8 +63,8 @@ const guideItems = [
     content:
       "Our transparent pricing helps you budget effectively. Hotel laundry can be 3x more expensive, so plan ahead to save.",
     tips: [
-      "Expect to pay around 20-28 SAR per kg.",
-      "An average 3-5 kg load costs about 60-120 SAR.",
+      "Expect to pay around 20-25 SAR per kg.",
+      "An average 3-5 kg load costs about 60-100 SAR.",
       "Avoid expensive hotel services to save up to 70%.",
     ],
   },

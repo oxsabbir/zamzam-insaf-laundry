@@ -17,7 +17,7 @@ const pricePlan = {
   },
   premium: {
     title: "Premium",
-    price: 28,
+    price: 25,
     feature: [
       "Everything in Basic",
       "Professional pressing",
@@ -29,7 +29,7 @@ const pricePlan = {
   },
   vip: {
     title: "VIP",
-    price: 35,
+    price: 30,
     feature: [
       "Everything in Premium",
       "Premium detergents",
