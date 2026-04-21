@@ -1,3 +1,8 @@
+export const siteInfo = {
+  name: "Makkah Laundry Near Haram",
+  domain: "makkahlaundrynearharam.com",
+};
+
 export const managerInfo = {
   fullName: "Mohammad Rakibul Hossain",
   phoneNumber: "+966 50 863 5924",
@@ -8,5 +13,5 @@ export const managerInfo = {
   },
   address: `Ajyad St, Ajyad District, Makkah 24231, Saudi Arabia
 `,
-  email: "info@zamzaminsaflaundry.com",
+  email: "info@makkahlaundrynearharam.com",
 };

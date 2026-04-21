@@ -9,7 +9,7 @@ import {
   DollarSign,
   Shield,
 } from "lucide-react";
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 
 const TermsConditions = () => {
   return (
@@ -58,9 +58,9 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                By using ZamZam Insaf Laundry Service, you agree to these Terms
-                and Conditions. These terms govern your use of our pickup and
-                delivery laundry services in Makkah, Saudi Arabia.
+                By using {siteInfo.name}, you agree to these Terms and
+                Conditions. These terms govern use of our pickup, washing,
+                pressing, and delivery services in Makkah, Saudi Arabia.
               </p>
             </motion.div>
 
@@ -78,7 +78,7 @@ const TermsConditions = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    Service Agreement
+                    Service Overview
                   </h2>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const TermsConditions = () => {
                         {" "}
                         Our services are available throughout Makkah, with
                         priority service in areas near Masjid al-Haram and the
-                        ZamZam Insaf.
+                        surrounding hotel districts.
                       </span>
                     </div>
                   </li>
@@ -152,7 +152,7 @@ const TermsConditions = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    Payment & Pricing
+                    Payment and Pricing
                   </h2>
                 </div>
               </div>
@@ -228,7 +228,7 @@ const TermsConditions = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    Pickup & Delivery Terms
+                    Pickup and Delivery Terms
                   </h2>
                 </div>
               </div>
@@ -303,7 +303,7 @@ const TermsConditions = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    Liability & Responsibility
+                    Responsibility and Care
                   </h2>
                 </div>
               </div>
@@ -470,7 +470,7 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Changes to Terms
+                Changes to These Terms
               </h2>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">

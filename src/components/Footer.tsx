@@ -2,8 +2,6 @@ import { useState } from "react";
 import {
   Facebook,
   Instagram,
-  Twitter,
-  MapPin,
   Phone,
   Mail,
   Clock,
@@ -13,12 +11,9 @@ import {
 // import TikTokIcon from "./icons/Tiktok";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import WhatsAppIcon from "./icons/Whatsapp";
 import { motion } from "motion/react"; // Ensure this matches your installed package (framer-motion vs motion)
-import brandLogo from "@/assets/logo_zam_zam.webp"; // Ensure you have a version that looks good on dark bg, or use filter invert
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 // import SnapChatIcon from "./icons/SnapChat";
 
 const Footer = () => {
@@ -50,7 +45,7 @@ const Footer = () => {
     }
 
     const message = encodeURIComponent(
-      `*New Laundry Booking*\n\n *Name:* ${formData.name}\n *Phone:* ${formData.phone}\n *Hotel Name:* ${formData.hotel}`,
+      `*New Booking Request - ${siteInfo.name}*\n\n *Name:* ${formData.name}\n *Phone:* ${formData.phone}\n *Hotel / Building:* ${formData.hotel}`,
     );
     window.open(
       `https://wa.me/+${managerInfo.onlyNumber.whatsApp}?text=${message}`,
@@ -91,7 +86,7 @@ const Footer = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-full opacity-80 group-hover:opacity-100 border-0 transition-opacity"
-          title="Clock Tower Laundry Location"
+          title={`${siteInfo.name} service area`}
         />
       </div>
 
@@ -104,17 +99,17 @@ const Footer = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="w-56 mb-6">
-                {/* Ensure logo works on dark bg, or use a white version */}
-                <img
-                  src={brandLogo}
-                  alt="Zamzam laundry logo"
-                  className="w-full h-auto "
-                />
+              <div className="mb-6">
+                <div className="text-2xl font-black uppercase tracking-[0.22em] text-white">
+                  Makkah Laundry
+                </div>
+                <div className="text-lg font-semibold text-emerald-300">
+                  Near Haram
+                </div>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                The most trusted laundry service in Makkah. specialized in
-                caring for Pilgrim garments with speed, purity, and precision.
+                Laundry pickup, washing, drying, folding, and pressing for
+                guests, residents, and hotels across Makkah near Haram.
               </p>
 
               <div className="flex gap-3">
@@ -141,7 +136,7 @@ const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 rounded-xl flex items-center justify-center hover:bg-emerald-600 hover:border-emerald-500 hover:text-white transition-all duration-300 group"
+                    className="w-12 h-12 bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 rounded-xl flex items-center justify-center hover:from-emerald-600 hover:to-emerald-500 hover:border-emerald-400 hover:text-white transition-all duration-300 group"
                   >
                     <social.icon
                       size={20}
@@ -168,7 +163,7 @@ const Footer = () => {
                   {link?.url ? (
                     <a
                       href={link.url}
-                      className="text-slate-00 hover:text-emerald-400 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
+                      className="text-slate-00 hover:text-emerald-300 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
                     >
                       <ArrowRight
                         size={14}
@@ -179,7 +174,7 @@ const Footer = () => {
                   ) : (
                     <button
                       onClick={() => scrollToSection(link.id)}
-                      className="text-slate-00 hover:text-emerald-400 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
+                      className="text-slate-00 hover:text-emerald-300 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
                     >
                       <ArrowRight
                         size={14}
@@ -198,7 +193,7 @@ const Footer = () => {
             <h4 className="text-white font-bold text-xl mb-6">Reach Us</h4>
             <ul className="space-y-6">
               <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-300 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
                   <Phone size={18} />
                 </div>
                 <div>
@@ -207,7 +202,7 @@ const Footer = () => {
                   </div>
                   <a
                     href={`tel:+${managerInfo.onlyNumber.whatsApp}`}
-                    className="text-white hover:text-emerald-400 transition-colors font-medium text-lg"
+                    className="text-white hover:text-emerald-300 transition-colors font-medium text-lg"
                   >
                     {managerInfo.whatsApp}
                   </a>
@@ -215,7 +210,7 @@ const Footer = () => {
               </li>
 
               <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-300 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
                   <Mail size={18} />
                 </div>
                 <div>
@@ -224,7 +219,7 @@ const Footer = () => {
                   </div>
                   <a
                     href={`mailto:${managerInfo.email}`}
-                    className="text-white hover:text-emerald-400 transition-colors font-medium"
+                    className="text-white hover:text-emerald-300 transition-colors font-medium"
                   >
                     {managerInfo.email}
                   </a>
@@ -232,7 +227,7 @@ const Footer = () => {
               </li>
 
               <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-300 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
                   <Clock size={18} />
                 </div>
                 <div>
@@ -250,9 +245,11 @@ const Footer = () => {
           {/* Form Column (3 Cols) */}
           <div className="lg:col-span-3">
             <div className="bg-gradient-to-r from-slate-900 to-slate-700 p-6 rounded-2xl border border-slate-800 shadow-xl">
-              <h4 className="text-white font-bold text-lg mb-2">Book Now</h4>
+              <h4 className="text-white font-bold text-lg mb-2">
+                Book a Pickup
+              </h4>
               <p className="text-slate-300 text-sm mb-4">
-                Fill This Form To Book Your Laundry Instantly
+                Send your details and we will prepare your pickup on WhatsApp.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -262,7 +259,7 @@ const Footer = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
+                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-400 h-11"
                 />
                 <Input
                   placeholder="Phone Number"
@@ -270,21 +267,21 @@ const Footer = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
                   }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
+                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-400 h-11"
                 />
                 <Input
-                  placeholder="Hotel Name"
+                  placeholder="Hotel / Building Name"
                   value={formData.hotel}
                   onChange={(e) =>
                     setFormData({ ...formData, hotel: e.target.value })
                   }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
+                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-400 h-11"
                 />
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-11 rounded-lg transition-all"
+                  className="w-full bg-emerald-500 hover:bg-emerald-400 text-white font-bold h-11 rounded-lg transition-all"
                 >
                   {isSubmitting ? (
                     "Sending..."
@@ -304,18 +301,18 @@ const Footer = () => {
       <div className="bg-slate-800 border-t border-slate-900 py-8">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-300 text-sm">
-            © {currentYear} Makkah Laudry Service. All rights reserved.
+            © {currentYear} {siteInfo.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm font-medium">
             <a
               href="/privacy-policy"
-              className="text-slate-300 hover:text-emerald-500 transition-colors"
+              className="text-slate-300 hover:text-emerald-300 transition-colors"
             >
               Privacy Policy
             </a>
             <a
               href="/terms-of-service"
-              className="text-slate-300 hover:text-emerald-500 transition-colors"
+              className="text-slate-300 hover:text-emerald-300 transition-colors"
             >
               Terms of Service
             </a>

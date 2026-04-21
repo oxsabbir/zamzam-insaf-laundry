@@ -1,57 +1,57 @@
 import ServiceCard from "./ServiceCard";
 const urgentServices = [
   {
-    title: "Press / Ironing / Folding",
+    title: "Steam Press & Fold",
     price: "20 Riyals",
     unit: "Kg",
     description:
-      "Professional pressing, ironing, and folding service with delivery within 5 hours or as per client’s request.",
-    highlight: "Free Pickup & Delivery Included",
+      "Neat pressing and crisp folding for everyday garments, uniforms, and travel wear that need a polished finish.",
+    highlight: "Great for same-day presentation",
     deliveryTime: "Up to 5 Hours",
   },
   {
-    title: "Urgent Wash, Dry & Iron",
+    title: "Rush Wash, Dry & Press",
     price: "35 Riyals",
     unit: "Kg",
     description:
-      "Urgent wash, dry, service with folding or hanger option. Fast delivery available across Makkah.",
-    highlight: "Urgent Service – Around Makkah Only",
+      "Priority processing for loads that must be washed, dried, and returned quickly with a ready-to-wear finish.",
+    highlight: "Priority queue for urgent orders",
     deliveryTime: "Within 1 Hour",
   },
   {
-    title: "12 Hours Wash & Delivery",
+    title: "12-Hour Wash & Return",
     price: "22 Riyals",
     unit: "Kg",
     description:
-      "Normal wash, dry and folding or hanger service with delivery within 12 hours.",
-    highlight: "Free Pickup & Delivery Included",
+      "A balanced option for regular laundry loads with dependable washing, drying, and clean folding.",
+    highlight: "Popular for hotel guests",
     deliveryTime: "12 Hours",
   },
   {
-    title: "5 Hours Wash & Delivery",
+    title: "5-Hour Express Laundry",
     price: "30 Riyals",
     unit: "Kg",
     description:
-      "Wash, dry and folding or hanger service with express delivery within 5 hours.",
-    highlight: "Free Pickup & Delivery Included",
+      "A quicker wash-and-fold plan when you want fresh garments back before the day is over.",
+    highlight: "Express turnaround available",
     deliveryTime: "5 Hours",
   },
   {
-    title: "Premium Ihram Care",
+    title: "Ihram & White Garment Care",
     price: "25 Riyals",
     unit: "Kg",
     description:
-      "Specialized washing and care for Ihram garments using gentle processes to maintain purity and fabric quality.",
-    highlight: "Pilgrim-Safe & Gentle Care",
+      "Gentle washing for white garments and Ihram wear with attention to cleanliness, softness, and careful finishing.",
+    highlight: "Soft-touch care for sensitive fabrics",
     deliveryTime: "Same Day",
   },
   {
-    title: "Stain Removal Service",
+    title: "Targeted Stain Treatment",
     price: "25 Riyals",
     unit: "Kg",
     description:
-      "Advanced stain treatment for tough spots, handled carefully to protect fabric and restore cleanliness.",
-    highlight: "Deep Cleaning Expertise",
+      "Focused spotting and stain treatment for marks that need extra work before standard cleaning and pressing.",
+    highlight: "Detailed pre-treatment included",
     deliveryTime: "Up to 24 Hours",
   },
 ];
@@ -65,19 +65,19 @@ export default function OurServices() {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Our Laundry Services in Makkah
+            Laundry Services Built for Fast Pickups and Clean Returns
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            We provide reliable laundry services across Makkah, Wherever you are
-            in Makkah
+            Choose the service speed and garment care level that matches your
+            schedule.
             <br />
             <span className="">
-              With Our quick{" "}
+              With quick{" "}
               <strong className="text-primary font-semibold">
                 pickup and delivery
               </strong>{" "}
-              for hotels, apartments, and areas near the Haram—making laundry
-              easy and stress-free for you.
+              for hotels, apartments, and nearby districts, laundry becomes one
+              less thing to manage during your stay.
             </span>
           </p>
         </div>

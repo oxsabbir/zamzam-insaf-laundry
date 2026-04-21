@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Shield, Lock, Eye, Mail } from "lucide-react";
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 
 const PrivacyPolicy = () => {
   return (
@@ -51,10 +51,10 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                At ZamZam Insaf Laundry Service, we are committed to protecting
-                your privacy and handling your personal information with care
-                and respect. This Privacy Policy explains what information we
-                collect, why we collect it, and how we use it.
+                At {siteInfo.name}, we are committed to protecting your privacy
+                and handling personal information with care and respect. This
+                policy explains what information we collect, why we collect it,
+                and how it supports our laundry pickup and delivery service.
               </p>
             </motion.div>
 
@@ -72,14 +72,14 @@ const PrivacyPolicy = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    What Information We Collect
+                    Information We May Collect
                   </h2>
                 </div>
               </div>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We collect only the essential information needed to provide
-                  our laundry services effectively:
+                  We collect only the information needed to organize laundry
+                  service effectively:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -150,14 +150,13 @@ const PrivacyPolicy = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    Why We Collect Information
+                    Why We Use This Information
                   </h2>
                 </div>
               </div>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We use your information solely to provide and improve our
-                  laundry services:
+                  We use your information only to deliver and improve service:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -205,13 +204,13 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Your Data Protection
+                How We Protect Your Information
               </h2>
               <div className="bg-gradient-to-br from-success/5 to-primary/5 p-8 rounded-2xl border border-border">
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-xl font-bold text-foreground mb-3">
-                      We Never Sell Your Data
+                      No Sale of Personal Data
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Your personal information is never sold, rented, or shared
@@ -221,7 +220,7 @@ const PrivacyPolicy = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground mb-3">
-                      Limited Sharing
+                      Limited Internal Access
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       We only share your information with our trusted service
@@ -232,7 +231,7 @@ const PrivacyPolicy = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground mb-3">
-                      Secure Storage
+                      Secure Handling
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Your information is stored securely and protected against
@@ -253,12 +252,12 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Cookies & Website Analytics
+                Cookies and Website Analytics
               </h2>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Our website may use cookies and analytics tools to improve
-                  your browsing experience:
+                  browsing experience and understand general site usage:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -295,7 +294,7 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Your Privacy Rights
+                Your Privacy Choices
               </h2>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -345,14 +344,14 @@ const PrivacyPolicy = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    Questions About Privacy?
+                    Questions About This Policy?
                   </h2>
                 </div>
               </div>
               <div className="bg-gradient-to-r from-primary/10 to-success/10 p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  If you have any questions or concerns about how we handle your
-                  personal information, please don't hesitate to contact us:
+                  If you have questions about how we handle personal
+                  information, you can contact us here:
                 </p>
                 <div className="space-y-2">
                   <p className="text-foreground">
@@ -385,7 +384,7 @@ const PrivacyPolicy = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Policy Updates
+                Updates to This Policy
               </h2>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed">

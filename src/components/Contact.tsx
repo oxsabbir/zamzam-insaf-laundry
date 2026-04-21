@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { managerInfo, siteInfo } from "@/constants";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -30,7 +31,7 @@ const Contact = () => {
     // In a real application, you would send this data to a backend
     toast({
       title: "Message Sent!",
-      description: "We'll get back to you as soon as possible.",
+      description: "We'll review your request and reply as soon as possible.",
     });
 
     // Reset form
@@ -39,9 +40,12 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
-      "Hi, I'd like to book a laundry service.",
+      "Hi, I'd like to arrange a pickup with Makkah Laundry Near Haram.",
     );
-    window.open(`https://wa.me/1234567890?text=${message}`, "_blank");
+    window.open(
+      `https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`,
+      "_blank"
+    );
   };
 
   return (
@@ -49,10 +53,11 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Get In Touch
+            Get in Touch With {siteInfo.name}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to experience professional laundry care? Contact us today!
+            Ask about pickup timing, care options, or a new order and our team
+            will guide you.
           </p>
         </div>
 
@@ -72,10 +77,10 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-foreground">Phone</p>
                       <a
-                        href="tel:+1234567890"
+                        href={`tel:+${managerInfo.onlyNumber.phoneNumber}`}
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +1 (234) 567-890
+                        {managerInfo.phoneNumber}
                       </a>
                     </div>
                   </div>
@@ -87,10 +92,10 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-foreground">Email</p>
                       <a
-                        href="mailto:info@makkahlaundrycare.com"
+                        href={`mailto:${managerInfo.email}`}
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        info@makkahlaundrycare.com
+                        {managerInfo.email}
                       </a>
                     </div>
                   </div>
@@ -102,7 +107,7 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-foreground">Address</p>
                       <p className="text-muted-foreground">
-                        123 Main Street
+                        Ajyad District
                         <br />
                         Makkah, Saudi Arabia
                       </p>
@@ -121,7 +126,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Makkah Laundry Care Location"
+                  title={`${siteInfo.name} location`}
                 />
               </div>
             </div>
@@ -182,7 +187,7 @@ const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
                   }
-                  placeholder="+1 (234) 567-890"
+                  placeholder={managerInfo.phoneNumber}
                 />
               </div>
 
@@ -199,14 +204,14 @@ const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  placeholder="Tell us about your laundry needs..."
+                  placeholder="Tell us what items you need cleaned and where pickup is needed..."
                   rows={5}
                   required
                 />
               </div>
 
               <Button type="submit" size="lg" className="w-full">
-                Send Message
+                Send Inquiry
               </Button>
             </form>
           </div>

@@ -34,7 +34,7 @@ const ServiceCard = ({
         <Button
           onClick={() =>
             handleWhatsApp(
-              `Hi, I would like to book your ${encodeURIComponent(title)}. 
+              `Hi, I would like to book your ${encodeURIComponent(title)} service. 
 Please share the pickup details and available timing.
 Thank you.`,
               true
@@ -43,23 +43,10 @@ Thank you.`,
           id="generate_lead"
           className=" bg-primary"
         >
-          Book Now
+          Request Service
         </Button>
       </div>
 
-      {/* <button
-        onClick={() =>
-          handleWhatsApp(
-            `Hi, I would like to book your ${encodeURIComponent(title)}.
-Please share the pickup details and available timing.
-Thank you.`,
-            true
-          )
-        }
-        className="text-muted-foreground font-medium hover:text-primary transition-colors"
-      >
-        Book Now
-      </button> */}
     </div>
   );
 };

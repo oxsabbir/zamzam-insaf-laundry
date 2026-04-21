@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
 import FloatingCTA from "./FloatingCTA";
+import { siteInfo } from "@/constants";
 
 const HeroNew = () => {
   const [displayedText, setDisplayedText] = useState("");
@@ -27,13 +28,13 @@ const HeroNew = () => {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-r from-gray-900  via-green-950  to-gray-900  min-h-screen flex items-center pt-16"
+      className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-emerald-950 to-gray-900 min-h-screen flex items-center pt-16"
     >
       <FloatingCTA />
 
       <img
         src={heroImage}
-        alt="Professional clock tower laundry service  - Express laundry pickup and delivery in Makkah for pilgrims"
+        alt="Laundry pickup and delivery service near Haram in Makkah"
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -43,14 +44,14 @@ const HeroNew = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-red-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
-            PILGRIM'S CHOICE: FAST & FRESH LAUNDRY!
+            FRESH CLOTHES RETURN FAST NEAR HARAM
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
-              ZamZam Insaf Laundry Service <br /> <span>Makkah</span>
+              {siteInfo.name} <br /> <span>Makkah</span>
             </span>
             <span className="text-accent inline-block ">15 Minutes</span>{" "}
-            Express Pickup - Best Laundry Near Haram!
+            Pickup for Wash, Fold, Press, and Delivery
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center justify-center mb-2 sm:mb-3">
@@ -127,24 +128,23 @@ const HeroNew = () => {
                 </svg>
               </div>
               <span className="text-primary-foreground ml-2 font-bold text-sm sm:text-base">
-                Over 7,500+ Pilgrims Served
+                Trusted by hotel guests and visitors across central Makkah
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              "Incredibly fast service! My clothes were picked up and clean in
-              no time.
+              "Excellent turnaround, neatly packed garments, and a pickup team
+              that understood exactly when we needed everything returned.
               <span className="text-accent font-bold">
-                {" "}
-                A true blessing for any pilgrim in Makkah!"
+                {" "}A smooth laundry solution near Haram."
               </span>
             </p>
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-accent">
-                  20 SAR
+                  Urgent
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Starting/kg
+                  Pickup Window
                 </div>
               </div>
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
@@ -152,7 +152,7 @@ const HeroNew = () => {
                   15 Min
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Guaranteed Pickup
+                  Dispatch Target
                 </div>
               </div>
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
@@ -160,7 +160,7 @@ const HeroNew = () => {
                   FREE
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Pickup/Drop
+                  Collection & Return
                 </div>
               </div>
             </div>
@@ -170,24 +170,24 @@ const HeroNew = () => {
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-emerald-500 text-white hover:bg-emerald-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
               <WhatsAppIcon size={24} />
-              WhatsApp NOW - 15 Min Pickup!
+              WhatsApp for Fast Pickup
             </button>
 
             <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
-                <Clock size={18} /> 24/7 Service
+                <Clock size={18} /> Day & Night Service
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
-                <Quote size={18} /> Free Quotes
+                <Quote size={18} /> Instant Quotes
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
                 <CircleDollarSign size={18} />
-                Money-Back Guarantee
+                Clear Pricing
               </span>
             </div>
           </div>

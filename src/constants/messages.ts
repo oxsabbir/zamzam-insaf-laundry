@@ -1,58 +1,58 @@
 export const whatsappMessages = {
-  pickup: `Hi! I need laundry service in Makkah.
-Could you please share the pickup details and timing?
+  pickup: `Hi! I need pickup from Makkah Laundry Near Haram.
+Please share the collection time and the next available slot.
 
 Thank you!`,
 
   checkPickUpTime: `Hello, 
-I would like to check the pickup time for *<location>* in Makkah. Could you please provide the details so I can confirm the schedule?
+I would like to confirm the pickup time for *<location>* with Makkah Laundry Near Haram. Please share the schedule.
 
 Thank you.`,
 
   package: `Hello, 
-I would like to place an order for the *<package>* package at *<price>*, ready on the same day. 
-Kindly confirm the pickup details and schedule.
+I would like to book the *<package>* service at *<price>*. 
+Kindly confirm pickup, care details, and the expected return time.
 
 Thank you.
 `,
   firstOrder: `Hello, 
-I would like to place my *First order* and take advantage of the *FREE pickup* offer. 
-Please provide the details for scheduling the pickup and any instructions I should follow.
+I would like to place my *first order* with Makkah Laundry Near Haram. 
+Please share the pickup process and any instructions I should follow.
 
 Thank you.
 `,
 
   pricePlan: `Hello, 
-I would like to place an order for the *<plan>* package at *<price> SAR/kg*. 
-Kindly provide the pickup details and confirm the schedule.
+I would like to choose the *<plan>* plan at *<price> SAR/kg*. 
+Please confirm the pickup details and service timing.
 
 Thank you.
 `,
 
   faq: `Hello, 
-I have a few questions regarding your laundry services and would like some information. 
-Could you please provide answers or direct me to the relevant details?
+I have a few questions about your laundry and garment care services. 
+Could you please guide me with the right details?
 
 Thank you.
 `,
 
   emergency: `Hello, 
-I need an *Emergency pickup* for my laundry as soon as possible.  
-Please contact me immediately to arrange the pickup.  
+I need an *emergency pickup* as soon as possible.  
+Please contact me immediately so we can arrange the fastest service.  
 
 Thank you.
 `,
 
   directManager: `Hi <manager>!  
-I need laundry pickup in Makkah. My location is: [User Location]  
+I need laundry pickup near Haram. My location is: [User Location]  
 
-Please share the pickup details.  
+Please share the collection details.  
 
 Thank you.
 `,
 
   booking: `Hi! 
-I would like to book the *<bookingHour> <bookingService>* for urgent laundry pickup.  
+I would like to book the *<bookingHour> <bookingService>* option.  
 Please share the pickup details and confirm the schedule.  
 
 Thank you.`,

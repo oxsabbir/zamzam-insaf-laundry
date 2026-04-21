@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/Whatsapp";
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 
 const Contact = () => {
   return (
@@ -20,11 +20,11 @@ const Contact = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Get in Touch
+              Contact {siteInfo.name}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              We're here to help with all your laundry needs in Makkah. Reach
-              out anytime — we're available 24/7!
+              Reach out for pickup timing, pricing, garment care questions, and
+              service help anywhere near Haram and across Makkah.
             </p>
           </motion.div>
         </div>
@@ -48,7 +48,7 @@ const Contact = () => {
                 <WhatsAppIcon size={28} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
-              <p className="text-white/90 text-sm mb-3">Quick responses</p>
+              <p className="text-white/90 text-sm mb-3">Fast booking support</p>
               <p className="text-white font-semibold">{managerInfo.whatsApp}</p>
             </motion.a>
 
@@ -65,7 +65,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
               <p className="text-muted-foreground text-sm mb-3">
-                Call us directly
+                Call for live assistance
               </p>
               <p className="text-foreground font-semibold">
                 {managerInfo.phoneNumber}
@@ -73,7 +73,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="mailto:info@clocktowerlaundryservice.com"
+              href={`mailto:${managerInfo.email}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -85,7 +85,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
               <p className="text-muted-foreground text-sm mb-3">
-                Send us a message
+                Send a service inquiry
               </p>
               <p className="text-foreground font-semibold text-sm break-all">
                 {managerInfo.email}
@@ -104,9 +104,11 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Hours</h3>
               <p className="text-muted-foreground text-sm mb-3">
-                Always available
+                Message support available daily
               </p>
-              <p className="text-foreground font-semibold">24/7 Service</p>
+              <p className="text-foreground font-semibold">
+                Flexible daily support
+              </p>
             </motion.div>
           </div>
 
@@ -121,25 +123,24 @@ const Contact = () => {
             <div className="bg-gradient-to-r from-primary/10 to-success/10 p-10 rounded-3xl border border-border">
               <MessageCircle className="w-16 h-16 text-success mx-auto mb-6" />
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Book Your Pickup Now
+                Arrange Your Pickup in Minutes
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Ready for express laundry service? Contact us via WhatsApp and
-                we'll be at your location in just 15 minutes. Available 24/7 for
-                your convenience.
+                Send your hotel name, building, or area on WhatsApp and we will
+                confirm the next available collection time for your laundry.
               </p>
               <a
                 href={`https://wa.me/${
                   managerInfo.onlyNumber.whatsApp
                 }?text=${encodeURIComponent(
-                  "Hi! I'd like to book a laundry pickup.",
+                  "Hi! I would like to schedule a pickup with Makkah Laundry Near Haram.",
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-success hover:bg-success/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 <WhatsAppIcon size={24} />
-                Book Pickup via WhatsApp
+                Book Pickup on WhatsApp
               </a>
             </div>
           </motion.div>
@@ -154,7 +155,7 @@ const Contact = () => {
           >
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Our Service Area
+                Main Service Coverage
               </h2>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-success" />
@@ -175,7 +176,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
-                title="Clock Tower Laundry Location"
+                title={`${siteInfo.name} location map`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
@@ -188,43 +189,43 @@ const Contact = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Clock Tower & Abraj Al Bait (5-10 min)
+                    Haram hotels and Abraj Al Bait
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Jabal Omar & Aziziyah (10-15 min)
+                    Jabal Omar and nearby hotel towers
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Kudai & Misfalah (12-18 min)
+                    Kudai, Misfalah, and surrounding stays
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    All areas near Masjid al-Haram
+                    Additional central Makkah neighborhoods
                   </li>
                 </ul>
               </div>
 
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-lg font-bold text-foreground mb-3">
-                  Why Choose Us?
+                  What You Can Expect
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    15-minute express pickup guaranteed
+                    Quick pickup coordination
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Free pickup and delivery
+                    Pickup and return service
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Professional care for all fabrics
+                    Washing, folding, and pressing options
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Money-back satisfaction guarantee
+                    Friendly support through WhatsApp and phone
                   </li>
                 </ul>
               </div>

@@ -16,17 +16,17 @@ export default function UrgentService() {
       <div className="container mx-auto px-3 sm:px-4">
         <header className="text-center mb-8 sm:mb-12">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 bg-blue-500 text-white text-sm px-4 py-2 animate-pulse">
-            ⚡ IMMEDIATE LAUNDRY SERVICE
+            ⚡ FAST TURNAROUND OPTIONS
           </div>
           <h2
             id="emergency-times-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Require Fresh Clothes, Fast? We Deliver!
+            Choose the Return Speed That Fits Your Day
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            24/7 emergency, express, and same-day laundry solutions right by
-            Haram.
+            From rush washing to same-day pressing, we organize pickup and
+            return timing around your stay near Haram.
           </p>
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
@@ -36,17 +36,17 @@ export default function UrgentService() {
               1 Hour
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Emergency Service
+              Rapid Rescue Service
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              For urgent situations
+              For garments needed urgently
             </p>
             <button
               id="generate_lead"
               onClick={() => handleBooking("1 Hour", "Emergency Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
-              Book Now
+              Choose This Option
             </button>
           </div>
           <div className="rounded-lg text-card-foreground shadow-sm p-6 text-center hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-blue-300 bg-blue-50 dark:bg-blue-900/10 hover:opacity-90">
@@ -55,17 +55,17 @@ export default function UrgentService() {
               5 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Express Service
+              Express Return
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Between prayers
+              Ideal between appointments
             </p>
             <button
               id="generate_lead"
               onClick={() => handleBooking("5 Hour", "Express Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
-              Book Now
+              Choose This Option
             </button>
           </div>
           <div className="rounded-lg text-card-foreground shadow-sm p-6 text-center hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-blue-300 bg-blue-50 dark:bg-blue-900/10 hover:opacity-90">
@@ -74,17 +74,17 @@ export default function UrgentService() {
               12 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Same Day Service
+              Same-Day Care
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Standard turnaround
+              Balanced speed and value
             </p>
             <button
               id="generate_lead"
               onClick={() => handleBooking("12 Hour", "Same Day Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
-              Book Now
+              Choose This Option
             </button>
           </div>
         </div>

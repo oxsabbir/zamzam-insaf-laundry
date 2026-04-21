@@ -1,16 +1,13 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-import logo_light from "@/assets/logo_light.png";
-import logo_dark from "@/assets/logo_dark.png";
-import logo from "@/assets/logo_zam_zam.webp";
 
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 import { useNavigate, useResolvedPath } from "react-router-dom";
 
 const Navigation = () => {
@@ -88,17 +85,20 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-2 group"
           >
-            <div className="py-2">
-              <div className="w-fit h-[60px] md:h-[75px]">
-                <a href="/">
-                  <img
-                    src={logo}
-                    alt="ZamZam Insaf laundry logo"
-                    width={200}
-                    height={100}
-                    className="w-full h-full object-contain"
-                  />
-                </a>
+            <div className="py-2 text-left">
+              <div
+                className={`text-sm md:text-base font-black uppercase tracking-[0.18em] ${
+                  isScrolled ? "text-primary" : "text-accent"
+                }`}
+              >
+                Makkah Laundry
+              </div>
+              <div
+                className={`text-xs md:text-sm font-semibold ${
+                  isScrolled ? "text-foreground" : "text-white"
+                }`}
+              >
+                Near Haram
               </div>
             </div>
           </button>
@@ -123,7 +123,7 @@ const Navigation = () => {
               className="ml-2 bg-success hover:bg-success/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               <WhatsAppIcon size={18} className="mr-2" />
-              Book Now
+              Request Pickup
             </Button>
           </div>
 
@@ -146,17 +146,14 @@ const Navigation = () => {
               <div className="flex flex-col gap-6 mt-8">
                 {/* Mobile Logo */}
                 <div className="py-1.5">
-                  <div className="w-fit h-[60px]">
-                    <a href="/">
-                      <img
-                        src={logo}
-                        alt="ZamZam Insaf laundry logo"
-                        width={200}
-                        height={100}
-                        className="w-full h-full object-contain"
-                      />
-                    </a>
-                  </div>
+                  <a href="/" className="block">
+                    <div className="text-sm font-black uppercase tracking-[0.18em] text-primary">
+                      Makkah Laundry
+                    </div>
+                    <div className="text-sm font-semibold text-foreground">
+                      Near Haram
+                    </div>
+                  </a>
                 </div>
 
                 {/* Mobile Menu Items */}
@@ -193,7 +190,7 @@ const Navigation = () => {
                     className="w-full bg-success hover:bg-success/90 text-white font-semibold shadow-lg text-base h-12"
                   >
                     <WhatsAppIcon size={20} className="mr-2" />
-                    Book Now on WhatsApp
+                    Request Pickup on WhatsApp
                   </Button>
                 </motion.div>
 
@@ -206,10 +203,10 @@ const Navigation = () => {
                 >
                   <div className="space-y-2">
                     <p className="font-semibold text-foreground">
-                      24/7 Service Available
+                      {siteInfo.name}
                     </p>
                     <p>📞 {managerInfo.whatsApp}</p>
-                    <p>⏱️ 15 Min Pickup Time</p>
+                    <p>⏱️ Quick pickup near Haram</p>
                   </div>
                 </motion.div>
               </div>

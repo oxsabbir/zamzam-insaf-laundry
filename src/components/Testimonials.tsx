@@ -1,5 +1,5 @@
-import { Star, Quote } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { Star } from "lucide-react";
+import { useRef } from "react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { managerInfo } from "@/constants";
@@ -7,12 +7,12 @@ import { managerInfo } from "@/constants";
 const testimonials = [
   {
     name: "Ahmed Al-Rashid",
-    location: "Clock Tower Hotel, Makkah",
+    location: "Abraj Al Bait, Makkah",
     country: "Saudi Arabia",
     rating: 5,
     service: "Irham Cleaning",
     review:
-      "Perfect for pilgrims! Clean clothes in just 15 minutes. Exactly what we needed in Makkah! The team was professional and the service was incredibly fast. Highly recommended!",
+      "Pickup was easy to arrange, the washing quality was strong, and everything came back folded neatly for our next day out.",
     avatar: "AR",
     flag: "🇸🇦",
   },
@@ -24,7 +24,7 @@ const testimonials = [
     service: "Regular Customer",
 
     review:
-      "Amazing service! They picked up my laundry within 10 minutes and returned everything perfectly clean and pressed. The prices are much better than hotel laundry. Will use again!",
+      "The team replied quickly, collected right from the hotel lobby, and returned our clothes looking fresh without the usual hotel laundry cost.",
     avatar: "FH",
     flag: "🇪🇬",
   },
@@ -36,7 +36,7 @@ const testimonials = [
 
     rating: 5,
     review:
-      "Best laundry service in Makkah! They understand pilgrims' needs and work around prayer times. My Ihram clothes were treated with care and returned spotless. 5 stars!",
+      "Their timing worked well with our schedule, and my white garments came back clean, soft, and properly handled.",
     avatar: "MK",
     flag: "🇵🇰",
   },
@@ -47,7 +47,7 @@ const testimonials = [
     service: "Heavy Items",
     rating: 5,
     review:
-      "Exceptional service! Available 24/7 and they speak English perfectly. I needed emergency laundry at 2 AM and they delivered. Saved my trip! Thank you so much.",
+      "I needed a late-night urgent order, and they still managed the pickup smoothly and returned everything much sooner than expected.",
     avatar: "AA",
     flag: "🇦🇪",
   },
@@ -58,7 +58,7 @@ const testimonials = [
     service: "Regular Customer",
     rating: 5,
     review:
-      "Very reliable and affordable! Half the price of hotel laundry with better quality. The WhatsApp booking is so convenient. I recommend this to all pilgrims!",
+      "Booking on WhatsApp was simple, the pricing felt reasonable, and the order was packed cleanly when it came back.",
     avatar: "IY",
     flag: "🇮🇩",
   },
@@ -70,7 +70,7 @@ const testimonials = [
 
     rating: 5,
     review:
-      "Outstanding experience! They handled my delicate abayas with great care. Fast pickup, professional service, and reasonable prices. This is the only laundry service you need in Makkah!",
+      "My abayas were returned pressed nicely, and the fabric still felt cared for. I would absolutely book again.",
     avatar: "MA",
     flag: "🇲🇾",
   },
@@ -81,7 +81,7 @@ const testimonials = [
     rating: 5,
     service: "Ihram Cleaning",
     review:
-      "During my Umrah, Zamzam Insaf Laundry was a lifesaver! Their prompt service and attention to detail for my Ihram clothes were exceptional. Truly a 5-star experience.",
+      "During Umrah, this service made laundry one less thing to worry about. The team was responsive and careful with every item.",
     avatar: "OF",
     flag: "🇬🇧",
   },
@@ -92,7 +92,7 @@ const testimonials = [
     rating: 5,
     service: "Abaya Cleaning",
     review:
-      "I was so impressed with Zamzam Insaf Laundry's efficiency. They picked up my abayas and returned them perfectly clean and pressed, allowing me to focus completely on my worship. Highly recommend their services to all pilgrims.",
+      "The collection was on time, the garments looked very clean on return, and the overall process felt organized from start to finish.",
     avatar: "HB",
     flag: "🇯🇴",
   },
@@ -103,7 +103,7 @@ const testimonials = [
     rating: 5,
     service: "Regular Customer",
     review:
-      "As a frequent visitor for Hajj and Umrah, I've tried many laundry services. Zamzam Insaf Laundry stands out for its quality and reliability. Their 24/7 service is a blessing. Will definitely use them again!",
+      "I have used several laundry services in Makkah, and this one stands out for clear communication, dependable timing, and a better overall finish.",
     avatar: "FR",
     flag: "🇧🇩",
   },
@@ -133,7 +133,7 @@ const Testimonials = () => {
             }
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            What Our Customers Say
+            What Guests Say After Using Our Service
           </motion.h2>
           <motion.p
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
@@ -141,7 +141,7 @@ const Testimonials = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            5000+ happy customers from 50+ countries trust us with their laundry
+            Feedback from travelers and residents who wanted fast pickup and a clean return
           </motion.p>
           <motion.div
             className="flex items-center justify-center gap-2 mt-4"
@@ -157,7 +157,7 @@ const Testimonials = () => {
               ))}
             </div>
             <span className="text-xl font-bold text-foreground">4.9/5</span>
-            <span className="text-muted-foreground">(5000+ reviews)</span>
+            <span className="text-muted-foreground">(customer feedback)</span>
           </motion.div>
         </motion.div>
 
@@ -199,13 +199,12 @@ const Testimonials = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-xl text-foreground font-semibold mb-4">
-            Join thousands of satisfied customers who trust us with their
-            laundry!
+            Book a pickup and see how simple laundry near Haram can feel.
           </p>
           <button
             onClick={() => {
               const message = encodeURIComponent(
-                "Hi! I want to book your 5-star laundry service."
+                "Hi! I would like to arrange a pickup with Makkah Laundry Near Haram."
               );
               window.open(
                 `https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`,
@@ -214,7 +213,7 @@ const Testimonials = () => {
             }}
             className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-success hover:bg-success/90 rounded-full shadow-lg hover:shadow-xl transition-all"
           >
-            Get Your 5-Star Service Now
+            Request Your Pickup
           </button>
         </div>
       </div>

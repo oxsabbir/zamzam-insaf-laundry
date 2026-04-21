@@ -3,33 +3,33 @@ import { Zap, DollarSign, Clock, Shield, Languages, Users } from "lucide-react";
 const reasons = [
   {
     icon: Zap,
-    title: "Lightning Fast Service",
-    description: "15-minute pickup guarantee. Others take hours - we take minutes. Perfect for urgent situations.",
+    title: "Quick Collection Flow",
+    description: "Fast pickup planning keeps your order moving early, which helps us return fresh garments sooner.",
   },
   {
     icon: DollarSign,
-    title: "Best Prices in Makkah",
-    description: "Starting at just 20 SAR/kg with FREE pickup/delivery. Save up to 50% compared to hotel laundry.",
+    title: "Honest Laundry Pricing",
+    description: "Straightforward rates and free collection make it easier to budget for washing, pressing, and folding.",
   },
   {
     icon: Clock,
-    title: "24/7 Availability",
-    description: "Need laundry at 3 AM? No problem! We're the only service in Makkah available round the clock.",
+    title: "Flexible Service Hours",
+    description: "Our team works around changing schedules, late arrivals, and urgent garment needs throughout the day.",
   },
   {
     icon: Shield,
-    title: "100% Safe & Secure",
-    description: "Your clothes are tracked, insured, and handled by professional staff. Money-back guarantee.",
+    title: "Professional Garment Care",
+    description: "Each order is handled with attention to fabric type, finishing quality, and clean presentation on return.",
   },
   {
     icon: Languages,
-    title: "Multilingual Support",
-    description: "Speak Arabic, English, or Urdu? Our team communicates in your preferred language.",
+    title: "Simple Communication",
+    description: "Pickup updates, timing, and service notes are shared clearly so booking your order feels easy.",
   },
   {
     icon: Users,
-    title: "5000+ Happy Customers",
-    description: "Trusted by pilgrims from 50+ countries. 4.9/5 star rating with verified reviews.",
+    title: "Built for Busy Guests",
+    description: "We serve travelers, families, and residents who want their laundry collected and returned without hassle.",
   },
 ];
 
@@ -39,10 +39,10 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Why Choose Makkah Laundry Care?
+            Why This Laundry Service Fits Life Near Haram
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience the difference with professional service trusted by thousands
+            Fresh copy, fast service, and dependable garment care for short stays and daily needs
           </p>
         </div>
 

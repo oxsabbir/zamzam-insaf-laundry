@@ -15,68 +15,68 @@ import { Button } from "./ui/button";
 const guideItems = [
   {
     icon: <Shirt className="h-7 w-7 text-primary" />,
-    title: "Caring for Your Ihram",
+    title: "Keeping White Garments Bright",
     content:
-      "Ihram garments are sacred. To maintain their purity, wash them gently with fragrance-free detergents and air dry them in the shade.",
+      "White garments need gentle washing and the right drying process to stay fresh, soft, and presentable during your stay.",
     tips: [
-      "Use a gentle machine cycle or hand wash.",
-      "Opt for mild, unscented detergent.",
-      "Avoid direct sunlight to prevent yellowing.",
+      "Use a gentle wash cycle for delicate white fabrics.",
+      "Choose mild detergent when fabric sensitivity matters.",
+      "Dry carefully to help garments keep their clean look.",
     ],
   },
   {
     icon: <UserCheck className="h-7 w-7 text-primary" />,
-    title: "Abaya & Thobe Care",
+    title: "Abaya and Thobe Finishing",
     content:
-      "Your traditional garments require special care. We recommend dry cleaning for delicate items and professional pressing for a crisp look.",
+      "Traditional garments look best when washing, steaming, and pressing are handled with extra attention to shape and drape.",
     tips: [
-      "Dry clean embroidered or delicate abayas.",
-      "Machine wash and press thobes professionally.",
-      "Use our express service for urgent needs.",
+      "Separate embellished pieces from everyday items.",
+      "Ask for pressing if you need a sharper finish.",
+      "Use express handling when a return time matters.",
     ],
   },
   {
     icon: <Clock className="h-7 w-7 text-primary" />,
-    title: "Smart Laundry Timing",
+    title: "Timing Your Laundry Well",
     content:
-      "Our flexible services are designed around your worship schedule. Plan your laundry efficiently so you can focus on what matters.",
+      "Good timing helps you avoid running short on clean clothes during busy days, hotel checkouts, or late arrivals.",
     tips: [
-      "Use our same-day service (drop off before 10 AM).",
-      "A 3-hour express option is perfect for between rituals.",
-      "We offer 24/7 pickup and delivery.",
+      "Request pickup before heading out for the day.",
+      "Use express service when you need a fast return.",
+      "Keep one spare outfit ready while the order is away.",
     ],
   },
   {
     icon: <Package className="h-7 w-7 text-primary" />,
-    title: "Packing for Your Pilgrimage",
+    title: "Packing Less, Washing Smarter",
     content:
-      "Packing smart reduces laundry stress. Experienced pilgrims recommend bringing just enough, focusing on lightweight and quick-drying fabrics.",
+      "Laundry becomes easier when you pack versatile clothes and rely on washing support instead of carrying extra heavy bags.",
     tips: [
-      "Pack 3-4 sets of Ihram.",
-      "Bring 2-3 comfortable thobes or abayas.",
-      "Choose light, quick-drying undergarments.",
+      "Bring repeat-wear pieces that wash well.",
+      "Choose fabrics that dry and press neatly.",
+      "Keep one small bag ready for urgent laundry.",
     ],
   },
   {
     icon: <DollarSign className="h-7 w-7 text-primary" />,
-    title: "Understanding Laundry Costs",
+    title: "Planning Your Laundry Budget",
     content:
-      "Our transparent pricing helps you budget effectively. Hotel laundry can be 3x more expensive, so plan ahead to save.",
+      "Knowing your likely laundry costs early helps you avoid expensive hotel markups and choose the service speed you actually need.",
     tips: [
-      "Expect to pay around 20-25 SAR per kg.",
-      "An average 3-5 kg load costs about 60-100 SAR.",
-      "Avoid expensive hotel services to save up to 70%.",
+      "Compare hotel rates with pickup laundry prices.",
+      "Group everyday items into one practical load.",
+      "Reserve rush service for the garments that truly need it.",
     ],
   },
   {
     icon: <Wind className="h-7 w-7 text-primary" />,
-    title: "Keeping Clothes Fresh",
+    title: "Staying Ready Between Washes",
     content:
-      "Makkah's heat means frequent washing is essential. Airing out clothes and scheduling timely laundry service makes all the difference.",
+      "Freshness lasts longer when you rotate garments, air items properly, and book laundry before everything becomes urgent.",
     tips: [
-      "Plan to change Ihram after Tawaf or Sa'i.",
-      "Air-dry garments between wears.",
-      "Schedule pickups before you leave for the Haram.",
+      "Let lightly used clothing air out before rewashing.",
+      "Separate daily wear from special garments.",
+      "Book pickup before your spare outfits run low.",
     ],
   },
 ];
@@ -93,11 +93,11 @@ export default function PilgrimGuide() {
             id="guide-heading"
             className="text-3xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            A Pilgrim's Guide to Hassle-Free Laundry
+            Helpful Laundry Tips for Staying Near Haram
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Focus on your spiritual journey. We'll take care of the laundry with
-            these essential tips for Hajj & Umrah.
+            A few smart laundry habits can make your stay lighter, cleaner, and
+            easier to manage.
           </p>
         </header>
 
@@ -125,7 +125,7 @@ export default function PilgrimGuide() {
                 <ul className="space-y-3">
                   {item.tips.map((tip, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-emerald-500 mt-0.5 flex-shrink-0" />
                       <span className="text-muted-foreground">{tip}</span>
                     </li>
                   ))}
@@ -138,18 +138,18 @@ export default function PilgrimGuide() {
         <div className="mt-12 sm:mt-16 text-center">
           <div className="max-w-2xl mx-auto bg-card border rounded-xl p-6 shadow-sm">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 text-foreground">
-              Have More Questions?
+              Need Advice Before Booking?
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6">
-              Our team understands the unique needs of pilgrims. WhatsApp us
-              anytime for personalized laundry advice.
+              Message us anytime if you want help choosing the right service
+              speed, garment care option, or pickup time.
             </p>
             <Button
               onClick={() => handleWhatsApp(whatsappMessages.faq)}
-              className="bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-semibold"
+              className="bg-emerald-500 text-white hover:bg-emerald-600 shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-semibold"
             >
               <WhatsAppIcon className="mr-2" />
-              Ask a Question on WhatsApp
+              Ask on WhatsApp
             </Button>
           </div>
         </div>

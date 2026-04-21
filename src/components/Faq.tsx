@@ -8,104 +8,104 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Frequently Asked Questions
+            Common Questions About Pickup, Washing, and Delivery
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Got questions? We've got answers! Here are the most common questions
-            from our customers.
+            Here are quick answers to the questions customers usually ask
+            before booking their first order.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you really pickup in 15 minutes?
+                Q: How fast can you usually collect an order?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes! 15-minute pickup is our guarantee for all areas in
-                Makkah. If we're late, your service is FREE.
+                A: In central Makkah and near Haram, pickup is often arranged
+                very quickly. Timing can vary by distance and traffic.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Is pickup and delivery really free?
+                Q: Is collection and return included?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Absolutely! No hidden fees, no minimum orders. Free pickup
-                and delivery is included in all our services.
+                A: Yes. Our service is designed to make pickup and delivery
+                convenient for hotels, apartments, and nearby districts.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you work 24/7?
+                Q: Can I message late at night?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes, we're available 24/7 including weekends and holidays.
-                Perfect for emergency situations and busy schedules.
+                A: Yes, you can contact us outside normal daytime hours if you
+                need an update, a pickup, or an urgent order.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What if my clothes get damaged?
+                Q: Do you handle garments carefully?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We offer 100% insurance on all items. If anything gets
-                damaged, we'll compensate you fully or replace the item.
+                A: We sort garments by care needs and review issues with you if
+                an item needs special handling or stain treatment.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What are your prices for thobes and abayas?
+                Q: Do you clean thobes, abayas, and white garments?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We have special prices for traditional wear. Thobes are SAR
-                20 and abayas are SAR 25, including steam pressing.
+                A: Yes. We offer garment care for traditional wear, including
+                washing, steaming, pressing, and stain-focused treatment.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you offer carpet and rug cleaning?
+                Q: What types of laundry can I send?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes, we offer professional cleaning for all types of carpets
-                and rugs. Prices vary by size and material.
+                A: Everyday clothes, traditional garments, urgent laundry,
+                pressing orders, and selected bulky items are all supported.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What's your turnaround for large family orders?
+                Q: What if I have a bigger family load?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We prioritize large orders. Most are ready within 24-48
-                hours, depending on the items and services required.
+                A: Larger orders can still be arranged. We will confirm the
+                best return time based on the quantity and service type.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you clean delicate items like bishts or shemaghs?
+                Q: Can I ask about a special item before booking?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Absolutely. We are experts in cleaning traditional Saudi
-                garments, ensuring they are handled with the utmost care.
+                A: Absolutely. Send a photo or short description on WhatsApp
+                and we will guide you on the best service option.
               </p>
             </div>
           </div>
           <div className="rounded-lg bg-card text-card-foreground shadow-sm mt-8 sm:mt-12 bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/30">
             <div className="p-4 sm:p-6 text-center">
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-foreground">
-                💬 Still Have Questions?
+                💬 Need a Quick Answer?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                Our friendly team is available 24/7 to answer any questions in
-                Arabic, English, or Urdu.
+                Message or call us if you want help choosing the right pickup
+                time or laundry option.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button
                   onClick={() => handleWhatsApp(whatsappMessages.faq)}
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all h-10 px-4 py-2 w-full"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-emerald-500 text-white hover:bg-emerald-600 shadow-lg hover:shadow-xl transition-all h-10 px-4 py-2 w-full"
                 >
                   <WhatsAppIcon />
-                  WhatsApp Your Question
+                  Ask on WhatsApp
                 </button>
                 <button
                   onClick={handleCall}
@@ -125,7 +125,7 @@ export default function Faq() {
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
-                  Call Us Now
+                  Call for Help
                 </button>
               </div>
             </div>

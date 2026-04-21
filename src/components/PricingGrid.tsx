@@ -12,43 +12,43 @@ import { handleWhatsApp } from "@/lib/utils";
 const pricingItems = [
   {
     emoji: "👕",
-    title: "Regular Clothes",
-    subtitle: "Shirts, pants, casual wear",
+    title: "Everyday Wear",
+    subtitle: "Shirts, trousers, and daily essentials",
     price: "20 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "👔",
-    title: "Formal Wear",
-    subtitle: "Suits, dress shirts, formal attire",
+    title: "Pressed Occasion Wear",
+    subtitle: "Suits, dress shirts, and event clothing",
     price: "25 SAR/kg",
     time: "Same day",
   },
   {
     emoji: "🕋",
-    title: "Ihram Clothes",
-    subtitle: "Special care for holy garments",
+    title: "Ihram Garments",
+    subtitle: "Gentle cleaning for white worship wear",
     price: "20 SAR/piece",
     time: "3 hours",
   },
   {
     emoji: "🧥",
-    title: "Heavy Items",
-    subtitle: "Jackets, blankets, curtains",
+    title: "Bulky Laundry",
+    subtitle: "Jackets, blankets, and larger fabric items",
     price: "28 SAR/kg",
     time: "Next day",
   },
   {
     emoji: "👟",
-    title: "Shoes Cleaning",
-    subtitle: "Professional shoe cleaning service",
+    title: "Shoe Refresh",
+    subtitle: "Careful cleaning for daily footwear",
     price: "25 SAR/pair",
     time: "4 hours",
   },
   {
     emoji: "🔧",
-    title: "Alterations",
-    subtitle: "Hemming, repairs, adjustments",
+    title: "Minor Garment Fixes",
+    subtitle: "Simple repairs and finishing touches",
     price: "From 20 SAR",
     time: "Same day",
   },
@@ -67,8 +67,15 @@ const PricingGrid = () => {
     <section className="py-20 bg-muted/60">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12">
-                                  <h2 id="services-heading" className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">Zamzam Insaf Laundry: Transparent Pricing</h2>          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Clear, competitive pricing for all your laundry needs in Makkah. Quality service starts from{" "}
+          <h2
+            id="services-heading"
+            className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
+          >
+            Pricing That Matches Real Laundry Needs
+          </h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            Pick the item type you need cleaned and see how quickly it can be
+            returned. Service starts from{" "}
             <span className="text-primary ml-1 font-semibold">20 SAR/kg!</span>
           </p>
         </div>
@@ -104,7 +111,7 @@ const PricingGrid = () => {
                   onClick={() => handleOrder(item.title, item.price)}
                   className="w-full bg-success hover:bg-success/90"
                 >
-                  Order Now
+                  Select Service
                 </Button>
               </CardContent>
             </Card>

@@ -10,20 +10,20 @@ import { handleWhatsApp } from "@/lib/utils";
 const areas = [
   {
     emoji: "🕌",
-    title: "Haram Area & Abraj Al Bait",
+    title: "Haram Hotels & Abraj Al Bait",
     description:
-      "Rapid laundry solutions for accommodations directly adjacent to Masjid al-Haram. Catering specifically to the needs of pilgrims.",
+      "Laundry pickup designed for guests staying a short walk from Masjid al-Haram, with quick dispatch and careful garment handling.",
     locations: [
-      { name: "Clock Tower Hotels", time: "5-10 min" },
+      { name: "Abraj Al Bait Hotels", time: "5-10 min" },
       { name: "Al Safwah Towers", time: "5-10 min" },
       { name: "Hilton Makkah", time: "8-12 min" },
     ],
   },
   {
     emoji: "🏨",
-    title: "Jabal Omar & Hayatt Regency",
+    title: "Jabal Omar & Hotel Towers",
     description:
-      "Tailored services for premium hotel districts, offering convenient 24/7 express pickup.",
+      "Reliable collection and return for premium hotel districts where timing, presentation, and convenience matter most.",
     locations: [
       { name: "Jabal Omar Towers", time: "10-15 min" },
       { name: "Swissotel Makkah", time: "10-15 min" },
@@ -33,9 +33,9 @@ const areas = [
 
   {
     emoji: "🌆",
-    title: "Kudai & Misfalah",
+    title: "Kudai & Misfalah Stays",
     description:
-      "Efficient and affordable service for mid-tier lodging areas, ensuring quick turnaround and great value.",
+      "Practical wash-and-fold service for apartments and mid-range stays that need solid turnaround without hotel pricing.",
     locations: [
       { name: "Kudai Area Hotels", time: "15-20 min" },
       { name: "Misfalah District", time: "15-20 min" },
@@ -43,9 +43,9 @@ const areas = [
   },
   {
     emoji: "🏨",
-    title: "Hilton Suites & Nearby Hotels",
+    title: "Hilton Suites & Nearby Properties",
     description:
-      "Premium laundry service tailored for hotel guests, with fast pickup and reliable delivery for a comfortable stay in Makkah.",
+      "Pickup and return scheduling that works well for busy hotel guests, families, and business travelers in central Makkah.",
     locations: [
       { name: "Hilton Suites Makkah", time: "10-20 min" },
       { name: "Nearby Hotels & Residences", time: "15-25 min" },
@@ -55,7 +55,7 @@ const areas = [
     emoji: "🏘️",
     title: "Maabda, Al Rusaifah & Al Awali",
     description:
-      "Dependable and extensive service across Makkah's diverse neighborhoods, complete with same-day delivery.",
+      "Wide-area laundry support for neighborhoods that need dependable collection, washing, and door-to-door return service.",
     locations: [
       { name: "Maabda Area", time: "15-25 min" },
       { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
@@ -82,12 +82,12 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Extensive Laundry Coverage Across Makkah
+            Pickup Routes That Reach Hotels, Towers, and Local Districts
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            From bustling hotel zones to residential areas, our express pickup
-            service reaches every corner of Makkah, ensuring fresh laundry
-            wherever you are.
+            We collect laundry from busy hotel corridors, apartment buildings,
+            and neighborhood addresses across Makkah so you do not need to
+            leave your location.
           </p>
         </div>
 
@@ -127,14 +127,14 @@ const AreaCoverage = () => {
                     handleWhatsApp(
                       `Hi I need laundry service in ${encodeURIComponent(
                         area.title,
-                      )}. Could you please share the pickup details and timing? Thank you! `,
+                      )}. Please share the next pickup time and service options. Thank you! `,
                       true,
                     )
                   }
                   id="generate_lead"
                   className=" bg-success"
                 >
-                  Book Now
+                  Request Pickup
                 </Button>
               </div>
             </div>
@@ -143,7 +143,7 @@ const AreaCoverage = () => {
         <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/50 bg-gradient-to-r from-primary/5 to-accent/5">
           <div className="p-4 py-6 sm:p-6 text-center">
             <h3 className="text-lg md:text-xl font-bold mb-5 text-primary">
-              Unsure About Your Location? Get Instant Pickup Confirmation!
+              Not Sure About Coverage? Ask for a Live Pickup Time
             </h3>
             <div className="space-y-4 ">
               <input
@@ -152,18 +152,18 @@ const AreaCoverage = () => {
                 minLength={1}
                 onChange={(e) => setLocation(e.target.value)}
                 className="flex w-full border-input bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-12 sm:h-14 text-base border-2 focus:border-accent rounded-xl"
-                placeholder="Enter your hotel/location name"
+                placeholder="Enter your hotel, tower, or area name"
               />
               <button
                 onClick={handleCheckArea}
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 shadow-primary px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-emerald-500 text-white hover:bg-emerald-600 shadow-primary px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
               >
                 <WhatsAppIcon size={24} />
-                Check My Pickup Time - FREE
+                Check My Pickup Time
               </button>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground mt-3">
-              ✅ Fast Reply | ✅ No Obligation | ✅ Always Available
+              ✅ Fast reply | ✅ No commitment | ✅ Service updates anytime
             </p>
           </div>
         </div>
