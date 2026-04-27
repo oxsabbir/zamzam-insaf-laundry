@@ -17,7 +17,7 @@ export default function FinalCTA() {
       }}
       className="py-10 sm:py-16 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-tl from-primary/55 to-black/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-tl from-green-950/55 via-gray-950/50 to-green-950/50"></div>
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
@@ -27,7 +27,8 @@ export default function FinalCTA() {
             Book a pickup for washing, drying, folding, or pressing and let our
             team handle the collection and return.
             <span className="text-accent font-bold">
-              {" "}Fresh clothes can be one message away.
+              {" "}
+              Fresh clothes can be one message away.
             </span>
           </p>
         </div>

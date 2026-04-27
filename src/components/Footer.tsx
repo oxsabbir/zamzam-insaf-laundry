@@ -79,7 +79,7 @@ const Footer = () => {
 
       <div className="w-full h-[400px] relative transition-all duration-700 ease-in-out group">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1855.312843271923!2d39.8202008857488!3d21.42186292841074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b679347f05%3A0x50f5f4304df897e6!2sHilton%20Suites%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1771903409889!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.2656995945267!2d39.8231667!3d21.418799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1777290264871!5m2!1sen!2sbd"
           width="100%"
           height="100%"
           allowFullScreen

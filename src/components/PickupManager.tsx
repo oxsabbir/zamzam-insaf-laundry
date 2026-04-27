@@ -33,8 +33,11 @@ export default function PickupManager() {
             id="manager-heading"
             className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
           >
-            Direct Help for Pickup and Delivery. <br className="hidden sm:block" />
-            <span className="text-primary">A Real Team Member Handles Your Request.</span>
+            Direct Help for Pickup and Delivery.{" "}
+            <br className="hidden sm:block" />
+            <span className="text-primary">
+              A Real Team Member Handles Your Request.
+            </span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Ask questions, confirm timing, and arrange collection with someone
@@ -123,17 +126,17 @@ export default function PickupManager() {
 
                 {/* Testimonial Quote */}
                 <div className="mb-8 bg-slate-50 p-5 rounded-xl border border-slate-100 relative">
-                <div className="text-slate-700 italic text-sm leading-relaxed relative z-10">
+                  <div className="text-slate-700 italic text-sm leading-relaxed relative z-10">
                     "{managerInfo.fullName} made the process easy. We sent our
                     location, got a quick response, and the pickup arrived just
                     when promised."
                   </div>
                   <div className="mt-3 flex items-center gap-2">
                     <div className="w-6 h-6 rounded-full bg-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-600">
-                      AF
+                      BU
                     </div>
                     <div className="text-xs font-bold text-slate-900">
-                      Ahmed F.
+                      Borhan Uddin.
                     </div>
                     <div className="text-xs text-slate-400">
                       • Hotel guest near Haram
