@@ -17,7 +17,7 @@ export default function FinalCTA() {
       }}
       className="py-10 sm:py-16 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-tl from-emerald-900/40 to-black/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-tl from-primary/55 to-black/80"></div>
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
@@ -36,7 +36,7 @@ export default function FinalCTA() {
             <button
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none text-accent-foreground duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-emerald-500 text-white hover:bg-emerald-600 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none text-accent-foreground duration-300 w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl bg-primary text-white hover:bg-primary/90 font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
             >
               <WhatsAppIcon size={32} />
               <div className="text-left ml-2">
@@ -78,7 +78,7 @@ export default function FinalCTA() {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="lucide lucide-message-circle w-4 h-4 mr-2 text-emerald-400"
+                        className="lucide lucide-message-circle w-4 h-4 mr-2 text-primary/40"
                       >
                         <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
                       </svg>

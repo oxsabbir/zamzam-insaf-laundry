@@ -104,11 +104,6 @@ Thank you.`;
 
           {/* Premium Plan (Featured) */}
           <div className="flex flex-col p-6 sm:p-8 bg-gradient-to-br from-primary via-primary to-secondary text-primary-foreground rounded-[2rem] shadow-2xl relative xl:scale-[1.03]">
-            <div className="absolute top-0 left-6 sm:left-8 -translate-y-1/2">
-              <div className="bg-gradient-to-r from-amber-400 to-orange-400 text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-[0.16em] shadow-lg">
-                Common Finishing Format
-              </div>
-            </div>
             <div className="mb-8 pt-3">
               <div className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] mb-4">
                 Featured Format

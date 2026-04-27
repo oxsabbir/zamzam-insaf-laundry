@@ -10,7 +10,7 @@ const HeroNew = () => {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-emerald-950 to-gray-900 min-h-screen flex items-center pt-16"
+      className="relative overflow-hidden bg-gradient-to-r from-gray-950 via-gray-800 to-gray-950 min-h-screen flex items-center pt-16"
     >
       <FloatingCTA />
 
@@ -148,7 +148,7 @@ const HeroNew = () => {
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-emerald-500 text-white hover:bg-emerald-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-primary text-white hover:bg-primary/90 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
               <WhatsAppIcon size={24} />
               WhatsApp for Fast Pickup

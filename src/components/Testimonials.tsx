@@ -8,104 +8,83 @@ const testimonials = [
   {
     name: "Ahmed Al-Rashid",
     location: "Abraj Al Bait, Makkah",
-    country: "Saudi Arabia",
     rating: 5,
-    service: "Irham Cleaning",
+    service: "Ihram Cleaning",
     review:
-      "Pickup was easy to arrange, the washing quality was strong, and everything came back folded neatly for our next day out.",
+      "Makkah Laundry Near Haram made pickup easy for our hotel stay. The clothes came back clean, folded well, and right on time.",
     avatar: "AR",
-    flag: "🇸🇦",
   },
   {
     name: "Fatima Hassan",
     location: "Hilton Makkah",
-    country: "Egypt",
     rating: 5,
     service: "Regular Customer",
-
     review:
-      "The team replied quickly, collected right from the hotel lobby, and returned our clothes looking fresh without the usual hotel laundry cost.",
+      "They replied quickly on WhatsApp, collected from the lobby, and returned everything fresh without the high hotel laundry cost.",
     avatar: "FH",
-    flag: "🇪🇬",
   },
   {
     name: "Muhammad Khan",
     location: "Jabal Omar Towers",
-    country: "Pakistan",
     service: "Formal Wear",
-
     rating: 5,
     review:
-      "Their timing worked well with our schedule, and my white garments came back clean, soft, and properly handled.",
+      "Their timing fit our schedule well, and my white garments came back clean, soft, and handled with care.",
     avatar: "MK",
-    flag: "🇵🇰",
   },
   {
     name: "Aisha Abdullah",
     location: "Swissotel Makkah",
-    country: "UAE",
-    service: "Heavy Items",
+    service: "Urgent Order",
     rating: 5,
     review:
-      "I needed a late-night urgent order, and they still managed the pickup smoothly and returned everything much sooner than expected.",
+      "I needed a late-night urgent order, and Makkah Laundry Near Haram still arranged the pickup smoothly and returned it faster than expected.",
     avatar: "AA",
-    flag: "🇦🇪",
   },
   {
     name: "Ibrahim Yusuf",
     location: "Aziziyah District",
-    country: "Indonesia",
     service: "Regular Customer",
     rating: 5,
     review:
-      "Booking on WhatsApp was simple, the pricing felt reasonable, and the order was packed cleanly when it came back.",
+      "Booking on WhatsApp was simple, the service felt organized, and the order came back packed neatly and ready to use.",
     avatar: "IY",
-    flag: "🇮🇩",
   },
   {
     name: "Mariam Ali",
     location: "Al Safwah Towers",
-    country: "Malaysia",
-    service: "Irham Cleaning",
-
+    service: "Abaya Care",
     rating: 5,
     review:
-      "My abayas were returned pressed nicely, and the fabric still felt cared for. I would absolutely book again.",
+      "My abayas came back pressed nicely, and the fabric still felt properly cared for. I would book this service again.",
     avatar: "MA",
-    flag: "🇲🇾",
   },
   {
     name: "Omar Farooq",
     location: "Elaf Kinda Hotel, Makkah",
-    country: "UK",
     rating: 5,
     service: "Ihram Cleaning",
     review:
-      "During Umrah, this service made laundry one less thing to worry about. The team was responsive and careful with every item.",
+      "During Umrah, this service made laundry one less thing to think about. The team stayed responsive and careful with every item.",
     avatar: "OF",
-    flag: "🇬🇧",
   },
   {
     name: "Hajar Bint Abdullah",
     location: "Makkah Hotel",
-    country: "Jordan",
     rating: 5,
     service: "Abaya Cleaning",
     review:
-      "The collection was on time, the garments looked very clean on return, and the overall process felt organized from start to finish.",
+      "The collection arrived on time, the garments looked very clean on return, and the whole process felt smooth from start to finish.",
     avatar: "HB",
-    flag: "🇯🇴",
   },
   {
     name: "Dr. Faisal Rahman",
     location: "Hilton Suites Makkah",
-    country: "Bangladesh",
     rating: 5,
     service: "Regular Customer",
     review:
-      "I have used several laundry services in Makkah, and this one stands out for clear communication, dependable timing, and a better overall finish.",
+      "I have tried several laundry services in Makkah, and Makkah Laundry Near Haram stands out for clear communication and dependable timing.",
     avatar: "FR",
-    flag: "🇧🇩",
   },
 ];
 
@@ -185,7 +164,7 @@ const Testimonials = () => {
                     {review.name}
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    {review.flag} {review.location}
+                    {review.location}
                   </div>
                   <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mt-1 text-xs bg-primary/10 text-primary">
                     {review.service}

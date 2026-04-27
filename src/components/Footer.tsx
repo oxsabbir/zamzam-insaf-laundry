@@ -139,7 +139,7 @@ const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 rounded-xl flex items-center justify-center hover:from-emerald-600 hover:to-emerald-500 hover:border-emerald-400 hover:text-white transition-all duration-300 group"
+                    className="w-12 h-12 bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 rounded-xl flex items-center justify-center hover:from-primary/90 hover:to-primary hover:border-primary/60 hover:text-white transition-all duration-300 group"
                   >
                     <social.icon
                       size={20}
@@ -166,7 +166,7 @@ const Footer = () => {
                   {link?.url ? (
                     <a
                       href={link.url}
-                      className="text-slate-00 hover:text-emerald-300 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
+                      className="text-slate-00 hover:text-primary hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
                     >
                       <ArrowRight
                         size={14}
@@ -177,7 +177,7 @@ const Footer = () => {
                   ) : (
                     <button
                       onClick={() => scrollToSection(link.id)}
-                      className="text-slate-00 hover:text-emerald-300 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
+                      className="text-slate-00 hover:text-primary hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
                     >
                       <ArrowRight
                         size={14}
@@ -196,7 +196,7 @@ const Footer = () => {
             <h4 className="text-white font-bold text-xl mb-6">Reach Us</h4>
             <ul className="space-y-6">
               <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-300 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-primary/80 group-hover:bg-primary group-hover:text-white transition-colors">
                   <Phone size={18} />
                 </div>
                 <div>
@@ -205,7 +205,7 @@ const Footer = () => {
                   </div>
                   <a
                     href={`tel:+${managerInfo.onlyNumber.whatsApp}`}
-                    className="text-white hover:text-emerald-300 transition-colors font-medium text-lg"
+                    className="text-white hover:text-primary transition-colors font-medium text-lg"
                   >
                     {managerInfo.whatsApp}
                   </a>
@@ -213,7 +213,7 @@ const Footer = () => {
               </li>
 
               <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-300 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-primary/80 group-hover:bg-primary group-hover:text-white transition-colors">
                   <Mail size={18} />
                 </div>
                 <div>
@@ -222,7 +222,7 @@ const Footer = () => {
                   </div>
                   <a
                     href={`mailto:${managerInfo.email}`}
-                    className="text-white hover:text-emerald-300 transition-colors font-medium"
+                    className="text-white hover:text-primary transition-colors font-medium"
                   >
                     {managerInfo.email}
                   </a>
@@ -230,7 +230,7 @@ const Footer = () => {
               </li>
 
               <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-300 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-primary/80 group-hover:bg-primary group-hover:text-white transition-colors">
                   <Clock size={18} />
                 </div>
                 <div>
@@ -262,7 +262,7 @@ const Footer = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-400 h-11"
+                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-primary h-11"
                 />
                 <Input
                   placeholder="Phone Number"
@@ -270,7 +270,7 @@ const Footer = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
                   }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-400 h-11"
+                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-primary h-11"
                 />
                 <Input
                   placeholder="Hotel / Building Name"
@@ -278,13 +278,13 @@ const Footer = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, hotel: e.target.value })
                   }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-400 h-11"
+                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-primary h-11"
                 />
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-emerald-500 hover:bg-emerald-400 text-white font-bold h-11 rounded-lg transition-all"
+                  className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-11 rounded-lg transition-all"
                 >
                   {isSubmitting ? (
                     "Sending..."
@@ -309,13 +309,13 @@ const Footer = () => {
           <div className="flex items-center gap-6 text-sm font-medium">
             <a
               href="/privacy-policy"
-              className="text-slate-300 hover:text-emerald-300 transition-colors"
+              className="text-slate-300 hover:text-primary transition-colors"
             >
               Privacy Policy
             </a>
             <a
               href="/terms-of-service"
-              className="text-slate-300 hover:text-emerald-300 transition-colors"
+              className="text-slate-300 hover:text-primary transition-colors"
             >
               Terms of Service
             </a>

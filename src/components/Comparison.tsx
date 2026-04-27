@@ -76,7 +76,7 @@ const Comparison = () => {
                 <div className="text-sm font-semibold text-left text-slate-100">
                   {item.feature}
                 </div>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-emerald-300 font-bold text-xs sm:text-sm">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-primary-foreground/80 font-bold text-xs sm:text-sm">
                   <Check size={16} className="shrink-0" />
                   <span>{item.us}</span>
                 </div>
@@ -107,7 +107,7 @@ const Comparison = () => {
           <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 hover:shadow-xl transition-all hover:-translate-y-1 border border-border">
             <div className="flex flex-col items-center text-center">
               <div className="mb-3 sm:mb-4">
-                <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-emerald-500" />
+                <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
                 Clear Service Structure

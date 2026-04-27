@@ -125,7 +125,7 @@ export default function PilgrimGuide() {
                 <ul className="space-y-3">
                   {item.tips.map((tip, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-emerald-500 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-muted-foreground">{tip}</span>
                     </li>
                   ))}
@@ -146,7 +146,7 @@ export default function PilgrimGuide() {
             </p>
             <Button
               onClick={() => handleWhatsApp(whatsappMessages.faq)}
-              className="bg-emerald-500 text-white hover:bg-emerald-600 shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-semibold"
+              className="bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-semibold"
             >
               <WhatsAppIcon className="mr-2" />
               Ask on WhatsApp

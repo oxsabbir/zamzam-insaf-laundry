@@ -143,7 +143,7 @@ Thank you.`;
             </div>
           </div>
 
-          <div className="lg:col-span-5 rounded-[2rem] border border-primary/15 bg-gradient-to-br from-emerald-50 via-card to-emerald-100/70 p-5 sm:p-8 shadow-lg flex flex-col">
+          <div className="lg:col-span-5 rounded-[2rem] border border-primary/15 bg-gradient-to-br from-primary/10 via-card to-primary/15 p-5 sm:p-8 shadow-lg flex flex-col">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-4 self-start">
               <Sparkles className="h-4 w-4" />
               Per Piece
