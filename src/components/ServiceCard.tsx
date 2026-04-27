@@ -3,16 +3,14 @@ import { Button } from "./ui/button";
 
 interface ServiceCardProps {
   title: string;
-  price: string;
-  unit: string;
+  detail: string;
   description: string;
   highlight: string;
 }
 
 const ServiceCard = ({
   title,
-  price,
-  unit,
+  detail,
   description,
   highlight,
 }: ServiceCardProps) => {
@@ -21,7 +19,7 @@ const ServiceCard = ({
       <h2 className="text-2xl font-bold text-foreground mb-4">{title}</h2>
 
       <p className="text-primary text-xl font-semibold mb-4">
-        {price}/{unit}
+        {detail}
       </p>
 
       <p className="text-muted-foreground text-sm leading-relaxed mb-4">

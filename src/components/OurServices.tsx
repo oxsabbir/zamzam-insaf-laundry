@@ -1,58 +1,46 @@
 import ServiceCard from "./ServiceCard";
 const urgentServices = [
   {
-    title: "Steam Press & Fold",
-    price: "20 Riyals",
-    unit: "Kg",
+    title: "Urgent Laundry Service",
+    detail: "24/7 support near Haram",
     description:
-      "Neat pressing and crisp folding for everyday garments, uniforms, and travel wear that need a polished finish.",
-    highlight: "Great for same-day presentation",
-    deliveryTime: "Up to 5 Hours",
+      "Built for urgent situations when garments need fast pickup coordination and the quickest available return option.",
+    highlight: "Includes 1 hour emergency and 2-3 hour express choices",
   },
   {
-    title: "Rush Wash, Dry & Press",
-    price: "35 Riyals",
-    unit: "Kg",
+    title: "Same-Day Laundry Service",
+    detail: "7-12 hours or 12 hours",
     description:
-      "Priority processing for loads that must be washed, dried, and returned quickly with a ready-to-wear finish.",
-    highlight: "Priority queue for urgent orders",
-    deliveryTime: "Within 1 Hour",
+      "A practical same-day option for guests and residents who want garments returned before the day is over.",
+    highlight: "Premium same-day and standard same-day windows available",
   },
   {
-    title: "12-Hour Wash & Return",
-    price: "22 Riyals",
-    unit: "Kg",
+    title: "Free Pick-up & Delivery",
+    detail: "Within 24 hours",
     description:
-      "A balanced option for regular laundry loads with dependable washing, drying, and clean folding.",
-    highlight: "Popular for hotel guests",
-    deliveryTime: "12 Hours",
+      "Collection and return are arranged for covered hotels and nearby districts so customers do not need to travel.",
+    highlight: "Free pickup and delivery service for covered areas",
   },
   {
-    title: "5-Hour Express Laundry",
-    price: "30 Riyals",
-    unit: "Kg",
+    title: "Wash, Iron & Fold",
+    detail: "Per kg service",
     description:
-      "A quicker wash-and-fold plan when you want fresh garments back before the day is over.",
-    highlight: "Express turnaround available",
-    deliveryTime: "5 Hours",
+      "This is one of the main per kg service formats and can be arranged in express, premium same-day, or one-day regular timing.",
+    highlight: "Available in 2-3, 7-12, and 18-24 hour windows",
   },
   {
-    title: "Ihram & White Garment Care",
-    price: "25 Riyals",
-    unit: "Kg",
+    title: "Wash + Dry + Fold",
+    detail: "Per kg service",
     description:
-      "Gentle washing for white garments and Ihram wear with attention to cleanliness, softness, and careful finishing.",
-    highlight: "Soft-touch care for sensitive fabrics",
-    deliveryTime: "Same Day",
+      "Suitable for everyday clothing loads that need a clean wash, proper drying, and neat fold return.",
+    highlight: "Good for regular garments and travel laundry",
   },
   {
-    title: "Targeted Stain Treatment",
-    price: "25 Riyals",
-    unit: "Kg",
+    title: "VIP Service",
+    detail: "Special handling support",
     description:
-      "Focused spotting and stain treatment for marks that need extra work before standard cleaning and pressing.",
-    highlight: "Detailed pre-treatment included",
-    deliveryTime: "Up to 24 Hours",
+      "For orders that need extra attention, final confirmation, and more careful coordination before processing and delivery.",
+    highlight: "Final timing and price are confirmed after review",
   },
 ];
 
@@ -65,19 +53,17 @@ export default function OurServices() {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Laundry Services Built for Fast Pickups and Clean Returns
+            Main Laundry Services Available Near Haram
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            Choose the service speed and garment care level that matches your
-            schedule.
+            These are the main service types currently offered.
             <br />
             <span className="">
-              With quick{" "}
+              They cover urgent orders, same-day laundry, regular laundry, and{" "}
               <strong className="text-primary font-semibold">
-                pickup and delivery
+                free pickup and delivery
               </strong>{" "}
-              for hotels, apartments, and nearby districts, laundry becomes one
-              less thing to manage during your stay.
+              for covered hotels and nearby districts.
             </span>
           </p>
         </div>
@@ -87,8 +73,7 @@ export default function OurServices() {
             <ServiceCard
               key={index}
               title={service.title}
-              price={service.price}
-              unit={service.unit}
+              detail={service.detail}
               description={service.description}
               highlight={service.highlight}
             />

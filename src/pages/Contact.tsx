@@ -189,19 +189,19 @@ const Contact = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Haram hotels and Abraj Al Bait
+                    Clock Tower / all hotels and Al Safwah Tower
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Jabal Omar and nearby hotel towers
+                    Hilton Makkah, Anjum Hotel, and Dar Al Tawhid Makkah
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Kudai, Misfalah, and surrounding stays
+                    Jabal Omar Area, Ajyad / Misfalah Area
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Additional central Makkah neighborhoods
+                    Ajyad Area, Aziziah Street Area, and Jabal Al Kaaba Area
                   </li>
                 </ul>
               </div>

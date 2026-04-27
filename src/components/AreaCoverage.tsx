@@ -1,7 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Check, MessageCircleMore } from "lucide-react";
-import { Input } from "./ui/input";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useState } from "react";
 import { whatsappMessages } from "@/constants/messages";
@@ -10,55 +8,28 @@ import { handleWhatsApp } from "@/lib/utils";
 const areas = [
   {
     emoji: "🕌",
-    title: "Haram Hotels & Abraj Al Bait",
+    title: "Around Haram Area",
     description:
-      "Laundry pickup designed for guests staying a short walk from Masjid al-Haram, with quick dispatch and careful garment handling.",
+      "These are the closest hotel and tower routes around Haram with the pickup windows you provided.",
     locations: [
-      { name: "Abraj Al Bait Hotels", time: "5-10 min" },
-      { name: "Al Safwah Towers", time: "5-10 min" },
-      { name: "Hilton Makkah", time: "8-12 min" },
+      { name: "Clock Tower / All Hotels", time: "5-10 min" },
+      { name: "Al Safwah Tower", time: "5-10 min" },
+      { name: "Hilton Makkah", time: "7-10 min" },
+      { name: "Anjum Hotel", time: "10-15 min" },
+      { name: "Dar Al Tawhid Makkah", time: "5-10 min" },
+      { name: "Jabal Omar Area", time: "10-15 min" },
+      { name: "Ajyad / Misfalah Area", time: "15-20 min" },
     ],
   },
   {
     emoji: "🏨",
-    title: "Jabal Omar & Hotel Towers",
+    title: "Additional Areas",
     description:
-      "Reliable collection and return for premium hotel districts where timing, presentation, and convenience matter most.",
+      "These extra pickup routes are also covered with timing that depends on the exact location.",
     locations: [
-      { name: "Jabal Omar Towers", time: "10-15 min" },
-      { name: "Swissotel Makkah", time: "10-15 min" },
-      { name: "Aziziyah District", time: "12-18 min" },
-    ],
-  },
-
-  {
-    emoji: "🌆",
-    title: "Kudai & Misfalah Stays",
-    description:
-      "Practical wash-and-fold service for apartments and mid-range stays that need solid turnaround without hotel pricing.",
-    locations: [
-      { name: "Kudai Area Hotels", time: "15-20 min" },
-      { name: "Misfalah District", time: "15-20 min" },
-    ],
-  },
-  {
-    emoji: "🏨",
-    title: "Hilton Suites & Nearby Properties",
-    description:
-      "Pickup and return scheduling that works well for busy hotel guests, families, and business travelers in central Makkah.",
-    locations: [
-      { name: "Hilton Suites Makkah", time: "10-20 min" },
-      { name: "Nearby Hotels & Residences", time: "15-25 min" },
-    ],
-  },
-  {
-    emoji: "🏘️",
-    title: "Maabda, Al Rusaifah & Al Awali",
-    description:
-      "Wide-area laundry support for neighborhoods that need dependable collection, washing, and door-to-door return service.",
-    locations: [
-      { name: "Maabda Area", time: "15-25 min" },
-      { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
+      { name: "Ajyad Area", time: "10-15 min" },
+      { name: "Aziziah Street Area", time: "10-25 min" },
+      { name: "Jabal Al Kaaba Area", time: "10-15 min" },
     ],
   },
 ];
@@ -82,12 +53,11 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Pickup Routes That Reach Hotels, Towers, and Local Districts
+            Service Areas and Pickup Timing Near Haram
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            We collect laundry from busy hotel corridors, apartment buildings,
-            and neighborhood addresses across Makkah so you do not need to
-            leave your location.
+            The list below now follows your exact coverage notes, including the
+            closest Haram hotels and the additional surrounding areas.
           </p>
         </div>
 
@@ -125,9 +95,7 @@ const AreaCoverage = () => {
                 <Button
                   onClick={() =>
                     handleWhatsApp(
-                      `Hi I need laundry service in ${encodeURIComponent(
-                        area.title,
-                      )}. Please share the next pickup time and service options. Thank you! `,
+                      `Hi I need laundry service in ${area.title}. Please share the next pickup time and available service options. Thank you!`,
                       true,
                     )
                   }
@@ -163,7 +131,7 @@ const AreaCoverage = () => {
               </button>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground mt-3">
-              ✅ Fast reply | ✅ No commitment | ✅ Service updates anytime
+              ✅ Pickup time by area | ✅ Free pickup & delivery | ✅ Reply on WhatsApp
             </p>
           </div>
         </div>

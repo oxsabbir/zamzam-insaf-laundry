@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "motion/react"; // Ensure this matches your installed package (framer-motion vs motion)
 import { managerInfo, siteInfo } from "@/constants";
-// import SnapChatIcon from "./icons/SnapChat";
+import brandLogo from "@/assets/logo-near-haram.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -99,14 +99,17 @@ const Footer = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="mb-6">
-                <div className="text-2xl font-black uppercase tracking-[0.22em] text-white">
-                  Makkah Laundry
+              <a href="/">
+                <div className="py-2">
+                  <img
+                    src={brandLogo}
+                    alt="Makkah Laundry Near Haram"
+                    width={200}
+                    height={100}
+                    className="w-[200px] h-auto"
+                  />
                 </div>
-                <div className="text-lg font-semibold text-emerald-300">
-                  Near Haram
-                </div>
-              </div>
+              </a>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
                 Laundry pickup, washing, drying, folding, and pressing for
                 guests, residents, and hotels across Makkah near Haram.

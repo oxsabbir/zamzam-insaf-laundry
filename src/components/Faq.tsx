@@ -22,8 +22,9 @@ export default function Faq() {
                 Q: How fast can you usually collect an order?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: In central Makkah and near Haram, pickup is often arranged
-                very quickly. Timing can vary by distance and traffic.
+                A: Pickup timing depends on the area. The closest Haram hotels
+                can be 5-10 minutes, while some extended routes can be up to
+                10-25 minutes.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
@@ -31,8 +32,47 @@ export default function Faq() {
                 Q: Is collection and return included?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes. Our service is designed to make pickup and delivery
-                convenient for hotels, apartments, and nearby districts.
+                A: Yes. Pickup and delivery are free within 24 hours for the
+                covered service areas listed on the website.
+              </p>
+            </div>
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Q: What timing options do you offer?
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                A: The main options are 1 hour emergency, 2-3 hours express,
+                7-12 hours premium same-day, 12 hours same-day, and 18-24
+                hours one-day regular service.
+              </p>
+            </div>
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Q: How is the final price decided?
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                A: Final price depends on cloth type, garment category, and the
+                timing option you choose. The team confirms it when arranging
+                the order.
+              </p>
+            </div>
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Q: Do you offer both per kg and per piece service?
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                A: Yes. We offer wash, iron and fold per kg, wash plus dry plus
+                fold, per piece with hanger, press / iron with hanger, and
+                press / iron and fold.
+              </p>
+            </div>
+            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
+              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
+                Q: Do you have VIP service?
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                A: Yes. VIP service is available for orders that need special
+                handling, with timing and final price confirmed after review.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
@@ -40,44 +80,8 @@ export default function Faq() {
                 Q: Can I message late at night?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes, you can contact us outside normal daytime hours if you
-                need an update, a pickup, or an urgent order.
-              </p>
-            </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you handle garments carefully?
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                A: We sort garments by care needs and review issues with you if
-                an item needs special handling or stain treatment.
-              </p>
-            </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you clean thobes, abayas, and white garments?
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes. We offer garment care for traditional wear, including
-                washing, steaming, pressing, and stain-focused treatment.
-              </p>
-            </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What types of laundry can I send?
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                A: Everyday clothes, traditional garments, urgent laundry,
-                pressing orders, and selected bulky items are all supported.
-              </p>
-            </div>
-            <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
-              <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What if I have a bigger family load?
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                A: Larger orders can still be arranged. We will confirm the
-                best return time based on the quantity and service type.
+                A: Yes. The service includes urgent and 24/7 support, so you
+                can message for late-night updates or emergency requests.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">

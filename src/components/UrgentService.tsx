@@ -22,24 +22,24 @@ export default function UrgentService() {
             id="emergency-times-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Choose the Return Speed That Fits Your Day
+            Choose the Exact Laundry Timing You Need
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            From rush washing to same-day pressing, we organize pickup and
-            return timing around your stay near Haram.
+            These are the main timing windows now offered for urgent, express,
+            same-day, and regular laundry service near Haram.
           </p>
         </header>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-4 sm:gap-6 max-w-7xl mx-auto">
           <div className="rounded-lg text-card-foreground shadow-sm p-6 text-center hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-blue-300 bg-blue-50 dark:bg-blue-900/10 hover:opacity-90">
             <div className="text-5xl mb-4">⚡</div>
             <div className="text-3xl font-bold mb-2 text-foreground">
               1 Hour
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Rapid Rescue Service
+              Emergency Service
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              For garments needed urgently
+              For urgent situations
             </p>
             <button
               id="generate_lead"
@@ -52,17 +52,36 @@ export default function UrgentService() {
           <div className="rounded-lg text-card-foreground shadow-sm p-6 text-center hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-blue-300 bg-blue-50 dark:bg-blue-900/10 hover:opacity-90">
             <div className="text-5xl mb-4">🚀</div>
             <div className="text-3xl font-bold mb-2 text-foreground">
-              5 Hours
+              2-3 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Express Return
+              Express Service
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Ideal between appointments
+              Fast return for urgent daily laundry
             </p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("5 Hour", "Express Service")}
+              onClick={() => handleBooking("2-3 Hours", "Express Service")}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
+            >
+              Choose This Option
+            </button>
+          </div>
+          <div className="rounded-lg text-card-foreground shadow-sm p-6 text-center hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-blue-300 bg-blue-50 dark:bg-blue-900/10 hover:opacity-90">
+            <div className="text-5xl mb-4">🌟</div>
+            <div className="text-3xl font-bold mb-2 text-foreground">
+              7-12 Hours
+            </div>
+            <h3 className="text-lg font-bold mb-2 text-foreground">
+              Premium Same-Day
+            </h3>
+            <p className="text-sm text-muted-foreground mb-4">
+              Same-day return with more time for finishing
+            </p>
+            <button
+              id="generate_lead"
+              onClick={() => handleBooking("7-12 Hours", "Premium Same-Day Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
               Choose This Option
@@ -74,14 +93,33 @@ export default function UrgentService() {
               12 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Same-Day Care
+              Same-Day Service
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Balanced speed and value
+              Standard same-day return window
             </p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("12 Hour", "Same Day Service")}
+              onClick={() => handleBooking("12 Hours", "Same-Day Service")}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
+            >
+              Choose This Option
+            </button>
+          </div>
+          <div className="rounded-lg text-card-foreground shadow-sm p-6 text-center hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-blue-300 bg-blue-50 dark:bg-blue-900/10 hover:opacity-90">
+            <div className="text-5xl mb-4">🧺</div>
+            <div className="text-3xl font-bold mb-2 text-foreground">
+              18-24 Hours
+            </div>
+            <h3 className="text-lg font-bold mb-2 text-foreground">
+              One-Day Regular
+            </h3>
+            <p className="text-sm text-muted-foreground mb-4">
+              Low-cost regular service
+            </p>
+            <button
+              id="generate_lead"
+              onClick={() => handleBooking("18-24 Hours", "One-Day Regular Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
               Choose This Option

@@ -164,9 +164,8 @@ const TermsConditions = () => {
                       <strong className="text-foreground">Pricing:</strong>
                       <span className="text-muted-foreground">
                         {" "}
-                        Our standard rate starts at 20 SAR per kg. Final pricing
-                        depends on the weight and type of items, as well as any
-                        special services requested.
+                        Final pricing depends on cloth type, garment category,
+                        selected service format, and the return time requested.
                       </span>
                     </div>
                   </li>
@@ -191,8 +190,8 @@ const TermsConditions = () => {
                       </strong>
                       <span className="text-muted-foreground">
                         {" "}
-                        Pickup and delivery services are provided free of charge
-                        for orders meeting our minimum requirement.
+                        Pickup and delivery services are offered free within 24
+                        hours for the covered service areas.
                       </span>
                     </div>
                   </li>
@@ -240,9 +239,9 @@ const TermsConditions = () => {
                       <strong className="text-foreground">Pickup Time:</strong>
                       <span className="text-muted-foreground">
                         {" "}
-                        We guarantee pickup within 15 minutes in our priority
-                        service zones. Actual times may vary based on traffic
-                        and location.
+                        Pickup timing depends on the covered area. Closest Haram
+                        hotels may be 5-10 minutes, while wider routes may take
+                        up to 10-25 minutes depending on traffic and location.
                       </span>
                     </div>
                   </li>
@@ -254,9 +253,9 @@ const TermsConditions = () => {
                       </strong>
                       <span className="text-muted-foreground">
                         {" "}
-                        Standard service is completed within 12-24 hours.
-                        Express services (1-5 hours) are available at additional
-                        cost.
+                        Current service windows include 1 hour emergency, 2-3
+                        hours express, 7-12 hours premium same-day, 12 hours
+                        same-day, and 18-24 hours one-day regular service.
                       </span>
                     </div>
                   </li>

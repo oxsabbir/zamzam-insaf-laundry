@@ -12,33 +12,33 @@ import {
 const comparisonData = [
   {
     feature: "Pickup Time",
-    us: "15 Minutes",
-    others: "2-4 Hours",
+    us: "5-25 Minutes by Area",
+    others: "Often Slower or Unclear",
   },
   {
-    feature: "Operating Hours",
-    us: "Around the Clock (24/7)",
-    others: "Limited Hours",
+    feature: "Service Times",
+    us: "1 Hour to 24 Hours",
+    others: "Fewer Timing Choices",
   },
   {
-    feature: "Starting Price",
-    us: "From 20 SAR/kg",
-    others: "From 35 SAR/kg",
+    feature: "Service Types",
+    us: "Urgent, Same-Day, Regular",
+    others: "Not Always Clearly Listed",
   },
   {
-    feature: "Customer Support",
-    us: "Multi-language (En, Ar, Ur)",
-    others: "Primarily Arabic",
+    feature: "Formats Offered",
+    us: "Per Kg, Per Piece, VIP",
+    others: "More Limited Choices",
   },
   {
     feature: "Delivery Charge",
-    us: "Always Free",
-    others: "Often Extra",
+    us: "Free within 24 Hours",
+    others: "May Cost Extra",
   },
   {
-    feature: "Urgent Orders",
-    us: "Ready in 1 Hour",
-    others: "24-Hour Minimum",
+    feature: "Price Confirmation",
+    us: "Depends on Cloth Type",
+    others: "May Be Less Clear Upfront",
   },
 ];
 
@@ -98,8 +98,9 @@ const Comparison = () => {
                 Fast Dispatch From the Start
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                We organize quick collections near Haram so your garments enter
-                processing sooner and return on time.
+                Pickup timing now follows the area windows you provided, from
+                5-10 minutes in the closest hotel routes up to 10-25 minutes
+                in extended areas.
               </p>
             </div>
           </div>
@@ -109,11 +110,11 @@ const Comparison = () => {
                 <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-emerald-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Value Without Hotel Markups
+                Clear Service Structure
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Clear rates, free collection, and sensible package choices help
-                you avoid expensive hotel laundry bills.
+                The site now separates urgent, same-day, regular, per kg, per
+                piece, and VIP options so customers can choose the right fit.
               </p>
             </div>
           </div>
@@ -123,11 +124,12 @@ const Comparison = () => {
                 <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Available When Plans Change
+                Timing Choices for Different Needs
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Late arrivals, early departures, and last-minute pressing are
-                easier to manage with an around-the-clock team.
+                The service covers 1 hour emergency, 2-3 hour express, 7-12
+                hour premium same-day, 12 hour same-day, and 18-24 hour regular
+                processing.
               </p>
             </div>
           </div>
@@ -137,11 +139,12 @@ const Comparison = () => {
                 <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-blue-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Careful Handling at Every Step
+                Useful Finishing Options
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Garments are sorted, cleaned, and packed with attention so your
-                order comes back tidy, fresh, and ready to wear.
+                Customers can request wash, iron and fold, wash plus dry plus
+                fold, press with hanger, or press and fold depending on the
+                order.
               </p>
             </div>
           </div>
@@ -151,11 +154,11 @@ const Comparison = () => {
                 <Users className="w-8 h-8 sm:w-10 sm:h-10 text-purple-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Easy Communication
+                Free Pickup and Delivery
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Pickup updates, timing, and service notes are shared clearly so
-                booking your order feels easy.
+                Collection and return are included within 24 hours for covered
+                areas, which makes hotel and apartment laundry more convenient.
               </p>
             </div>
           </div>
@@ -165,11 +168,11 @@ const Comparison = () => {
                 <Award className="w-8 h-8 sm:w-10 sm:h-10 text-orange-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Chosen by Repeat Guests
+                Price Checked by Garment Type
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Many customers return because they want quick washing, neat
-                folding, and dependable delivery near their hotel.
+                Instead of showing fake fixed prices, the site now explains that
+                final price depends on cloth type and selected service timing.
               </p>
             </div>
           </div>

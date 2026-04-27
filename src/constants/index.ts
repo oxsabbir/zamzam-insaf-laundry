@@ -4,12 +4,12 @@ export const siteInfo = {
 };
 
 export const managerInfo = {
-  fullName: "Mohammad Rakibul Hossain",
-  phoneNumber: "+966 50 863 5924",
-  whatsApp: "+966 50 863 5924",
+  fullName: "Md Borhan Uddin",
+  phoneNumber: "+966 55 312 5787",
+  whatsApp: "+966 55 312 5787",
   onlyNumber: {
-    whatsApp: 966508635924,
-    phoneNumber: 966508635924,
+    whatsApp: 966553125787,
+    phoneNumber: 966553125787,
   },
   address: `Ajyad St, Ajyad District, Makkah 24231, Saudi Arabia
 `,

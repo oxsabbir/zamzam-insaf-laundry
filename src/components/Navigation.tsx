@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-
+import brandLogo from "@/assets/logo-near-haram.webp";
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
@@ -81,27 +81,18 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex items-center gap-2 group"
-          >
-            <div className="py-2 text-left">
-              <div
-                className={`text-sm md:text-base font-black uppercase tracking-[0.18em] ${
-                  isScrolled ? "text-primary" : "text-accent"
-                }`}
-              >
-                Makkah Laundry
-              </div>
-              <div
-                className={`text-xs md:text-sm font-semibold ${
-                  isScrolled ? "text-foreground" : "text-white"
-                }`}
-              >
-                Near Haram
-              </div>
+
+          <a href="/">
+            <div className="py-2">
+              <img
+                src={brandLogo}
+                alt="Makkah Laundry Near Haram"
+                width={200}
+                height={100}
+                className="w-[200px] h-auto"
+              />
             </div>
-          </button>
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-1 lg:gap-2">
