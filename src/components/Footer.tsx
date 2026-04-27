@@ -212,7 +212,7 @@ const Footer = () => {
                 </div>
               </li>
 
-              <li className="flex items-start gap-4 group">
+              <li className="flex items-start  w-fit gap-4 group">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-primary/80 group-hover:bg-primary group-hover:text-white transition-colors">
                   <Mail size={18} />
                 </div>
