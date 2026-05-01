@@ -76,18 +76,31 @@ const Footer = () => {
       {/* Background Decorators */}
 
       {/* Map Section - Full Width Banner Style */}
-
-      <div className="w-full h-[400px] relative transition-all duration-700 ease-in-out group">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.2656995945267!2d39.8231667!3d21.418799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1777290264871!5m2!1sen!2sbd"
-          width="100%"
-          height="100%"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full h-full opacity-80 group-hover:opacity-100 border-0 transition-opacity"
-          title={`${siteInfo.name} service area`}
-        />
+      <div className=" bg-white flex-col gap-3 md:flex-row flex items-center p-4">
+        <div className="w-full h-[400px] relative transition-all duration-700 ease-in-out group">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.2656995945267!2d39.8231667!3d21.418799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204c82533f16f%3A0xca0cff6480eeca59!2sThe%20Clock%20Towers!5e0!3m2!1sen!2sbd!4v1777290264871!5m2!1sen!2sbd"
+            width="100%"
+            height="100%"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full rounded-lg opacity-80 group-hover:opacity-100 border-0 transition-opacity"
+            title={`${siteInfo.name} service area`}
+          />
+        </div>
+        <div className="w-full h-[400px] relative transition-all duration-700 ease-in-out group">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.1943171921534!2d39.817306775267625!3d21.4216058803278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b5af22be57%3A0x36b2525d5e56e50a!2sJabal%20Omar%2C%20Ash%20Shubaikah%2C%20Makkah%2024231%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sbd!4v1777627232446!5m2!1sen!2sbd"
+            width="100%"
+            height="100%"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full rounded-lg opacity-80 group-hover:opacity-100 border-0 transition-opacity"
+            title={`${siteInfo.name} service area`}
+          />
+        </div>
       </div>
 
       <div className="container mx-auto px-6 py-16 lg:py-20">

@@ -44,7 +44,7 @@ const Contact = () => {
     );
     window.open(
       `https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`,
-      "_blank"
+      "_blank",
     );
   };
 
