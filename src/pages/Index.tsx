@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroNew from "@/components/HeroNew";
 import AreaCoverage from "@/components/AreaCoverage";
 import Comparison from "@/components/Comparison";
+import Gallery from "@/components/Gallery";
 import WhyChoose from "@/components/WhyChoose";
 import PricingGrid from "@/components/PricingGrid";
 import HowItWorks from "@/components/HowItWorks";
@@ -29,6 +30,7 @@ const Index = () => {
       <AreaCoverage />
 
       <Comparison />
+      <Gallery />
       <OurServices />
       <div id="pricing">
         <PricingGrid />
