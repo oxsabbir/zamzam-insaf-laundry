@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroNew from "@/components/HeroNew";
 import AreaCoverage from "@/components/AreaCoverage";
 import Comparison from "@/components/Comparison";
+import BusinessPromo from "@/components/BusinessPromo";
 import Gallery from "@/components/Gallery";
 import WhyChoose from "@/components/WhyChoose";
 import PricingGrid from "@/components/PricingGrid";
@@ -26,6 +27,7 @@ const Index = () => {
       <HeroNew />
       <div id="services">
         <UrgentService />
+        <BusinessPromo />
       </div>
       <AreaCoverage />
 
