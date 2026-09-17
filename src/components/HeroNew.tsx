@@ -1,39 +1,22 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/hero_background.webp";
+import heroImage from "@/assets/hero-makkah-laundry-hs.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
-import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
 import FloatingCTA from "./FloatingCTA";
+import { siteInfo } from "@/constants";
 
 const HeroNew = () => {
-  const [displayedText, setDisplayedText] = useState("");
-  const fullText = "15 Minutes";
-
-  useEffect(() => {
-    let currentIndex = 0;
-    const interval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setDisplayedText(fullText.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-r from-gray-900  via-green-950  to-gray-900  min-h-screen flex items-center pt-16"
+      className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-primary-950 to-gray-900 min-h-screen flex items-center pt-16"
     >
       <FloatingCTA />
 
       <img
         src={heroImage}
-        alt="Express laundry pickup and delivery service in Makkah"
+        alt={`${siteInfo.siteTitle} - reliable laundry pickup and delivery in Makkah for pilgrims, hotels, and residents`}
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -41,21 +24,21 @@ const HeroNew = () => {
       />
       <div className="relative container mx-auto px-3 py-6 sm:py-16">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-red-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
+          <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-primary-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
-            SIMPLE. FAST. RELIABLE.
+            FAST PICKUP & DELIVERY IN MAKKAH
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
-            <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
-              Makkah Laundry HS <br /> <span>Makkah</span>
+            <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
+              {siteInfo.siteTitle}
             </span>
-            <span className="text-accent inline-block mb-1 sm:mb-2">
-              15 Minutes
-            </span>
-            — Fast Pickup. Fresh Clothes. Done.
+            <span className="text-primary-300 inline-block ">
+              Fast, Reliable Laundry
+            </span>{" "}
+            for Pilgrims & Residents in Makkah
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
-            <div className="flex items-center justify-center mb-2 sm:mb-3">
+            <div className="flex items-center flex-col gap-2 justify-center mb-2 sm:mb-3">
               <div className="flex text-yellow-400 text-sm sm:text-xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -129,40 +112,41 @@ const HeroNew = () => {
                 </svg>
               </div>
               <span className="text-primary-foreground ml-2 font-bold text-sm sm:text-base">
-                Just 6,000+ Happy Customers Served
+                Rated 4.9/5 by guests & residents across Makkah
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              "Super easy! They picked up from my hotel and everything came
-              back spotless the very same day.
-              <span className="text-accent font-bold">
+              Express pickup in around 15 minutes, expert cleaning, and
+              on-time delivery across Makkah.
+              <span className="text-primary-300 font-bold">
                 {" "}
-                The simplest laundry service in Makkah!"
-              </span>
+                {siteInfo.siteTitle}
+              </span>{" "}
+              — spotless clothes with no hassle.
             </p>
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
-              <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
-                <div className="text-lg sm:text-2xl font-bold text-accent">
-                  20 SAR
+            <div className="grid grid-cols-2  sm:grid-cols-3 gap-2 sm:gap-4 text-center">
+              <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
+                <div className="text-lg sm:text-2xl font-bold text-primary-300">
+                  From 20 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Starts From
+                  SAR / KG
                 </div>
               </div>
-              <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
-                <div className="text-lg sm:text-2xl font-bold text-accent">
-                  15 Min
+              <div className="bg-primary-400/20 rounded-lg p-2 sm:p-3">
+                <div className="text-lg sm:text-2xl font-bold text-primary-300">
+                  Flexible
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Express Pickup
+                  Pickup Options
                 </div>
               </div>
-              <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
-                <div className="text-lg sm:text-2xl font-bold text-accent">
+              <div className="bg-primary-400/20 col-span-full sm:col-span-1 rounded-lg p-2 sm:p-3">
+                <div className="text-lg sm:text-2xl font-bold text-primary-300">
                   FREE
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Pickup &amp; Delivery
+                  Collection/Delivery
                 </div>
               </div>
             </div>
@@ -172,24 +156,24 @@ const HeroNew = () => {
               id="generate_lead"
               onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-primary-600 text-white hover:bg-primary-700 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
               <WhatsAppIcon size={24} />
-              Order Now — 15 Minutes to Pickup!
+              Book Pickup on WhatsApp
             </button>
 
             <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
-                <Clock size={18} /> Open 24/7
+                <Clock size={18} /> 24/7 Available
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
-                <Quote size={18} /> Free Quotes
+                <Quote size={18} /> No Hidden Fees
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
                 <CircleDollarSign size={18} />
-                Happy or Refunded
+                Professional Care
               </span>
             </div>
           </div>
