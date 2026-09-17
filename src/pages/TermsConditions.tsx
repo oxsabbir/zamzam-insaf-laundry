@@ -58,7 +58,7 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                By using ZamZam Insaf Laundry Service, you agree to these Terms
+                By using Makkah Laundry HS, you agree to these Terms
                 and Conditions. These terms govern your use of our pickup and
                 delivery laundry services in Makkah, Saudi Arabia.
               </p>
@@ -91,8 +91,8 @@ const TermsConditions = () => {
                       <span className="text-muted-foreground">
                         {" "}
                         Our services are available throughout Makkah, with
-                        priority service in areas near Masjid al-Haram and the
-                        ZamZam Insaf.
+                        priority service in central areas near Masjid al-Haram
+                        and the Aziziyah district.
                       </span>
                     </div>
                   </li>

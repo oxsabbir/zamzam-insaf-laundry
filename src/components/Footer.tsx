@@ -91,7 +91,7 @@ const Footer = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-full opacity-80 group-hover:opacity-100 border-0 transition-opacity"
-          title="Clock Tower Laundry Location"
+          title="Makkah Laundry HS Location"
         />
       </div>
 
@@ -108,13 +108,14 @@ const Footer = () => {
                 {/* Ensure logo works on dark bg, or use a white version */}
                 <img
                   src={brandLogo}
-                  alt="Zamzam laundry logo"
+                  alt="Makkah Laundry HS logo"
                   className="w-full h-auto "
                 />
               </div>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                The most trusted laundry service in Makkah. specialized in
-                caring for Pilgrim garments with speed, purity, and precision.
+                A dependable laundry service across Makkah, caring for
+                residents' and visitors' garments with speed, care, and
+                attention to detail.
               </p>
 
               <div className="flex gap-3">
@@ -304,7 +305,7 @@ const Footer = () => {
       <div className="bg-slate-800 border-t border-slate-900 py-8">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-300 text-sm">
-            © {currentYear} Makkah Laudry Service. All rights reserved.
+            © {currentYear} Makkah Laundry HS. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm font-medium">
             <a

@@ -23,8 +23,8 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              We're here to help with all your laundry needs in Makkah. Reach
-              out anytime — we're available 24/7!
+              We're here for all your laundry needs across Makkah. Reach out
+              any time — we're available around the clock!
             </p>
           </motion.div>
         </div>
@@ -73,7 +73,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="mailto:info@clocktowerlaundryservice.com"
+              href={`mailto:${managerInfo.email}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -124,9 +124,9 @@ const Contact = () => {
                 Book Your Pickup Now
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Ready for express laundry service? Contact us via WhatsApp and
-                we'll be at your location in just 15 minutes. Available 24/7 for
-                your convenience.
+                Looking for a smooth laundry pickup? Message us on WhatsApp and
+                we'll reach your location in around 15 minutes. Available any
+                time of day for your convenience.
               </p>
               <a
                 href={`https://wa.me/${
@@ -159,7 +159,7 @@ const Contact = () => {
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-success" />
                 <p className="text-lg">
-                  Umm Al Qura, Ash Shubaikah, Makkah 21955, Saudi Arabia
+                  Aziziyah District, Makkah 24245, Saudi Arabia
                 </p>
               </div>
             </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
-                title="Clock Tower Laundry Location"
+                title="Makkah Laundry HS Location"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
@@ -188,7 +188,7 @@ const Contact = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Clock Tower & Abraj Al Bait (5-10 min)
+                    Central Makkah & Towers (5-10 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
@@ -196,11 +196,11 @@ const Contact = () => {
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Kudai & Misfalah (12-18 min)
+                    Al-Shisha & Jarwal (12-18 min)
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    All areas near Masjid al-Haram
+                    Everywhere around the Haram
                   </li>
                 </ul>
               </div>
@@ -212,19 +212,19 @@ const Contact = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    15-minute express pickup guaranteed
+                    Express pickup in about 15 minutes
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Free pickup and delivery
+                    Complimentary pickup and delivery
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Professional care for all fabrics
+                    Gentle care for every fabric type
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Money-back satisfaction guarantee
+                    Satisfaction promised on every order
                   </li>
                 </ul>
               </div>

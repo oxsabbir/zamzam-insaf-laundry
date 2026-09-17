@@ -20,10 +20,10 @@ const About = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              About ZamZam Insaf Laundry Service
+              About Makkah Laundry HS
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Making laundry easy for residents and visitors across Makkah
+              Making laundry simple for residents and guests throughout Makkah
             </p>
           </motion.div>
         </div>
@@ -55,21 +55,21 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                ZamZam Insaf Laundry Service is a reliable pickup and delivery
-                laundry provider, serving pilgrims, residents, and visitors
-                throughout the holy city with care and consistency.
+                Makkah Laundry HS is a trusted pickup-and-delivery
+                laundry provider, looking after residents, guests, and visitors
+                across the city with consistency and care.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Based near the central areas of Makkah, close to Masjid
-                al-Haram, we understand the unique routines and time constraints
-                of Umrah and Hajj visitors, as well as the daily needs of local
-                residents. Our service is designed to fit seamlessly into your
-                schedule, whether you’re here for worship or everyday life.
+                Base in the Aziziyah district, close to the heart of the holy
+                city, we understand the rhythms of Umrah and Hajj guests as well
+                as the everyday needs of local families. Our service is built to
+                fit your schedule, whether you're visiting for a few days or
+                living here full-time.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                With 15-minute express pickup, 24/7 availability, and
-                professional garment care, we take the stress out of laundry so
-                you can focus on what truly matters during your stay in Makkah.
+                With express pickup in around 15 minutes, availability around
+                the clock, and attentive garment care, we take the hassle out of
+                laundry so you can get on with your day in Makkah.
               </p>
             </motion.div>
           </div>
@@ -89,11 +89,11 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Our Mission
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              To provide exceptional laundry care that respects your time, your
-              garments, and the environment — allowing you to focus on what
-              truly matters during your time in Makkah.
-            </p>
+<p className="text-lg text-muted-foreground leading-relaxed">
+                To deliver laundry care that respects your time, your fabrics,
+                and the environment — so you can focus on what matters most
+                during your time in Makkah.
+              </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -111,8 +111,8 @@ const About = () => {
                 Speed & Convenience
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                15-minute pickup guaranteed, with express turnaround options as
-                fast as 1 hour for urgent needs.
+                Pickup within about 15 minutes, with express options as fast as
+                1 hour for those truly urgent moments.
               </p>
             </motion.div>
 
@@ -130,8 +130,8 @@ const About = () => {
                 Premium Care
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Every garment receives gentle, professional treatment using
-                quality detergents and modern equipment.
+                Every garment gets gentle, professional treatment using quality
+                products and modern equipment.
               </p>
             </motion.div>
 
@@ -169,12 +169,12 @@ const About = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Experienced Team, Customer-First Service
+                Skilled Team, Service First
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Our dedicated team consists of trained professionals who
-                understand the importance of trust, especially when handling
-                your personal belongings during your spiritual journey.
+                Our trained crew knows just how much trust you're placing in us
+                — especially with your personal belongings during a journey like
+                Hajj or Umrah.
               </p>
             </motion.div>
 
@@ -191,17 +191,17 @@ const About = () => {
                   Trained Professionals
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Every member of our team is carefully trained in fabric care,
-                  stain removal, and customer service excellence.
+                  Each member of the team is trained in fabric care, stain
+                  handling, and friendly service.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Certified in professional laundry techniques
+                    Skilled in professional laundry techniques
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Understanding of cultural and religious sensitivities
+                    Mindful of cultural and religious sensitivities
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
@@ -222,21 +222,20 @@ const About = () => {
                   Quality Guarantee
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We stand behind our work with a complete satisfaction
-                  guarantee on every order.
+                  We stand behind every order with a full satisfaction promise.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Money-back guarantee if not satisfied
+                    Refund if you're not fully satisfied
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Free re-wash if you're not happy
+                    Free re-clean whenever needed
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    Transparent pricing with no hidden fees
+                    Clear pricing without hidden charges
                   </li>
                 </ul>
               </motion.div>
@@ -257,12 +256,12 @@ const About = () => {
           >
             <Target className="w-16 h-16 text-white mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Experience the Difference?
+              Ready to See the Difference?
             </h2>
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Join thousands of satisfied customers who trust us with their
-              laundry needs in Makkah. Let us take care of your clothes while
-              you focus on your spiritual journey.
+              Join thousands of satisfied guests who trust us with their laundry
+              across Makkah. Let us handle your wardrobe while you enjoy your
+              stay.
             </p>
             <a
               href={`https://wa.me/${managerInfo.onlyNumber.whatsApp}`}

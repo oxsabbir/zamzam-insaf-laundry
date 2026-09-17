@@ -21,14 +21,14 @@ export default function FinalCTA() {
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Ready for the Best Laundry Experience in Makkah?
+            Ready for Stress-Free Laundry in Makkah?
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Join 5000+ satisfied customers who chose the fastest, cheapest, and
-            most reliable laundry service in Makkah.
+            Join thousands of guests who chose the fastest, fairest, and most
+            dependable laundry service in the city.
             <span className="text-accent font-bold">
               {" "}
-              Your clean clothes are just 15 minutes away!
+              Your fresh clothes are only 15 minutes away!
             </span>
           </p>
         </div>
@@ -41,9 +41,9 @@ export default function FinalCTA() {
             >
               <WhatsAppIcon size={32} />
               <div className="text-left ml-2">
-                <div>WhatsApp Pickup</div>
+                <div>Book via WhatsApp</div>
                 <div className="text-xs sm:text-sm opacity-90">
-                  Response in 30 seconds
+                  Replies within 30 seconds
                 </div>
               </div>
             </button>
@@ -53,9 +53,9 @@ export default function FinalCTA() {
             >
               <PhoneCallIcon size={32} />
               <div className="text-left ml-2">
-                <div>Call Now</div>
+                <div>Call Us Direct</div>
                 <div className="text-xs sm:text-sm opacity-90">
-                  Instant quote available
+                  Get an instant quote
                 </div>
               </div>
             </button>
@@ -118,7 +118,7 @@ export default function FinalCTA() {
                         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </svg>
-                      <span>All Makkah Areas Covered</span>
+                      <span>All of Makkah Covered</span>
                     </div>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function FinalCTA() {
                         <circle cx="12" cy="12" r="10"></circle>
                         <polyline points="12 6 12 12 16 14"></polyline>
                       </svg>
-                      <span>24/7 Emergency Service</span>
+                      <span>24/7 Everyday Service</span>
                     </div>
                     <div className="flex items-center justify-center sm:justify-start">
                       <svg
@@ -160,7 +160,7 @@ export default function FinalCTA() {
                       >
                         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                       </svg>
-                      <span>15 Min Pickup Guarantee</span>
+                      <span>~15 Min Pickup Reach</span>
                     </div>
                     <div className="flex items-center justify-center sm:justify-start">
                       <svg
@@ -177,7 +177,7 @@ export default function FinalCTA() {
                       >
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                       </svg>
-                      <span>100% Satisfaction Guarantee</span>
+                      <span>Satisfaction Guaranteed</span>
                     </div>
                   </div>
                 </div>
@@ -190,21 +190,21 @@ export default function FinalCTA() {
                 <Zap className=" text-white" size={24} />
               </div>
               <h3 className="text-lg sm:text-2xl font-bold text-primary-foreground">
-                Don't Wait - Clean Clothes in 15 Minutes!
+                No Waiting About — Fresh Clothes in 15 Minutes!
               </h3>
             </div>
             <p className="text-sm sm:text-base text-primary-foreground/90 mb-4">
-              Other services make you wait hours. We guarantee 15-minute pickup
-              or your service is
+              Elsewhere you wait for hours. We arrive in around 15 minutes — or
+              the pickup is
               <span className="text-accent font-bold"> completely FREE!</span>
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-accent">
-                  5000+
+                  6000+
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Satisfied Customers
+                  Happy Guests
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
@@ -212,7 +212,7 @@ export default function FinalCTA() {
                   15 Min
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Pickup Promise
+                  Fast Reach
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
@@ -220,7 +220,7 @@ export default function FinalCTA() {
                   24/7
                 </div>
                 <div className="text-xs text-white sm:text-sm">
-                  Always Available
+                  Round the Clock
                 </div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">

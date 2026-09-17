@@ -6,105 +6,105 @@ import { managerInfo } from "@/constants";
 
 const testimonials = [
   {
-    name: "Ahmed Al-Rashid",
-    location: "Clock Tower Hotel, Makkah",
+    name: "Khalid Al-Otaibi",
+    location: "Jabal Omar, Makkah",
     country: "Saudi Arabia",
     rating: 5,
-    service: "Irham Cleaning",
+    service: "Ihram Care",
     review:
-      "Perfect for pilgrims! Clean clothes in just 15 minutes. Exactly what we needed in Makkah! The team was professional and the service was incredibly fast. Highly recommended!",
-    avatar: "AR",
+      "Booked in the morning and my clothes were back by afternoon. Just what a busy guest in Makkah needs. Polite, quick, and well-priced.",
+    avatar: "KA",
     flag: "🇸🇦",
   },
   {
-    name: "Fatima Hassan",
-    location: "Hilton Makkah",
+    name: "Mariam Tarek",
+    location: "Aziziyah, Makkah",
     country: "Egypt",
     rating: 5,
-    service: "Regular Customer",
+    service: "Regular Service",
 
     review:
-      "Amazing service! They picked up my laundry within 10 minutes and returned everything perfectly clean and pressed. The prices are much better than hotel laundry. Will use again!",
-    avatar: "FH",
+      "Great value for money! Pickup took under ten minutes and everything came back neatly pressed. Far better than what my hotel offered.",
+    avatar: "MT",
     flag: "🇪🇬",
   },
   {
-    name: "Muhammad Khan",
-    location: "Jabal Omar Towers",
+    name: "Imran Qureshi",
+    location: "Al-Shisha, Makkah",
     country: "Pakistan",
-    service: "Formal Wear",
+    service: "Business Wear",
 
     rating: 5,
     review:
-      "Best laundry service in Makkah! They understand pilgrims' needs and work around prayer times. My Ihram clothes were treated with care and returned spotless. 5 stars!",
-    avatar: "MK",
+      "My dress shirts came back crisp and spotless for a work event. They understood the timeline and delivered without delays. Highly satisfied.",
+    avatar: "IQ",
     flag: "🇵🇰",
   },
   {
-    name: "Aisha Abdullah",
-    location: "Swissotel Makkah",
+    name: "Layla Khalifa",
+    location: "Ghaza District, Makkah",
     country: "UAE",
-    service: "Heavy Items",
+    service: "Bulky Items",
     rating: 5,
     review:
-      "Exceptional service! Available 24/7 and they speak English perfectly. I needed emergency laundry at 2 AM and they delivered. Saved my trip! Thank you so much.",
-    avatar: "AA",
+      "Handled my blankets and curtains beautifully. Available late at night too — a real lifesaver when I needed help at short notice. Thank you!",
+    avatar: "LK",
     flag: "🇦🇪",
   },
   {
-    name: "Ibrahim Yusuf",
-    location: "Aziziyah District",
+    name: "Ridwan Sulaiman",
+    location: "Al-Rusaifah, Makkah",
     country: "Indonesia",
-    service: "Regular Customer",
+    service: "Regular Service",
     rating: 5,
     review:
-      "Very reliable and affordable! Half the price of hotel laundry with better quality. The WhatsApp booking is so convenient. I recommend this to all pilgrims!",
-    avatar: "IY",
+      "Easy WhatsApp booking and very fair prices. My clothes smelled fresh and were returned the same day. I recommend them to every guest in Makkah.",
+    avatar: "RS",
     flag: "🇮🇩",
   },
   {
-    name: "Mariam Ali",
-    location: "Al Safwah Towers",
+    name: "Siti Aminah",
+    location: "Al-Safwah, Makkah",
     country: "Malaysia",
-    service: "Irham Cleaning",
+    service: "Abaya Care",
 
     rating: 5,
     review:
-      "Outstanding experience! They handled my delicate abayas with great care. Fast pickup, professional service, and reasonable prices. This is the only laundry service you need in Makkah!",
-    avatar: "MA",
+      "They cared for my delicate abayas with real attention to detail. Quick pickup, gentle handling, and lovely results each time. My go-to in Makkah!",
+    avatar: "SA",
     flag: "🇲🇾",
   },
   {
-    name: "Omar Farooq",
-    location: "Elaf Kinda Hotel, Makkah",
+    name: "Yusuf Patel",
+    location: "Jarwal, Makkah",
     country: "UK",
     rating: 5,
-    service: "Ihram Cleaning",
+    service: "Ihram Care",
     review:
-      "During my Umrah, Zamzam Insaf Laundry was a lifesaver! Their prompt service and attention to detail for my Ihram clothes were exceptional. Truly a 5-star experience.",
-    avatar: "OF",
+      "During Umrah this service made things effortless. They took care of my Ihram with great respect and returned it spotless. Truly helpful team.",
+    avatar: "YP",
     flag: "🇬🇧",
   },
   {
-    name: "Hajar Bint Abdullah",
-    location: "Makkah Hotel",
+    name: "Noor Al-Zoubi",
+    location: "Souq Al Omrah, Makkah",
     country: "Jordan",
     rating: 5,
-    service: "Abaya Cleaning",
+    service: "Delicate Items",
     review:
-      "I was so impressed with Zamzam Insaf Laundry's efficiency. They picked up my abayas and returned them perfectly clean and pressed, allowing me to focus completely on my worship. Highly recommend their services to all pilgrims.",
-    avatar: "HB",
+      "I was impressed by how carefully they handled every item. The pickups are prompt and the communication is clear. I trust them fully with my clothes.",
+    avatar: "NZ",
     flag: "🇯🇴",
   },
   {
-    name: "Dr. Faisal Rahman",
-    location: "Hilton Suites Makkah",
+    name: "Tanvir Ahmed",
+    location: "Aziziyah, Makkah",
     country: "Bangladesh",
     rating: 5,
-    service: "Regular Customer",
+    service: "Regular Service",
     review:
-      "As a frequent visitor for Hajj and Umrah, I've tried many laundry services. Zamzam Insaf Laundry stands out for its quality and reliability. Their 24/7 service is a blessing. Will definitely use them again!",
-    avatar: "FR",
+      "I've used many laundry services over the years — this one stands out for consistency and care. Friendly team, fair prices, and always on time.",
+    avatar: "TA",
     flag: "🇧🇩",
   },
 ];
@@ -133,7 +133,7 @@ const Testimonials = () => {
             }
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            What Our Customers Say
+            What Our Guests Say
           </motion.h2>
           <motion.p
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
@@ -141,7 +141,8 @@ const Testimonials = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            5000+ happy customers from 50+ countries trust us with their laundry
+            Thousands of happy guests across Makkah trust us with their
+            wardrobe
           </motion.p>
           <motion.div
             className="flex items-center justify-center gap-2 mt-4"
@@ -157,7 +158,7 @@ const Testimonials = () => {
               ))}
             </div>
             <span className="text-xl font-bold text-foreground">4.9/5</span>
-            <span className="text-muted-foreground">(5000+ reviews)</span>
+            <span className="text-muted-foreground">(3000+ reviews)</span>
           </motion.div>
         </motion.div>
 
@@ -199,13 +200,13 @@ const Testimonials = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-xl text-foreground font-semibold mb-4">
-            Join thousands of satisfied customers who trust us with their
+            Experience the difference — join the guests who trust us with their
             laundry!
           </p>
           <button
             onClick={() => {
               const message = encodeURIComponent(
-                "Hi! I want to book your 5-star laundry service."
+                "Hi! I'd like to book your highly rated laundry service."
               );
               window.open(
                 `https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`,
@@ -214,7 +215,7 @@ const Testimonials = () => {
             }}
             className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-success hover:bg-success/90 rounded-full shadow-lg hover:shadow-xl transition-all"
           >
-            Get Your 5-Star Service Now
+            Book Your Service Now
           </button>
         </div>
       </div>

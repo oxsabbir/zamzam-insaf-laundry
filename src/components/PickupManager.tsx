@@ -27,19 +27,19 @@ export default function PickupManager() {
         <div className="text-center mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-700 text-sm font-semibold mb-6">
             <BadgeCheck size={16} className="text-green-600" />
-            Verified Customer Support
+            Real People, Caring Support
           </div>
           <h2
             id="manager-heading"
             className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
           >
-            Direct Support, Personalized Service. <br className="hidden sm:block" />
-            <span className="text-green-600">Your Dedicated Laundry Partner.</span>
+            Personal, Direct Service. <br className="hidden sm:block" />
+            <span className="text-green-600">Your Trusted Laundry Neighbor.</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Experience hassle-free laundry with a direct point of contact. Our
-            dedicated team understands your needs and ensures a seamless
-            experience from pickup to delivery.
+            Enjoy laundry handled with a human touch and a single point of
+            contact. Our dedicated team guides you smoothly from pickup to
+            delivery.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export default function PickupManager() {
                       <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                     </span>
                     <span className="text-xs font-bold tracking-wider uppercase">
-                      Online Now in Makkah
+                      Online Now at Your Service
                     </span>
                   </div>
 
@@ -70,7 +70,7 @@ export default function PickupManager() {
                       {managerInfo.fullName}
                     </h3>
                     <p className="text-green-100 text-lg">
-                      Senior Logistics Manager
+                      Your Dedicated Support Team
                     </p>
                   </div>
 
@@ -79,7 +79,7 @@ export default function PickupManager() {
                       <Globe size={18} /> Speaks Arabic, English, Urdu
                     </div>
                     <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
-                      <MapPin size={18} /> Expert in Hotel Zones & Haram Area
+                      <MapPin size={18} /> Knows Every Corner of Makkah
                     </div>
                     <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
                       <WhatsAppIcon size={18} /> {managerInfo.whatsApp}
@@ -96,7 +96,7 @@ export default function PickupManager() {
                 {/* Stats Row */}
                 <div className="flex flex-wrap gap-4 sm:gap-8 mb-8 pb-8 border-b border-slate-100">
                   <div>
-                    <div className="text-3xl font-bold text-slate-900">1k+</div>
+                    <div className="text-3xl font-bold text-slate-900">2k+</div>
                     <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">
                       Pickups
                     </div>
@@ -114,7 +114,7 @@ export default function PickupManager() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-slate-900">15m</div>
+                    <div className="text-3xl font-bold text-slate-900">10m</div>
                     <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">
                       Avg Response
                     </div>
@@ -124,19 +124,19 @@ export default function PickupManager() {
                 {/* Testimonial Quote */}
                 <div className="mb-8 bg-slate-50 p-5 rounded-xl border border-slate-100 relative">
                   <div className="text-slate-700 italic text-sm leading-relaxed relative z-10">
-                    "{managerInfo.fullName} is amazing! He picked up our laundry
-                    within 10 minutes and even helped us with directions to the
-                    Haram. True hospitality."
+                    "{managerInfo.fullName} collected our laundry within ten
+                    minutes and even pointed us toward the best nearby shops.
+                    Warm, honest hospitality."
                   </div>
                   <div className="mt-3 flex items-center gap-2">
                     <div className="w-6 h-6 rounded-full bg-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-600">
-                      AF
+                      HF
                     </div>
                     <div className="text-xs font-bold text-slate-900">
-                      Ahmed F.
+                      Huda F.
                     </div>
                     <div className="text-xs text-slate-400">
-                      • Pilgrim from Malaysia
+                      • Guest from Malaysia
                     </div>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default function PickupManager() {
                 <div className="mt-4 text-center">
                   <p className="text-xs text-slate-400 flex items-center justify-center gap-1">
                     <Clock size={12} />
-                    <span>Usually responds in under 2 minutes</span>
+                    <span>Usually replies within a couple of minutes</span>
                   </p>
                 </div>
               </div>

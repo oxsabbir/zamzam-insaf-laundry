@@ -16,17 +16,17 @@ export default function UrgentService() {
       <div className="container mx-auto px-3 sm:px-4">
         <header className="text-center mb-8 sm:mb-12">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 bg-blue-500 text-white text-sm px-4 py-2 animate-pulse">
-            ⚡ IMMEDIATE LAUNDRY SERVICE
+            ⚡ FAST-TRACK LAUNDRY SERVICE
           </div>
           <h2
             id="emergency-times-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Require Fresh Clothes, Fast? We Deliver!
+            Clean Clothes on Short Notice? Got It!
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            24/7 emergency, express, and same-day laundry solutions right by
-            Haram.
+            Round-the-clock express and same-day laundry care, served to every
+            district of Makkah.
           </p>
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
@@ -36,14 +36,14 @@ export default function UrgentService() {
               1 Hour
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Emergency Service
+              Rush-Hour Service
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              For urgent situations
+              Critical, last-minute needs
             </p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("1 Hour", "Emergency Service")}
+              onClick={() => handleBooking("1 Hour", "Rush-Hour Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
               Book Now
@@ -55,14 +55,14 @@ export default function UrgentService() {
               5 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Express Service
+              Quick-Turn Service
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Between prayers
+              Ideal between appointments
             </p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("5 Hour", "Express Service")}
+              onClick={() => handleBooking("5 Hour", "Quick-Turn Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
               Book Now
@@ -74,14 +74,14 @@ export default function UrgentService() {
               12 Hours
             </div>
             <h3 className="text-lg font-bold mb-2 text-foreground">
-              Same Day Service
+              All-Day Service
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Standard turnaround
+              Convenient standard turnaround
             </p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("12 Hour", "Same Day Service")}
+              onClick={() => handleBooking("12 Hour", "All-Day Service")}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
               Book Now

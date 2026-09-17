@@ -1,12 +1,12 @@
 export const managerInfo = {
-  fullName: "Mohammad Rakibul Hossain",
-  phoneNumber: "+966 50 863 5924",
-  whatsApp: "+966 50 863 5924",
+  fullName: "Makkah Laundry HS",
+  phoneNumber: "+966 55 659 3250",
+  whatsApp: "+966 55 659 3250",
   onlyNumber: {
-    whatsApp: 966508635924,
-    phoneNumber: 966508635924,
+    whatsApp: 966556593250,
+    phoneNumber: 966556593250,
   },
-  address: `Ajyad St, Ajyad District, Makkah 24231, Saudi Arabia
+  address: `Aziziyah District, Makkah 24245, Saudi Arabia
 `,
-  email: "info@zamzaminsaflaundry.com",
+  email: "info@makkahlaundryhs.com",
 };

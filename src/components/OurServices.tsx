@@ -1,57 +1,57 @@
 import ServiceCard from "./ServiceCard";
 const urgentServices = [
   {
-    title: "Press / Ironing / Folding",
+    title: "Professional Press & Fold",
     price: "20 Riyals",
     unit: "Kg",
     description:
-      "Professional pressing, ironing, and folding service with delivery within 5 hours or as per client’s request.",
+      "Immaculate pressing, ironing, and folding, delivered within hours or at a time that suits you best.",
     highlight: "Free Pickup & Delivery Included",
     deliveryTime: "Up to 5 Hours",
   },
   {
-    title: "Urgent Wash, Dry & Iron",
+    title: "Rush Wash, Dry & Iron",
     price: "35 Riyals",
     unit: "Kg",
     description:
-      "Urgent wash, dry, service with folding or hanger option. Fast delivery available across Makkah.",
-    highlight: "Urgent Service – Around Makkah Only",
+      "Priority wash, dry, and finish with your choice of folding or hanger — rushed straight back to you.",
+    highlight: "Priority Service – Makkah Wide",
     deliveryTime: "Within 1 Hour",
   },
   {
-    title: "12 Hours Wash & Delivery",
+    title: "Standard 12-Hour Service",
     price: "22 Riyals",
     unit: "Kg",
     description:
-      "Normal wash, dry and folding or hanger service with delivery within 12 hours.",
+      "Dependable wash, dry, and fold-or-hanger service with guaranteed same-day drop-off.",
     highlight: "Free Pickup & Delivery Included",
     deliveryTime: "12 Hours",
   },
   {
-    title: "5 Hours Wash & Delivery",
+    title: "Express 5-Hour Service",
     price: "30 Riyals",
     unit: "Kg",
     description:
-      "Wash, dry and folding or hanger service with express delivery within 5 hours.",
+      "Wash, dry, and finished garments back within just five hours, folded or on hangers.",
     highlight: "Free Pickup & Delivery Included",
     deliveryTime: "5 Hours",
   },
   {
-    title: "Premium Ihram Care",
+    title: "Ihram & Holy Garment Care",
     price: "25 Riyals",
     unit: "Kg",
     description:
-      "Specialized washing and care for Ihram garments using gentle processes to maintain purity and fabric quality.",
-    highlight: "Pilgrim-Safe & Gentle Care",
+      "Gentle, fragrance-free washing and expert care for Ihram, preserving both purity and fabric quality.",
+    highlight: "Pilgrim-Safe & Tender Care",
     deliveryTime: "Same Day",
   },
   {
-    title: "Stain Removal Service",
+    title: "Advanced Stain Removal",
     price: "25 Riyals",
     unit: "Kg",
     description:
-      "Advanced stain treatment for tough spots, handled carefully to protect fabric and restore cleanliness.",
-    highlight: "Deep Cleaning Expertise",
+      "Targeted treatment for stubborn marks, protecting your fabric while restoring a fresh, clean look.",
+    highlight: "Deep-Clean Specialists",
     deliveryTime: "Up to 24 Hours",
   },
 ];
@@ -65,20 +65,15 @@ export default function OurServices() {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Our Laundry Services in Makkah
+            Complete Laundry Care in Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            We provide reliable laundry services across Makkah, Wherever you are
-            in Makkah
-            <br />
-            <span className="">
-              With Our quick{" "}
-              <strong className="text-primary font-semibold">
-                pickup and delivery
-              </strong>{" "}
-              for hotels, apartments, and areas near the Haram—making laundry
-              easy and stress-free for you.
-            </span>
+            Wherever you happen to be in Makkah, our fast{" "}
+            <strong className="text-primary font-semibold">
+              pickup and delivery
+            </strong>{" "}
+            cover hotels, apartments, and every neighborhood near the Haram —
+            making laundry effortless and worry-free.
           </p>
         </div>
 

@@ -10,55 +10,55 @@ import { handleWhatsApp } from "@/lib/utils";
 const areas = [
   {
     emoji: "🕌",
-    title: "Haram Area & Abraj Al Bait",
+    title: "Haram Ring & Makkah Towers",
     description:
-      "Rapid laundry solutions for accommodations directly adjacent to Masjid al-Haram. Catering specifically to the needs of pilgrims.",
+      "Express laundry visits for stays within steps of Masjid al-Haram, built around pilgrims' busy schedules.",
     locations: [
-      { name: "Clock Tower Hotels", time: "5-10 min" },
-      { name: "Al Safwah Towers", time: "5-10 min" },
-      { name: "Hilton Makkah", time: "8-12 min" },
+      { name: "Anjum Hotels (Towers)", time: "5-10 min" },
+      { name: "Al Marwa Hotels", time: "5-10 min" },
+      { name: "Hilton Convention", time: "8-12 min" },
     ],
   },
   {
     emoji: "🏨",
-    title: "Jabal Omar & Hayatt Regency",
+    title: "Jabal Omar & King Abdul Aziz Endowment",
     description:
-      "Tailored services for premium hotel districts, offering convenient 24/7 express pickup.",
+      "Dedicated cover for the premium hotel district with round-the-clock priority pickup windows.",
     locations: [
-      { name: "Jabal Omar Towers", time: "10-15 min" },
-      { name: "Swissotel Makkah", time: "10-15 min" },
-      { name: "Aziziyah District", time: "12-18 min" },
+      { name: "Jabal Omar Residences", time: "10-15 min" },
+      { name: "Swissotel Al Maqam", time: "10-15 min" },
+      { name: "Ghaza District", time: "12-18 min" },
     ],
   },
 
   {
     emoji: "🌆",
-    title: "Kudai & Misfalah",
+    title: "Al-Shisha & Jarwal",
     description:
-      "Efficient and affordable service for mid-tier lodging areas, ensuring quick turnaround and great value.",
+      "Budget-friendly service for neighborhoods near the holy gates, with dependable fast turnaround.",
     locations: [
-      { name: "Kudai Area Hotels", time: "15-20 min" },
-      { name: "Misfalah District", time: "15-20 min" },
+      { name: "Al-Shisha Hotels", time: "15-20 min" },
+      { name: "Jarwal Villas", time: "15-20 min" },
     ],
   },
   {
     emoji: "🏨",
-    title: "Hilton Suites & Nearby Hotels",
+    title: "Hilton Suites & Business Hotels",
     description:
-      "Premium laundry service tailored for hotel guests, with fast pickup and reliable delivery for a comfortable stay in Makkah.",
+      "Tailored laundry care for business travelers, with rapid pickup and scheduled delivery for a smooth stay.",
     locations: [
       { name: "Hilton Suites Makkah", time: "10-20 min" },
-      { name: "Nearby Hotels & Residences", time: "15-25 min" },
+      { name: "Souq Al Omrah Area", time: "15-25 min" },
     ],
   },
   {
     emoji: "🏘️",
-    title: "Maabda, Al Rusaifah & Al Awali",
+    title: "Aziziyah, Rusaifah & Al Taif Road",
     description:
-      "Dependable and extensive service across Makkah's diverse neighborhoods, complete with same-day delivery.",
+      "Wide-reaching residential service across Makkah's outer neighborhoods, complete with same-day delivery.",
     locations: [
-      { name: "Maabda Area", time: "15-25 min" },
-      { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
+      { name: "Aziziyah District", time: "15-25 min" },
+      { name: "Al Rusaifah & Taif Rd", time: "20-30 min" },
     ],
   },
 ];
@@ -82,12 +82,12 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Extensive Laundry Coverage Across Makkah
+            Full-City Laundry Coverage in Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            From bustling hotel zones to residential areas, our express pickup
-            service reaches every corner of Makkah, ensuring fresh laundry
-            wherever you are.
+            From busy hotel zones to family residences, our express pickup
+            network spans every corner of Makkah — so fresh laundry is never far
+            away.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ const AreaCoverage = () => {
         <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/50 bg-gradient-to-r from-primary/5 to-accent/5">
           <div className="p-4 py-6 sm:p-6 text-center">
             <h3 className="text-lg md:text-xl font-bold mb-5 text-primary">
-              Unsure About Your Location? Get Instant Pickup Confirmation!
+              Don't See Your Spot? Get Instant Pickup Confirmation!
             </h3>
             <div className="space-y-4 ">
               <input
@@ -163,7 +163,7 @@ const AreaCoverage = () => {
               </button>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground mt-3">
-              ✅ Fast Reply | ✅ No Obligation | ✅ Always Available
+              ✅ Instant Reply | ✅ No Obligation | ✅ Always Available
             </p>
           </div>
         </div>

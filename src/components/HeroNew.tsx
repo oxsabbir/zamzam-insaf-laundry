@@ -33,7 +33,7 @@ const HeroNew = () => {
 
       <img
         src={heroImage}
-        alt="Professional clock tower laundry service  - Express laundry pickup and delivery in Makkah for pilgrims"
+        alt="Express laundry pickup and delivery service in Makkah"
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -43,14 +43,16 @@ const HeroNew = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-red-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
-            PILGRIM'S CHOICE: FAST & FRESH LAUNDRY!
+            SIMPLE. FAST. RELIABLE.
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
-              ZamZam Insaf Laundry Service <br /> <span>Makkah</span>
+              Makkah Laundry HS <br /> <span>Makkah</span>
             </span>
-            <span className="text-accent inline-block ">15 Minutes</span>{" "}
-            Express Pickup - Best Laundry Near Haram!
+            <span className="text-accent inline-block mb-1 sm:mb-2">
+              15 Minutes
+            </span>
+            — Fast Pickup. Fresh Clothes. Done.
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center justify-center mb-2 sm:mb-3">
@@ -127,15 +129,15 @@ const HeroNew = () => {
                 </svg>
               </div>
               <span className="text-primary-foreground ml-2 font-bold text-sm sm:text-base">
-                Over 7,500+ Pilgrims Served
+                Just 6,000+ Happy Customers Served
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              "Incredibly fast service! My clothes were picked up and clean in
-              no time.
+              "Super easy! They picked up from my hotel and everything came
+              back spotless the very same day.
               <span className="text-accent font-bold">
                 {" "}
-                A true blessing for any pilgrim in Makkah!"
+                The simplest laundry service in Makkah!"
               </span>
             </p>
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
@@ -144,7 +146,7 @@ const HeroNew = () => {
                   20 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Starting/kg
+                  Starts From
                 </div>
               </div>
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
@@ -152,7 +154,7 @@ const HeroNew = () => {
                   15 Min
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Guaranteed Pickup
+                  Express Pickup
                 </div>
               </div>
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
@@ -160,7 +162,7 @@ const HeroNew = () => {
                   FREE
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Pickup/Drop
+                  Pickup &amp; Delivery
                 </div>
               </div>
             </div>
@@ -173,12 +175,12 @@ const HeroNew = () => {
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
               <WhatsAppIcon size={24} />
-              WhatsApp NOW - 15 Min Pickup!
+              Order Now — 15 Minutes to Pickup!
             </button>
 
             <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
-                <Clock size={18} /> 24/7 Service
+                <Clock size={18} /> Open 24/7
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
@@ -187,7 +189,7 @@ const HeroNew = () => {
               <span>|</span>
               <span className="flex items-center gap-2">
                 <CircleDollarSign size={18} />
-                Money-Back Guarantee
+                Happy or Refunded
               </span>
             </div>
           </div>

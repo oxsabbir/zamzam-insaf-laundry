@@ -8,35 +8,35 @@ const pricePlan = {
     title: "Basic",
     price: 20,
     feature: [
-      "Regular clothes wash & dry",
-      "FREE pickup & delivery",
-      "Same day service",
-      "Basic pressing included",
-      "24/7 availability",
+      "Everyday wash & dry care",
+      "Complimentary pickup & delivery",
+      "Same-day turnaround",
+      "Standard pressing included",
+      "Full-time availability",
     ],
   },
   premium: {
     title: "Premium",
     price: 25,
     feature: [
-      "Everything in Basic",
-      "Professional pressing",
-      "Stain removal treatment",
-      "Fabric conditioner",
-      "Plastic packaging",
-      "3-hour express option",
+      "Everything in the Basic plan",
+      "Executive pressing finish",
+      "Stain treatment on demand",
+      "Softener & freshness boost",
+      "Protective packaging",
+      "Express 3-hour option",
     ],
   },
   vip: {
     title: "VIP",
     price: 30,
     feature: [
-      "Everything in Premium",
-      "Premium detergents",
+      "Everything in the Premium plan",
+      "Luxury-grade detergents",
       "Hand-finished pressing",
-      "1-hour emergency service",
-      "Special garment care",
-      "Delivery scheduling",
+      "Priority 1-hour service",
+      "Premium fabric handling",
+      "Flexible delivery windows",
     ],
   },
 };
@@ -55,10 +55,10 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Choose Your Perfect Plan
+            Pick the Right Plan For You
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Affordable, transparent pricing for every need.
+            Straightforward, transparent pricing for every kind of need.
           </p>
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 max-w-5xl mx-auto">

@@ -8,96 +8,95 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Frequently Asked Questions
+            Questions Customers Ask Us
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Got questions? We've got answers! Here are the most common questions
-            from our customers.
+            Straight answers to the things people ask about most.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you really pickup in 15 minutes?
+                Q: Is a 15-minute pickup actually guaranteed?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes! 15-minute pickup is our guarantee for all areas in
-                Makkah. If we're late, your service is FREE.
+                A: In the central Makkah zones we aim to reach you in about 15
+                minutes. If we're late, pickup is on us.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Is pickup and delivery really free?
+                Q: Are pickup and delivery really free?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Absolutely! No hidden fees, no minimum orders. Free pickup
-                and delivery is included in all our services.
+                A: Absolutely. No hidden fees, no minimum orders. Free pickup
+                and delivery come with every single service.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you work 24/7?
+                Q: Are you open late and on holidays?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes, we're available 24/7 including weekends and holidays.
-                Perfect for emergency situations and busy schedules.
+                A: We run 24/7, including weekends and public holidays — a
+                lifesaver for late-night needs and packed schedules.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What if my clothes get damaged?
+                Q: What happens if something is damaged?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We offer 100% insurance on all items. If anything gets
-                damaged, we'll compensate you fully or replace the item.
+                A: Every item is handled with care and fully protected. If
+                damage ever occurs, we'll cover it or replace the item.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What are your prices for thobes and abayas?
+                Q: How much for thobes and abayas?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We have special prices for traditional wear. Thobes are SAR
-                20 and abayas are SAR 25, including steam pressing.
+                A: Thobes are cleaned from 20 SAR and abayas from 25 SAR, each
+                freshly pressed and returned.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you offer carpet and rug cleaning?
+                Q: Can you handle carpets and rugs?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Yes, we offer professional cleaning for all types of carpets
-                and rugs. Prices vary by size and material.
+                A: Yes, we professionally clean carpets and rugs of all sizes.
+                Pricing depends on dimensions and material.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: What's your turnaround for large family orders?
+                Q: How fast do large family orders come back?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We prioritize large orders. Most are ready within 24-48
-                hours, depending on the items and services required.
+                A: Family batches are prioritized — most are completed within
+                24-48 hours depending on the items and services.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Do you clean delicate items like bishts or shemaghs?
+                Q: Do you clean bishts and shemaghs?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Absolutely. We are experts in cleaning traditional Saudi
-                garments, ensuring they are handled with the utmost care.
+                A: Certainly. We specialize in traditional Saudi garments and
+                treat them with the extra care they deserve.
               </p>
             </div>
           </div>
           <div className="rounded-lg bg-card text-card-foreground shadow-sm mt-8 sm:mt-12 bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/30">
             <div className="p-4 sm:p-6 text-center">
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-foreground">
-                💬 Still Have Questions?
+                💬 Anything Else You'd Like to Know?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                Our friendly team is available 24/7 to answer any questions in
-                Arabic, English, or Urdu.
+                Our team is on hand around the clock, happy to help in Arabic,
+                English, or Urdu.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button

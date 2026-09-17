@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { managerInfo } from "@/constants";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -41,7 +42,10 @@ const Contact = () => {
     const message = encodeURIComponent(
       "Hi, I'd like to book a laundry service.",
     );
-    window.open(`https://wa.me/1234567890?text=${message}`, "_blank");
+    window.open(
+      `https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`,
+      "_blank",
+    );
   };
 
   return (
@@ -52,7 +56,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to experience professional laundry care? Contact us today!
+            Ready for reliable laundry care? Reach out to us today!
           </p>
         </div>
 
@@ -66,48 +70,46 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Phone</p>
-                      <a
-                        href="tel:+1234567890"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        +1 (234) 567-890
-                      </a>
-                    </div>
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-primary" />
                   </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Phone</p>
+                    <a
+                      href={`tel:+${managerInfo.onlyNumber.phoneNumber}`}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {managerInfo.phoneNumber}
+                    </a>
+                  </div>
+                </div>
 
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Email</p>
-                      <a
-                        href="mailto:info@makkahlaundrycare.com"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        info@makkahlaundrycare.com
-                      </a>
-                    </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-primary" />
                   </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Email</p>
+                    <a
+                      href={`mailto:${managerInfo.email}`}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {managerInfo.email}
+                    </a>
+                  </div>
+                </div>
 
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Address</p>
-                      <p className="text-muted-foreground">
-                        123 Main Street
-                        <br />
-                        Makkah, Saudi Arabia
-                      </p>
-                    </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-primary" />
                   </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Address</p>
+                    <p className="text-muted-foreground">
+                      {managerInfo.address}
+                    </p>
+                  </div>
+                </div>
                 </div>
               </div>
 
@@ -121,7 +123,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Makkah Laundry Care Location"
+                  title="Makkah Laundry HS Location"
                 />
               </div>
             </div>

@@ -3,33 +3,33 @@ import { Zap, DollarSign, Clock, Shield, Languages, Users } from "lucide-react";
 const reasons = [
   {
     icon: Zap,
-    title: "Lightning Fast Service",
-    description: "15-minute pickup guarantee. Others take hours - we take minutes. Perfect for urgent situations.",
+    title: "Speed You Can Rely On",
+    description: "Pickup in around 15 minutes. Where others take hours, we're already at your door.",
   },
   {
     icon: DollarSign,
-    title: "Best Prices in Makkah",
-    description: "Starting at just 20 SAR/kg with FREE pickup/delivery. Save up to 50% compared to hotel laundry.",
+    title: "Fair, Local Pricing",
+    description: "Rates from just 20 SAR/kg with FREE pickup and delivery — genuine savings versus hotel laundry.",
   },
   {
     icon: Clock,
-    title: "24/7 Availability",
-    description: "Need laundry at 3 AM? No problem! We're the only service in Makkah available round the clock.",
+    title: "Always on Call",
+    description: "Midnight emergency? No problem. We're the neighbourhood service that never closes.",
   },
   {
     icon: Shield,
-    title: "100% Safe & Secure",
-    description: "Your clothes are tracked, insured, and handled by professional staff. Money-back guarantee.",
+    title: "Safe & Sound Handling",
+    description: "Your garments are tracked, handled gently, and fully protected by our satisfaction promise.",
   },
   {
     icon: Languages,
-    title: "Multilingual Support",
-    description: "Speak Arabic, English, or Urdu? Our team communicates in your preferred language.",
+    title: "Speaks Your Language",
+    description: "Arabic, English, or Urdu — our team communicates the way you feel most comfortable.",
   },
   {
     icon: Users,
-    title: "5000+ Happy Customers",
-    description: "Trusted by pilgrims from 50+ countries. 4.9/5 star rating with verified reviews.",
+    title: "6,000+ Guests Served",
+    description: "Guests from across the globe choose us. A 4.9-star rating says it all.",
   },
 ];
 
@@ -39,10 +39,10 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Why Choose Makkah Laundry Care?
+            Why Guests Pick Makkah Laundry HS
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience the difference with professional service trusted by thousands
+            Professional, dependable service — trusted by thousands across the city
           </p>
         </div>
 
