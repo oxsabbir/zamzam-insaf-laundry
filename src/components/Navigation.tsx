@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-import logo_light from "@/assets/logo_light.png";
-import logo_dark from "@/assets/logo_dark.png";
+import logo_light from "@/assets/dark-logo-hs.webp";
+import logo_dark from "@/assets/light-logo-hs.webp";
 import logo from "@/assets/logo_zam_zam.webp";
 
 import { motion } from "motion/react";
@@ -89,14 +89,14 @@ const Navigation = () => {
             className="flex items-center gap-2 group"
           >
             <div className="py-2">
-              <div className="w-fit h-[60px] md:h-[75px]">
+              <div className="w-fit h-[60px] md:h-[70px]">
                 <a href="/">
                   <img
-                    src={logo}
+                    src={isScrolled ? logo_dark : logo_light}
                     alt="Makkah Laundry HS logo"
                     width={200}
                     height={100}
-                    className="w-full h-full object-contain"
+                    className={`w-full h-full object-contain ${isScrolled ? "brightness-100" : "brightness-110"} transition-transform duration-300`}
                   />
                 </a>
               </div>
@@ -145,18 +145,16 @@ const Navigation = () => {
             >
               <div className="flex flex-col gap-6 mt-8">
                 {/* Mobile Logo */}
-                <div className="py-1.5">
-                  <div className="w-fit h-[60px]">
-                    <a href="/">
-                      <img
-                        src={logo}
-                        alt="Makkah Laundry HS logo"
-                        width={200}
-                        height={100}
-                        className="w-full h-full object-contain"
-                      />
-                    </a>
-                  </div>
+                <div className="w-fit h-[60px] md:h-[70px]">
+                  <a href="/">
+                    <img
+                      src={isScrolled ? logo_dark : logo_light}
+                      alt="Makkah Laundry HS logo"
+                      width={200}
+                      height={100}
+                      className={`w-full h-full object-contain ${isScrolled ? "brightness-100" : "brightness-110"} transition-transform duration-300`}
+                    />
+                  </a>
                 </div>
 
                 {/* Mobile Menu Items */}

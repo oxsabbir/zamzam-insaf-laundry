@@ -6,7 +6,7 @@ export const managerInfo = {
     whatsApp: 966556593250,
     phoneNumber: 966556593250,
   },
-  address: `Aziziyah District, Makkah 24245, Saudi Arabia
+  address: `Clock Towers Complex, Makkah 21955, Saudi Arabia
 `,
   email: "info@makkahlaundryhs.com",
 };

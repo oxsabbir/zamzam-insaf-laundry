@@ -19,14 +19,14 @@ export default function PickupManager() {
       aria-labelledby="manager-heading"
     >
       {/* Background Abstract Shapes */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-100/40 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-100/40 rounded-full blur-3xl -z-10 -translate-x-1/2 translate-y-1/2" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-100/40 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary-100/40 rounded-full blur-3xl -z-10 -translate-x-1/2 translate-y-1/2" />
 
       <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 border border-green-100 text-green-700 text-sm font-semibold mb-6">
-            <BadgeCheck size={16} className="text-green-600" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-50 border border-primary-100 text-primary-700 text-sm font-semibold mb-6">
+            <BadgeCheck size={16} className="text-primary-600" />
             Real People, Caring Support
           </div>
           <h2
@@ -34,7 +34,7 @@ export default function PickupManager() {
             className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
           >
             Personal, Direct Service. <br className="hidden sm:block" />
-            <span className="text-green-600">Your Trusted Laundry Neighbor.</span>
+            <span className="text-primary-600">Your Trusted Laundry Neighbor.</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Enjoy laundry handled with a human touch and a single point of
@@ -47,15 +47,15 @@ export default function PickupManager() {
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
             <div className="grid grid-cols-1 lg:grid-cols-12">
               {/* Left Column: Profile & Photo */}
-              <div className="lg:col-span-5 bg-gradient-to-br from-green-600 to-emerald-700 p-8 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
+              <div className="lg:col-span-5 bg-gradient-to-br from-primary-600 to-primary-800 p-8 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
                 {/* Decorative Pattern */}
                 <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 mb-6 opacity-90">
                     <span className="relative flex h-3 w-3">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-primary-500"></span>
                     </span>
                     <span className="text-xs font-bold tracking-wider uppercase">
                       Online Now at Your Service
@@ -69,22 +69,22 @@ export default function PickupManager() {
                     <h3 className="text-3xl font-bold mb-1">
                       {managerInfo.fullName}
                     </h3>
-                    <p className="text-green-100 text-lg">
+                    <p className="text-primary-100 text-lg">
                       Your Dedicated Support Team
                     </p>
                   </div>
 
                   <div className="space-y-3">
-                    <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                    <div className="flex items-center gap-3 text-sm font-medium text-primary-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
                       <Globe size={18} /> Speaks Arabic, English, Urdu
                     </div>
-                    <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                    <div className="flex items-center gap-3 text-sm font-medium text-primary-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
                       <MapPin size={18} /> Knows Every Corner of Makkah
                     </div>
-                    <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                    <div className="flex items-center gap-3 text-sm font-medium text-primary-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
                       <WhatsAppIcon size={18} /> {managerInfo.whatsApp}
                     </div>
-                    <div className="flex items-center gap-3 text-sm font-medium text-green-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                    <div className="flex items-center gap-3 text-sm font-medium text-primary-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
                       <PhoneCallIcon size={18} /> {managerInfo.phoneNumber}
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export default function PickupManager() {
                     onClick={() =>
                       handleWhatsApp(whatsappMessages.pickup, true)
                     }
-                    className="w-full bg-green-500 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg shadow-green-500/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group"
+                    className="w-full bg-primary-600 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg shadow-primary-600/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group"
                   >
                     <WhatsAppIcon
                       size={24}

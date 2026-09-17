@@ -68,7 +68,7 @@ export default function EmergencyService() {
 
             {/* Card 3 */}
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300">
-              <div className="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center mb-4 text-emerald-600">
+              <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-4 text-primary-600">
                 <ShieldCheck size={24} strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
@@ -104,7 +104,7 @@ export default function EmergencyService() {
                       key={index}
                       className="flex items-center gap-3 text-slate-700 font-medium text-sm"
                     >
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary-100 flex items-center justify-center text-primary-600">
                         <Check size={12} strokeWidth={3} />
                       </div>
                       {item}

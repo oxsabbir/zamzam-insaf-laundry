@@ -1,325 +1,283 @@
-import { useState } from "react";
+import { siteInfo, managerInfo } from "@/constants";
 import {
-  Facebook,
-  Instagram,
-  Twitter,
-  MapPin,
-  Phone,
   Mail,
+  Phone,
+  MapPin,
   Clock,
-  ArrowRight,
-  Send,
+  Facebook,
+  Twitter,
+  Instagram,
+  ChevronRight,
+  Sparkles,
+  Truck,
+  ShieldCheck,
 } from "lucide-react";
-// import TikTokIcon from "./icons/Tiktok";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import WhatsAppIcon from "./icons/Whatsapp";
-import { motion } from "motion/react"; // Ensure this matches your installed package (framer-motion vs motion)
-import brandLogo from "@/assets/logo_zam_zam.webp"; // Ensure you have a version that looks good on dark bg, or use filter invert
-import { managerInfo } from "@/constants";
-// import SnapChatIcon from "./icons/SnapChat";
+import { useNavigate, useLocation } from "react-router-dom";
+import logo_dark from "@/assets/dark-logo-hs.webp";
+import { handleWhatsApp } from "@/lib/utils";
+import { whatsappMessages } from "@/constants/messages";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    hotel: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    if (
-      !formData.name.trim() ||
-      !formData.phone.trim() ||
-      !formData.hotel.trim()
-    ) {
-      toast({
-        title: "Missing Information",
-        description: "Please fill in all fields so we can help you.",
-        variant: "destructive",
-      });
-      setIsSubmitting(false);
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== "/") {
+      navigate("/#" + sectionId);
       return;
     }
 
-    const message = encodeURIComponent(
-      `*New Laundry Booking*\n\n *Name:* ${formData.name}\n *Phone:* ${formData.phone}\n *Hotel Name:* ${formData.hotel}`,
-    );
-    window.open(
-      `https://wa.me/+${managerInfo.onlyNumber.whatsApp}?text=${message}`,
-      "_blank",
-    );
-
-    toast({
-      title: "Message Prepared!",
-      description: "Opening WhatsApp to send your message...",
-    });
-
-    setFormData({ name: "", phone: "", hotel: "" });
-    setIsSubmitting(false);
-  };
-
-  const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
+  const quickLinks = [
+    { label: "Home", id: "hero" },
+    { label: "Services", id: "services" },
+    { label: "Pricing", id: "pricing" },
+    { label: "How It Works", id: "how-it-works" },
+    { label: "About Us", path: "/about" },
+  ];
+
+  const servicesLinks = [
+    { label: "Regular Laundry", id: "pricing" },
+    { label: "Dry Cleaning", id: "services" },
+    { label: "Ihram Care", id: "pricing" },
+    { label: "Ironing & Pressing", id: "pricing" },
+    { label: "Express Delivery", id: "services" },
+  ];
+
+  const socialLinks = [
+    { icon: Facebook, label: "Facebook", href: "#" },
+    { icon: Twitter, label: "Twitter", href: "#" },
+    { icon: Instagram, label: "Instagram", href: "#" },
+  ];
+
+  const trustBadges = [
+    { icon: Truck, label: "15 Min Pickup" },
+    { icon: Clock, label: "24/7 Available" },
+    { icon: ShieldCheck, label: "No Hidden Fees" },
+  ];
+
   return (
-    <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-300  mt-20 relative overflow-hidden">
-      {/* Background Decorators */}
-
-      {/* Map Section - Full Width Banner Style */}
-
-      <div className="w-full h-[400px] relative transition-all duration-700 ease-in-out group">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1855.312843271923!2d39.8202008857488!3d21.42186292841074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b679347f05%3A0x50f5f4304df897e6!2sHilton%20Suites%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1771903409889!5m2!1sen!2sbd"
-          width="100%"
-          height="100%"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full h-full opacity-80 group-hover:opacity-100 border-0 transition-opacity"
-          title="Makkah Laundry HS Location"
-        />
-      </div>
-
-      <div className="container mx-auto px-6 py-16 lg:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
-          {/* Brand Column (4 Cols) */}
-          <div className="lg:col-span-4 space-y-6">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <div className="w-56 mb-6">
-                {/* Ensure logo works on dark bg, or use a white version */}
-                <img
-                  src={brandLogo}
-                  alt="Makkah Laundry HS logo"
-                  className="w-full h-auto "
-                />
+    <footer className="relative">
+      {/* Pre-Footer CTA Banner */}
+      <div className="relative overflow-hidden bg-gradient-to-r from-primary-700 via-primary-600 to-primary-800">
+        <div className="pointer-events-none absolute -top-24 -left-24 w-72 h-72 rounded-full bg-white/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-32 -right-20 w-80 h-80 rounded-full bg-primary-950/40 blur-3xl" />
+        <div className="container relative mx-auto px-4 py-12 sm:py-14">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+            <div className="flex items-start gap-4 max-w-xl">
+              <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-white/10 backdrop-blur flex items-center justify-center text-white">
+                <Sparkles size={24} />
               </div>
-              <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                A dependable laundry service across Makkah, caring for
-                residents' and visitors' garments with speed, care, and
-                attention to detail.
-              </p>
-
-              <div className="flex gap-3">
-                {[
-                  {
-                    icon: Facebook,
-                    href: "#",
-                  },
-                  {
-                    icon: Instagram,
-                    href: "#",
-                  },
-                  // {
-                  //   icon: TikTokIcon,
-                  //   href: "https://www.tiktok.com/@makkah.laundry.se0?_r=1&_t=ZS-92HdhQG1ORo",
-                  // },
-                  // {
-                  //   icon: SnapChatIcon,
-                  //   href: "https://www.snapchat.com/add/makkahlaundry25?share_id=OrEFm2HyfsE&locale=en-US",
-                  // },
-                ].map((social, idx) => (
-                  <a
-                    key={idx}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 rounded-xl flex items-center justify-center hover:bg-emerald-600 hover:border-emerald-500 hover:text-white transition-all duration-300 group"
-                  >
-                    <social.icon
-                      size={20}
-                      className="group-hover:scale-110  transition-transform"
-                    />
-                  </a>
-                ))}
+              <div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight mb-2">
+                  Fresh Clothes, Delivered to Your Door
+                </h3>
+                <p className="text-primary-50/90 text-sm sm:text-base">
+                  Book your first pickup in under a minute — we'll handle the
+                  rest. Spotless results with no hassle.
+                </p>
               </div>
-            </motion.div>
-          </div>
-
-          {/* Links Column (2 Cols) */}
-          <div className="lg:col-span-2 pt-2">
-            <h4 className="text-white font-bold text-xl mb-6">Company</h4>
-            <ul className="space-y-4">
-              {[
-                { label: "Services", id: "services" },
-                { label: "Testimonials", id: "testimonials" },
-                { label: "Pricing", id: "pricing" },
-                { label: "About", id: "contact", url: "/about" },
-                { label: "Contact", id: "contact", url: "/contact" },
-              ].map((link, idx) => (
-                <li key={idx}>
-                  {link?.url ? (
-                    <a
-                      href={link.url}
-                      className="text-slate-00 hover:text-emerald-400 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
-                    >
-                      <ArrowRight
-                        size={14}
-                        className="opacity-0 hover:opacity-100 -ml-4 hover:ml-0 transition-all"
-                      />
-                      {link.label}
-                    </a>
-                  ) : (
-                    <button
-                      onClick={() => scrollToSection(link.id)}
-                      className="text-slate-00 hover:text-emerald-400 hover:translate-x-1 transition-all duration-300 flex items-center gap-2"
-                    >
-                      <ArrowRight
-                        size={14}
-                        className="opacity-0 hover:opacity-100 -ml-4 hover:ml-0 transition-all"
-                      />
-                      {link.label}
-                    </button>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info (2 Cols) */}
-          <div className="lg:col-span-3 pt-2">
-            <h4 className="text-white font-bold text-xl mb-6">Reach Us</h4>
-            <ul className="space-y-6">
-              <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
-                  <Phone size={18} />
-                </div>
-                <div>
-                  <div className="text-sm text-slate-300 mb-1">
-                    Phone / WhatsApp
-                  </div>
-                  <a
-                    href={`tel:+${managerInfo.onlyNumber.whatsApp}`}
-                    className="text-white hover:text-emerald-400 transition-colors font-medium text-lg"
-                  >
-                    {managerInfo.whatsApp}
-                  </a>
-                </div>
-              </li>
-
-              <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
-                  <Mail size={18} />
-                </div>
-                <div>
-                  <div className="text-sm text-slate-300 mb-1">
-                    Email Support
-                  </div>
-                  <a
-                    href={`mailto:${managerInfo.email}`}
-                    className="text-white hover:text-emerald-400 transition-colors font-medium"
-                  >
-                    {managerInfo.email}
-                  </a>
-                </div>
-              </li>
-
-              <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 border border-slate-800 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
-                  <Clock size={18} />
-                </div>
-                <div>
-                  <div className="text-sm text-slate-300 mb-1">
-                    Working Hours
-                  </div>
-                  <div className="text-white font-medium">
-                    24 Hours / 7 Days
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          {/* Form Column (3 Cols) */}
-          <div className="lg:col-span-3">
-            <div className="bg-gradient-to-r from-slate-900 to-slate-700 p-6 rounded-2xl border border-slate-800 shadow-xl">
-              <h4 className="text-white font-bold text-lg mb-2">Book Now</h4>
-              <p className="text-slate-300 text-sm mb-4">
-                Fill This Form To Book Your Laundry Instantly
-              </p>
-
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <Input
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
-                />
-                <Input
-                  placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={(e) =>
-                    setFormData({ ...formData, phone: e.target.value })
-                  }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
-                />
-                <Input
-                  placeholder="Hotel Name"
-                  value={formData.hotel}
-                  onChange={(e) =>
-                    setFormData({ ...formData, hotel: e.target.value })
-                  }
-                  className="bg-slate-800 border-slate-800 text-slate-200 placeholder:text-slate-500 focus:border-emerald-500 h-11"
-                />
-
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold h-11 rounded-lg transition-all"
-                >
-                  {isSubmitting ? (
-                    "Sending..."
-                  ) : (
-                    <span className="flex items-center gap-2">
-                      Send to WhatsApp <Send size={16} />
-                    </span>
-                  )}
-                </Button>
-              </form>
             </div>
+            <button
+              id="generate_lead_footer"
+              onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-all bg-white text-primary-700 hover:bg-primary-50 hover:shadow-2xl w-full lg:w-auto px-8 py-4 h-auto rounded-xl shadow-lg text-base sm:text-lg"
+            >
+              <WhatsAppIcon size={22} />
+              Book Now on WhatsApp
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="bg-slate-800 border-t border-slate-900 py-8">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-slate-300 text-sm">
-            © {currentYear} Makkah Laundry HS. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6 text-sm font-medium">
-            <a
-              href="/privacy-policy"
-              className="text-slate-300 hover:text-emerald-500 transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="/terms-of-service"
-              className="text-slate-300 hover:text-emerald-500 transition-colors"
-            >
-              Terms of Service
-            </a>
+      {/* Main Footer */}
+      <div className="relative bg-[#0a120b] text-white pt-20 pb-10 overflow-hidden">
+        {/* Decorative Ambient Glows */}
+        <div className="pointer-events-none absolute -top-40 right-0 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
+        <div className="pointer-events-none absolute bottom-0 -left-40 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl" />
+
+        <div className="container relative mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            {/* Brand */}
+            <div className="space-y-6">
+              <a href="/">
+                <img
+                  src={logo_dark}
+                  alt={`${siteInfo.shortName} Laundry Logo`}
+                  className="h-[80px] w-auto object-contain brightness-110"
+                />
+              </a>
+
+              <p className="text-zinc-400 leading-relaxed text-sm sm:text-base max-w-sm">
+                At {siteInfo.siteTitle}, we provide reliable, fast, and
+                high-quality laundry services across the holy city of Makkah.
+                Trust us to care for your garments with professionalism and
+                attention to detail.
+              </p>
+
+              <div className="flex space-x-3">
+                {socialLinks.map(({ icon: Icon, label, href }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    aria-label={label}
+                    className="bg-white/5 hover:bg-primary border border-white/5 p-3 rounded-xl text-white transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-primary/30"
+                  >
+                    <Icon size={17} />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-6">
+              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
+                Quick Links
+              </h4>
+              <ul className="space-y-3">
+                {quickLinks.map((link) => (
+                  <li key={link.label}>
+                    <button
+                      onClick={() =>
+                        link.path
+                          ? navigate(link.path)
+                          : scrollToSection(link.id!)
+                      }
+                      className="text-zinc-400 hover:text-primary flex items-center group transition-colors text-left text-sm"
+                    >
+                      <ChevronRight
+                        size={14}
+                        className="mr-2 group-hover:translate-x-1 transition-transform text-primary/50"
+                      />
+                      {link.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Our Services */}
+            <div className="space-y-6">
+              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
+                Our Services
+              </h4>
+              <ul className="space-y-3">
+                {servicesLinks.map((service) => (
+                  <li key={service.label}>
+                    <button
+                      onClick={() => scrollToSection(service.id)}
+                      className="text-zinc-400 hover:text-primary flex items-center group transition-colors text-left text-sm"
+                    >
+                      <ChevronRight
+                        size={14}
+                        className="mr-2 group-hover:translate-x-1 transition-transform text-primary/50"
+                      />
+                      {service.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact Us */}
+            <div className="space-y-6">
+              <h4 className="text-sm font-bold text-white uppercase tracking-[0.2em] border-l-2 border-primary pl-4">
+                Contact Us
+              </h4>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4 group">
+                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                    <MapPin size={18} />
+                  </div>
+                  <p className="text-zinc-400 text-sm leading-snug">
+                    {managerInfo.address}
+                  </p>
+                </div>
+                <div className="flex items-center space-x-4 group">
+                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                    <Phone size={18} />
+                  </div>
+                  <p className="text-zinc-400 text-sm">
+                    {managerInfo.phoneNumber}
+                  </p>
+                </div>
+                <div className="flex items-center space-x-4 group">
+                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                    <Mail size={18} />
+                  </div>
+                  <p className="text-zinc-400 text-sm truncate">
+                    {managerInfo.email}
+                  </p>
+                </div>
+                <div className="flex items-center space-x-4 group">
+                  <div className="bg-primary/10 p-2.5 rounded-lg text-primary border border-primary/10 transition-colors">
+                    <Clock size={18} />
+                  </div>
+                  <p className="text-zinc-400 text-sm">Open 24/7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Map Section */}
+          <div className="relative w-full h-[360px] rounded-3xl group border border-white/5 overflow-hidden mb-12 shadow-2xl shadow-primary/10">
+            <div className="pointer-events-none absolute inset-0 z-10 ring-1 ring-inset ring-white/10 rounded-3xl" />
+            <iframe
+              src={siteInfo.mapEmbedUrl}
+              className="w-full h-full rounded-3xl border-0 transition-transform duration-700 group-hover:scale-[1.01]"
+              title={`${siteInfo.shortName} Laundry Location`}
+            />
+          </div>
+
+          {/* Trust Strip */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 pb-10">
+            {trustBadges.map(({ icon: Icon, label }) => (
+              <div
+                key={label}
+                className="flex items-center gap-2 text-zinc-400 text-sm"
+              >
+                <Icon size={16} className="text-primary" />
+                {label}
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="pt-10 border-t border-white/5">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p className="text-zinc-500 text-xs">
+                © {currentYear} {siteInfo.siteTitle}. All rights reserved.
+              </p>
+              <div className="flex justify-center space-x-6 text-[11px] font-bold uppercase tracking-widest">
+                <a
+                  href="/privacy-policy"
+                  className="text-zinc-500 hover:text-primary transition-colors"
+                >
+                  Privacy Policy
+                </a>
+                <span className="text-zinc-700">•</span>
+                <a
+                  href="/terms-of-service"
+                  className="text-zinc-500 hover:text-primary transition-colors"
+                >
+                  Terms & Conditions
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

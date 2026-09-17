@@ -79,7 +79,7 @@ export default function FinalCTA() {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="lucide lucide-message-circle w-4 h-4 mr-2 text-green-400"
+                        className="lucide lucide-message-circle w-4 h-4 mr-2 text-primary-400"
                       >
                         <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
                       </svg>

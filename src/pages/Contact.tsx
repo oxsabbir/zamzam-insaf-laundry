@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/Whatsapp";
-import { managerInfo } from "@/constants";
+import { managerInfo, siteInfo } from "@/constants";
 
 const Contact = () => {
   return (
@@ -158,16 +158,14 @@ const Contact = () => {
               </h2>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-success" />
-                <p className="text-lg">
-                  Aziziyah District, Makkah 24245, Saudi Arabia
-                </p>
+                <p className="text-lg">{managerInfo.address}</p>
               </div>
             </div>
 
             {/* Map */}
             <div className="relative h-[400px] rounded-2xl overflow-hidden border border-border shadow-lg group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1855.312843271923!2d39.8202008857488!3d21.42186292841074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b679347f05%3A0x50f5f4304df897e6!2sHilton%20Suites%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1771903409889!5m2!1sen!2sbd"
+                src={siteInfo.mapEmbedUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
