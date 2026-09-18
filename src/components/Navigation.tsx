@@ -66,6 +66,7 @@ const Navigation = () => {
     { label: "Services", id: "services" },
     { label: "Testimonials", id: "testimonials" },
     { label: "Pricing", id: "pricing" },
+    { label: "Food Delivery", id: "food-delivery", url: "/food-delivery" },
     { label: "About", id: "contact", url: "/about" },
     { label: "Contact", id: "contact", url: "/contact" },
   ];

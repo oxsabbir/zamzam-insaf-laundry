@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import NotFound from "./pages/NotFound";
+import FoodDelivery from "./pages/FoodDelivery";
 
 const App = () => (
   <TooltipProvider>
@@ -20,6 +21,7 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsConditions />} />
+        <Route path="/food-delivery" element={<FoodDelivery />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

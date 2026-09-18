@@ -47,6 +47,7 @@ const Footer = () => {
     { label: "Services", id: "services" },
     { label: "Pricing", id: "pricing" },
     { label: "How It Works", id: "how-it-works" },
+    { label: "Food Delivery", id: "food-delivery", path: "/food-delivery" },
     { label: "About Us", path: "/about" },
   ];
 
