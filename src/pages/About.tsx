@@ -11,7 +11,7 @@ const About = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary to-background">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-primary/100 to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -91,8 +91,8 @@ const About = () => {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               To deliver laundry care that respects your time, your fabrics, and
-              the environment, so you can focus on what matters most during
-              your time in Makkah.
+              the environment, so you can focus on what matters most during your
+              time in Makkah.
             </p>
           </motion.div>
 

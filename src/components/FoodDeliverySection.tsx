@@ -47,14 +47,14 @@ const FoodDeliverySection = () => {
         >
           <span className="inline-flex items-center gap-2 text-primary-600 font-semibold text-base mb-3">
             <UtensilsCrossed size={18} />
-            MAKKAH LAUNDRY HS EXPRESS FAST FOOD
+            Makkah Laundry HS Express Fast Food
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-3">
             Hungry After Umrah?{" "}
-            <span className="text-primary-600">Get Fast Food Delivered.</span>
+            <span className="text-primary-600">Fast Food, Delivered.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Skip the street lines outside your hotel. Our riders deliver hot,
+            Skip the street lines outside your hotel. Our riders bring hot,
             crispy favorites straight to your room in 35-45 minutes.
           </p>
         </motion.div>
@@ -112,7 +112,7 @@ const FoodDeliverySection = () => {
             </p>
             <div className="inline-flex items-center gap-2 text-primary-600 font-semibold text-sm tracking-wide mb-6">
               <Clock size={16} />
-              FAST HOTEL ZONE DELIVERY: 35-45 MINS
+              Hotel Zone Delivery: 35-45 Mins
             </div>
             <div className="flex flex-wrap gap-4">
               <a
@@ -156,13 +156,13 @@ const FoodDeliverySection = () => {
           <div className="pointer-events-none absolute -top-20 -right-20 w-72 h-72 rounded-full bg-white/10 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-24 -left-16 w-80 h-80 rounded-full bg-primary-950/40 blur-3xl" />
 
-          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-center text-left lg:text-center">
-            <div className="text-center lg:text-left">
+          <div className="relative flex flex-col lg:flex-row gap-8 items-center lg:justify-between text-center lg:text-left">
+            <div className="max-w-xl">
               <h2 className="relative text-3xl md:text-4xl font-extrabold text-white mb-4">
                 Hungry After a Long Day of{" "}
                 <span className="text-accent">Ibadah?</span>
               </h2>
-              <p className="relative text-primary-50/90 text-lg max-w-xl lg:mx-0 mx-auto">
+              <p className="relative text-primary-50/90 text-lg">
                 Relax in your room, message us on WhatsApp, and let us take care
                 of dinner. Premium fast food packages ready to dispatch right
                 now.
@@ -174,9 +174,9 @@ const FoodDeliverySection = () => {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative inline-flex items-center gap-2.5 bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-10 py-4 rounded-lg text-lg shadow-lg hover:-translate-y-0.5 transition-all whitespace-nowrap"
+              className="relative inline-flex items-center justify-center gap-2.5 bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-8 py-4 rounded-lg text-base sm:text-lg shadow-lg hover:-translate-y-0.5 transition-all w-full sm:w-auto"
             >
-              Order Fast Food via WhatsApp
+              Order Fast Food
               <ArrowRight size={20} />
             </a>
           </div>

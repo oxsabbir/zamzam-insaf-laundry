@@ -18,7 +18,7 @@ export default function Faq() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Q: Is a 15-minute pickup actually guaranteed?
+                Q: How fast is the pickup?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
                 A: In the central Makkah zones we aim to reach you in about 15
@@ -95,8 +95,8 @@ export default function Faq() {
                 💬 Anything Else You'd Like to Know?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mb-4">
-                Our team is on hand around the clock, happy to help in Arabic,
-                English, or Urdu.
+                Our team is on hand around the clock, happy to help in English,
+                Arabic, or Urdu.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button

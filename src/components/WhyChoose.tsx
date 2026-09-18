@@ -14,7 +14,7 @@ const reasons = [
   {
     icon: Clock,
     title: "Always on Call",
-    description: "Midnight emergency? No problem. We're the neighbourhood service that never closes.",
+    description: "Midnight emergency? No problem. We're the neighborhood service that never closes.",
   },
   {
     icon: Shield,
@@ -24,7 +24,7 @@ const reasons = [
   {
     icon: Languages,
     title: "Speaks Your Language",
-    description: "Arabic, English, or Urdu. Our team communicates the way you feel most comfortable.",
+    description: "English, Arabic, or Urdu. Our team communicates the way you feel most comfortable.",
   },
   {
     icon: Users,

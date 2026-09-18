@@ -201,7 +201,7 @@ export default function FinalCTA() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-accent">
-                  6000+
+                  6,000+
                 </div>
                 <div className="text-xs text-white sm:text-sm">
                   Happy Guests

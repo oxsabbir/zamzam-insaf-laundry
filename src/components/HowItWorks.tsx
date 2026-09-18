@@ -111,9 +111,7 @@ const HowItWorks = () => {
           </h3>
           <p className="md:text-xl text-lg mb-6 opacity-95">
             Not happy with the result? We'll re-clean your laundry for free or
-            refund you in full.
-            <br />
-            <span className="font-bold">That's our standing promise.</span>
+            refund you in full. That's our standing promise.
           </p>
           <Button
             size="lg"

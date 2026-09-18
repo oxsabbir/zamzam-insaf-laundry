@@ -65,7 +65,7 @@ const guideItems = [
     tips: [
       "Budget about 20-25 SAR per kg.",
       "A 3-5 kg load typically runs 60-100 SAR.",
-      "Skip hotel upcharges and save up to 70%.",
+      "Skip hotel upcharges and save up to 50%.",
     ],
   },
   {

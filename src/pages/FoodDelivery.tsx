@@ -122,7 +122,7 @@ const FoodDelivery = () => {
           >
             <span className="inline-flex items-center gap-2 text-primary-600 font-semibold text-base mb-3">
               <UtensilsCrossed size={18} />
-              HOT & FRESH IN 45 MINUTES
+              Hot & Fresh in 45 Minutes
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
               Most Popular Pilgrim Favorites

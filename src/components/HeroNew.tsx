@@ -32,10 +32,10 @@ const HeroNew = () => {
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
               {siteInfo.siteTitle}
             </span>
-            <span className="text-primary-300 inline-block ">
-              Fast, Reliable Laundry
-            </span>{" "}
-            for Pilgrims & Residents in Makkah
+            Fast, Reliable Laundry{" "}
+            <span className="text-primary-300">
+              for Pilgrims & Residents in Makkah
+            </span>
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center flex-col gap-2 justify-center mb-2 sm:mb-3">

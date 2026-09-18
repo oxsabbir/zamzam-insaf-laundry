@@ -78,7 +78,7 @@ export default function PickupManager() {
 
                   <div className="space-y-3">
                     <div className="flex items-center gap-3 text-sm font-medium text-primary-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
-                      <Globe size={18} /> Speaks Arabic, English, Urdu
+                      <Globe size={18} /> Speaks English, Arabic, Urdu
                     </div>
                     <div className="flex items-center gap-3 text-sm font-medium text-primary-50 bg-white/10 p-3 rounded-lg backdrop-blur-sm">
                       <MapPin size={18} /> Knows Every Corner of Makkah
@@ -98,9 +98,9 @@ export default function PickupManager() {
                 {/* Stats Row */}
                 <div className="flex flex-wrap gap-4 sm:gap-8 mb-8 pb-8 border-b border-slate-100">
                   <div>
-                    <div className="text-3xl font-bold text-slate-900">2k+</div>
+                    <div className="text-3xl font-bold text-slate-900">6,000+</div>
                     <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">
-                      Pickups
+                      Happy Guests
                     </div>
                   </div>
                   <div>
@@ -116,9 +116,9 @@ export default function PickupManager() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-slate-900">10m</div>
+                    <div className="text-3xl font-bold text-slate-900">15 min</div>
                     <div className="text-xs text-slate-500 font-medium uppercase tracking-wide">
-                      Avg Response
+                      Avg Pickup Reach
                     </div>
                   </div>
                 </div>
