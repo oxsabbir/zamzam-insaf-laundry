@@ -71,7 +71,7 @@ const FoodDelivery = () => {
               <div className="flex flex-wrap gap-4">
                 <a
                   href={`https://wa.me/${FOOD_WHATSAPP}?text=${encodeURIComponent(
-                    "Hello Makkah Laundry HS! I'd like to see the Fast Food menu and order.",
+                    "Hello! I'd like to order some fast food. Please share today's menu and delivery options. Thank you!",
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -82,7 +82,7 @@ const FoodDelivery = () => {
                 </a>
                 <a
                   href={`https://wa.me/${FOOD_WHATSAPP}?text=${encodeURIComponent(
-                    "Hello! I'd like to track my recent fast food order.",
+                    "Hello! I'd like to track my fast food order. Please share the status of my delivery. Thank you!",
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -186,7 +186,7 @@ const FoodDelivery = () => {
               <div className="flex flex-wrap gap-4 mt-6">
                 <a
                   href={`https://wa.me/${FOOD_WHATSAPP}?text=${encodeURIComponent(
-                    "Hello! Send me the fast food menu. I want express delivery to my hotel.",
+                    "Hello! I'd like to order fast food delivered to my hotel. Please share the menu and available items. Thank you!",
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -237,7 +237,7 @@ const FoodDelivery = () => {
               </div>
               <a
                 href={`https://wa.me/${FOOD_WHATSAPP}?text=${encodeURIComponent(
-                  "I'm ready to order fast food to my hotel now!",
+                  "Hello! I'd like to order fast food. Please share today's menu and let me know the delivery time. Thank you!",
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

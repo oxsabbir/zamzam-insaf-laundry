@@ -117,7 +117,7 @@ const FoodDeliverySection = () => {
             <div className="flex flex-wrap gap-4">
               <a
                 href={`https://wa.me/${FOOD_WHATSAPP}?text=${encodeURIComponent(
-                  "Hello! Send me the fast food menu. I want express delivery to my hotel.",
+                  "Hello! I'd like to order fast food delivered to my hotel. Please share the menu and available items. Thank you!",
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -170,7 +170,7 @@ const FoodDeliverySection = () => {
             </div>
             <a
               href={`https://wa.me/${FOOD_WHATSAPP}?text=${encodeURIComponent(
-                "I'm ready to order fast food to my hotel now!",
+                "Hello! I'd like to order fast food. Please share today's menu and let me know the delivery time. Thank you!",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
