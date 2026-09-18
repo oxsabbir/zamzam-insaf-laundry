@@ -23,19 +23,19 @@ const HeroNew = () => {
         height="1080"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/50 to-black/65" />
-      <div className="relative container mx-auto px-3 py-6 sm:py-16">
+      <div className="relative container mx-auto px-3 py-8 sm:py-16">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-primary-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
             <Zap size={20} className="mr-1" />
             FAST PICKUP & DELIVERY IN MAKKAH
           </div>
-          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
-            <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-primary-300">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight">
+            <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-3 text-primary-300">
               {siteInfo.siteTitle}
             </span>
-            Fast, Reliable Laundry{" "}
+            Fast, Free Pickup & Delivery{" "}
             <span className="text-primary-300">
-              for Pilgrims & Residents in Makkah
+              for Hajjis & Residents in Makkah
             </span>
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
@@ -147,7 +147,7 @@ const HeroNew = () => {
                   FREE
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Collection/Delivery
+                  Delivery
                 </div>
               </div>
             </div>

@@ -6,104 +6,104 @@ import { managerInfo } from "@/constants";
 
 const testimonials = [
   {
-    name: "Khalid Al-Otaibi",
-    location: "Jabal Omar, Makkah",
+    name: "Ahmed Al-Rashid",
+    location: "Jeddah",
     country: "Saudi Arabia",
     rating: 5,
     service: "Ihram Care",
     review:
-      "Booked Makkah Laundry HS in the morning and my clothes were back by afternoon. Just what a busy guest in Makkah needs. Polite, quick, and well-priced.",
-    avatar: "KA",
+      "I come to Makkah every Ramadan and always bring my laundry to Makkah Laundry HS. My Ihram was handled with such respect and came back spotless the same day.",
+    avatar: "AR",
     flag: "🇸🇦",
   },
   {
     name: "Mariam Tarek",
-    location: "Aziziyah, Makkah",
+    location: "Cairo",
     country: "Egypt",
     rating: 5,
     service: "Regular Service",
 
     review:
-      "Great value for money! Makkah Laundry HS picked up in under ten minutes and everything came back neatly pressed. Far better than what my hotel offered.",
+      "Booked through WhatsApp in two minutes. The driver arrived within ten and everything came back neatly pressed overnight. Far better than my hotel's own service.",
     avatar: "MT",
     flag: "🇪🇬",
   },
   {
     name: "Imran Qureshi",
-    location: "Al-Shisha, Makkah",
+    location: "Karachi",
     country: "Pakistan",
     service: "Business Wear",
 
     rating: 5,
     review:
-      "Makkah Laundry HS returned my dress shirts crisp and spotless for a work event. They understood the timeline and delivered without delays. Highly satisfied.",
+      "Had a week of meetings in Jeddah then Umrah, so time was tight. My dress shirts came back crisp and spotless exactly when promised. Nobody else offered that.",
     avatar: "IQ",
     flag: "🇵🇰",
   },
   {
-    name: "Layla Khalifa",
-    location: "Ghaza District, Makkah",
-    country: "UAE",
+    name: "Lucas van der Meer",
+    location: "Rotterdam",
+    country: "Netherlands",
     service: "Bulky Items",
     rating: 5,
     review:
-      "Makkah Laundry HS handled my blankets and curtains beautifully. Available late at night too, a real lifesaver when I needed help at short notice. Thank you!",
-    avatar: "LK",
-    flag: "🇦🇪",
+      "Family towels and kids' jackets cleaned after Hajj before our flight home. They even stayed open late for our pickup. Friendly staff and honest prices.",
+    avatar: "LV",
+    flag: "🇳🇱",
   },
   {
     name: "Ridwan Sulaiman",
-    location: "Al-Rusaifah, Makkah",
+    location: "Jakarta",
     country: "Indonesia",
     service: "Regular Service",
     rating: 5,
     review:
-      "Easy WhatsApp booking with Makkah Laundry HS and very fair prices. My clothes smelled fresh and were returned the same day. I recommend them to every guest in Makkah.",
+      "Fair prices and same-day returns, every single time. I stayed a month in Makkah and used them weekly. My clothes always smelled fresh and folded perfectly.",
     avatar: "RS",
     flag: "🇮🇩",
   },
   {
     name: "Siti Aminah",
-    location: "Al-Safwah, Makkah",
+    location: "Kuala Lumpur",
     country: "Malaysia",
     service: "Abaya Care",
 
     rating: 5,
     review:
-      "They cared for my delicate abayas with real attention to detail. Quick pickup, gentle handling, and lovely results each time. Makkah Laundry HS is my go-to!",
+      "They treated my delicate abayas with amazing care, gentle on the embroidery and beads. Neat pickup, lovely finish, and delivered right to my hotel.",
     avatar: "SA",
     flag: "🇲🇾",
   },
   {
-    name: "Yusuf Patel",
-    location: "Jarwal, Makkah",
-    country: "UK",
-    rating: 5,
-    service: "Ihram Care",
-    review:
-      "During Umrah Makkah Laundry HS made things effortless. They took care of my Ihram with great respect and returned it spotless. Truly helpful team.",
-    avatar: "YP",
-    flag: "🇬🇧",
-  },
-  {
-    name: "Noor Al-Zoubi",
-    location: "Souq Al Omrah, Makkah",
-    country: "Jordan",
+    name: "Claire Dubois",
+    location: "Paris",
+    country: "France",
     rating: 5,
     service: "Delicate Items",
     review:
-      "I was impressed by how carefully Makkah Laundry HS handled every item. The pickups are prompt and the communication is clear. I trust them fully with my clothes.",
-    avatar: "NZ",
-    flag: "🇯🇴",
+      "First time in Makkah and I was worried about my silks and shawls. Makkah Laundry HS handled everything with real care and returned them wrinkle-free.",
+    avatar: "CD",
+    flag: "🇫🇷",
+  },
+  {
+    name: "Emre Yılmaz",
+    location: "Istanbul",
+    country: "Türkiye",
+    rating: 5,
+    service: "Ihram Care",
+    review:
+      "After a long journey I had no clean clothes left. They picked up within the hour and returned my laundered Ihram before Maghrib. Absolute lifesaver.",
+    avatar: "EY",
+    flag: "🇹🇷",
   },
   {
     name: "Tanvir Ahmed",
-    location: "Aziziyah, Makkah",
+    location: "Dhaka",
     country: "Bangladesh",
     rating: 5,
     service: "Regular Service",
     review:
-      "I've used many laundry services over the years. Makkah Laundry HS stands out for consistency and care. Friendly team, fair prices, and always on time.",
+      "I've used laundry services in many countries and Makkah Laundry HS stands out for consistency. Friendly team, fair prices, and spot-on delivery times.",
     avatar: "TA",
     flag: "🇧🇩",
   },
@@ -186,7 +186,7 @@ const Testimonials = () => {
                     {review.name}
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    {review.flag} {review.location}
+                    {review.flag} {review.location}, {review.country}
                   </div>
                   <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mt-1 text-xs bg-primary/10 text-primary">
                     {review.service}
