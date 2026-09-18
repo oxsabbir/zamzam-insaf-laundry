@@ -107,6 +107,39 @@ const testimonials = [
     avatar: "TA",
     flag: "🇧🇩",
   },
+  {
+    name: "Aisha Begum",
+    location: "London",
+    country: "United Kingdom",
+    rating: 5,
+    service: "Food Delivery",
+    review:
+      "After a long day in the Haram, ordering a Zinger meal through them on WhatsApp was a lifesaver. Hot, crunchy, and at my hotel door in 40 minutes.",
+    avatar: "AB",
+    flag: "🇬🇧",
+  },
+  {
+    name: "Fatima Noor",
+    location: "Karachi",
+    country: "Pakistan",
+    rating: 5,
+    service: "Food Delivery",
+    review:
+      "We ordered broast and shawarma for the whole family. Everything arrived warm and crispy, the portions were generous, and the prices were fair. Highly recommend!",
+    avatar: "FN",
+    flag: "🇵🇰",
+  },
+  {
+    name: "Omar Al-Harbi",
+    location: "Riyadh",
+    country: "Saudi Arabia",
+    rating: 5,
+    service: "Food Delivery",
+    review:
+      "Craved Kabsa late at night and they delivered it hot in under 45 minutes. The delivery rider was polite and the food tasted freshly made. Will order again.",
+    avatar: "OH",
+    flag: "🇸🇦",
+  },
 ];
 
 const Testimonials = () => {
@@ -142,7 +175,7 @@ const Testimonials = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             Thousands of happy customers across Makkah trust Makkah Laundry HS
-            with their wardrobe
+            with their wardrobe and their meals
           </motion.p>
           <motion.div
             className="flex items-center justify-center gap-2 mt-4"
