@@ -241,9 +241,9 @@ const FoodDelivery = () => {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative inline-flex items-center gap-2.5 bg-accent hover:bg-accent/90 text-accent-foreground font-bold mt-6 px-10 py-4 rounded-lg text-lg shadow-lg hover:-translate-y-0.5 transition-all"
+                className="relative inline-flex items-center justify-center gap-2.5 bg-accent hover:bg-accent/90 text-accent-foreground font-bold mt-6 w-full sm:w-auto px-8 sm:px-10 py-4 rounded-lg text-base sm:text-lg shadow-lg hover:-translate-y-0.5 transition-all"
               >
-                Order Your Fast Food Now
+                Order Fast Food
                 <ArrowRight size={20} />
               </a>
             </div>

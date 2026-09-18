@@ -11,7 +11,7 @@ const Contact = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary to-background">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-primary-700 to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ const Contact = () => {
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               We're here for all your laundry needs across Makkah. Reach out
-              any time — we're available around the clock!
+              any time, we're available around the clock!
             </p>
           </motion.div>
         </div>

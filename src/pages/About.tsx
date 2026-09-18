@@ -11,7 +11,7 @@ const About = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary/100 to-background">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-primary to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -172,8 +172,8 @@ const About = () => {
                 Skilled Team, Service First
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Our trained crew knows just how much trust you're placing in us
-                — especially with your personal belongings during a journey like
+                Our trained crew knows just how much trust you're placing in us,
+                especially with your personal belongings during a journey like
                 Hajj or Umrah.
               </p>
             </motion.div>
@@ -245,7 +245,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary to-success">
+      {/* <section className="py-16 bg-gradient-to-r from-primary to-success">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -273,7 +273,7 @@ const About = () => {
             </a>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>
