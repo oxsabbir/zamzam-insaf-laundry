@@ -49,7 +49,7 @@ const HeroNew = () => {
             className="inline-flex items-center justify-center gap-2 max-w-full rounded-full bg-gradient-to-r from-accent via-amber-400 to-orange-500 text-stone-900 font-extrabold text-sm sm:text-lg px-4 sm:px-6 py-2.5 sm:py-3 mb-5 sm:mb-7 shadow-lg shadow-amber-500/30 ring-1 ring-white/30 hover:shadow-amber-400/50 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
           >
             <UtensilsCrossed size={20} strokeWidth={2.5} className="shrink-0" />
-            Hungry? Order Food Fast
+            Hungry? Food Delivery 
             <ArrowRight size={22} strokeWidth={3} className="shrink-0" />
           </Link>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
