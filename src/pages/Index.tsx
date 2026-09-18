@@ -17,6 +17,7 @@ import Faq from "@/components/Faq";
 import EmergencyService from "@/components/EmergencyService";
 import FloatingCTA from "@/components/FloatingCTA";
 import OurServices from "@/components/OurServices";
+import FoodDeliverySection from "@/components/FoodDeliverySection";
 
 const Index = () => {
   return (
@@ -36,6 +37,7 @@ const Index = () => {
       <HowItWorks />
       <PricingSection />
       <PilgrimGuide />
+      <FoodDeliverySection />
       <div id="testimonials">
         <Testimonials />
       </div>
