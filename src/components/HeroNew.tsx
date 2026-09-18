@@ -22,7 +22,7 @@ const HeroNew = () => {
         width="1920"
         height="1080"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/50 to-black/65" />
       <div className="relative container mx-auto px-3 py-6 sm:py-16">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-primary-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
