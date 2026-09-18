@@ -106,9 +106,9 @@ const FoodDeliverySection = () => {
             </h2>
             <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
               We know how crowded the streets around the Haram can get. Our
-              professional delivery riders navigate through Makkah's hotel
-              zones efficiently to ensure your fast food arrives crisp, hot,
-              and within 45 minutes.
+              professional delivery riders navigate through Makkah's hotel zones
+              efficiently to ensure your fast food arrives crisp, hot, and
+              within 45 minutes.
             </p>
             <div className="inline-flex items-center gap-2 text-primary-600 font-semibold text-sm tracking-wide mb-6">
               <Clock size={16} />
@@ -164,7 +164,8 @@ const FoodDeliverySection = () => {
               </h2>
               <p className="relative text-primary-50/90 text-lg max-w-xl lg:mx-0 mx-auto">
                 Relax in your room, message us on WhatsApp, and let us take care
-                of dinner. Premium fast food packages ready to dispatch right now.
+                of dinner. Premium fast food packages ready to dispatch right
+                now.
               </p>
             </div>
             <a

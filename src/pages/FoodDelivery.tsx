@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "motion/react";
-import { Clock, MapPin, Zap, UtensilsCrossed, ArrowRight } from "lucide-react";
+import { Clock, MapPin, UtensilsCrossed, ArrowRight } from "lucide-react";
 import { managerInfo } from "@/constants";
 import foodBanner from "@/assets/food-banner.webp";
 import deliveryImage from "@/assets/food-delivery.webp";
@@ -53,7 +53,6 @@ const FoodDelivery = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-flex items-center gap-2 text-primary-200 font-semibold text-base mb-4">
-                <Zap size={16} className="text-white" />
                 Makkah Laundry HS — Express Fast Food Delivery
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-5">
