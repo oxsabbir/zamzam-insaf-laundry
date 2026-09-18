@@ -7,10 +7,23 @@ import broastImg from "@/assets/food-broast.webp";
 import burgerImg from "@/assets/food-burger.webp";
 import shawarmaImg from "@/assets/food-shawarma.webp";
 import friesImg from "@/assets/food-fries.webp";
+import kabsaImg from "@/assets/food-kabsa.webp";
+import chickenImg from "@/assets/food-chiken-fry.webp";
+import sambousaImg from "@/assets/food-sambousa.webp";
+import pizzaImg from "@/assets/food-pizza.webp";
+import brandKfcImg from "@/assets/brand-kfc.webp";
+import brandAlTazajImg from "@/assets/brand-Al_Tazaj.webp";
+import brandAlbaikImg from "@/assets/brand-albaik.webp";
+import brandAlromansiahImg from "@/assets/brand-alromansiah.webp";
 
 const FOOD_WHATSAPP = managerInfo.onlyNumber.whatsApp;
 
 const foodItems = [
+  {
+    image: kabsaImg,
+    title: "Chicken Kabsa",
+    description: "Saudi rice & meat feast, rich with spices",
+  },
   {
     image: broastImg,
     title: "Crispy Broast",
@@ -27,9 +40,24 @@ const foodItems = [
     description: "Toasted wraps packed with meat",
   },
   {
+    image: sambousaImg,
+    title: "Sambousa",
+    description: "Crisp golden pastries, stuffed & spiced",
+  },
+  {
+    image: pizzaImg,
+    title: "Hot Crust Pizza",
+    description: "Cheesy, oven-baked pizzas, fresh slices",
+  },
+  {
     image: friesImg,
-    title: "Crispy Fries & Sides",
+    title: "Crispy Fries",
     description: "Hot, salted golden potato fries",
+  },
+  {
+    image: chickenImg,
+    title: "Golden Fried Chicken",
+    description: "Crispy, juicy fried chicken pieces",
   },
 ];
 
@@ -86,6 +114,73 @@ const FoodDeliverySection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Brand Logos */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="pt-10 pb-2 sm:pt-14 sm:pb-4 max-w-6xl mx-auto"
+        >
+          <div className="text-center mb-6">
+            <span className="text-xs sm:text-sm font-bold text-muted-foreground uppercase tracking-[0.2em]">
+              We Deliver From Top Brands
+            </span>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+            {[
+              {
+                image: brandKfcImg,
+                name: "KFC",
+                glow: "group-hover:shadow-red-500/40",
+                base: "from-red-600 to-red-500",
+              },
+              {
+                image: brandAlTazajImg,
+                name: "Al Tazaj",
+                glow: "group-hover:shadow-emerald-500/40",
+                base: "from-emerald-700 to-emerald-500",
+              },
+              {
+                image: brandAlbaikImg,
+                name: "Al Baik",
+                glow: "group-hover:shadow-orange-500/40",
+                base: "from-orange-600 to-amber-500",
+              },
+              {
+                image: brandAlromansiahImg,
+                name: "Al Romansiah",
+                glow: "group-hover:shadow-primary-500/40",
+                base: "from-primary-700 to-primary-500",
+              },
+            ].map((brand, index) => (
+              <motion.div
+                key={brand.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group relative rounded-2xl bg-white dark:bg-card border border-border/60 shadow-md hover:shadow-2xl transition-all duration-300 p-4 sm:p-6 flex flex-col items-center gap-3"
+              >
+                <div
+                  className={`pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br ${brand.base} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                />
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-white border border-border/60 p-2 shadow-inner flex items-center justify-center group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300">
+                  <img
+                    src={brand.image}
+                    alt={`${brand.name} logo`}
+                    className="w-full h-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+                <span className="relative text-sm sm:text-base font-extrabold text-foreground tracking-tight">
+                  {brand.name}
+                </span>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Delivery Info + CTA */}
         <motion.div

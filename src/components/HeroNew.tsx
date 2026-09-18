@@ -1,5 +1,13 @@
-import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/hero-makkah-laundry-hs.webp";
+import {
+  Zap,
+  Clock,
+  Quote,
+  CircleDollarSign,
+  UtensilsCrossed,
+  ArrowRight,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-hs-bg.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
@@ -29,15 +37,21 @@ const HeroNew = () => {
             <Zap size={20} className="mr-1" />
             FAST PICKUP & DELIVERY IN MAKKAH
           </div>
-          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-wide">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-3 text-primary-300">
               {siteInfo.siteTitle}
             </span>
-            Fast, Free Pickup & Delivery{" "}
-            <span className="text-primary-300">
-              for Hajjis & Residents in Makkah
-            </span>
+            Fast, Free Laundry Delivery{" "}
+            <span className="text-primary-300">for Hajji & Umrah Pilgrims</span>
           </h1>
+          <Link
+            to="/food-delivery"
+            className="inline-flex items-center justify-center gap-2 max-w-full rounded-full bg-gradient-to-r from-accent via-amber-400 to-orange-500 text-stone-900 font-extrabold text-sm sm:text-lg px-4 sm:px-6 py-2.5 sm:py-3 mb-5 sm:mb-7 shadow-lg shadow-amber-500/30 ring-1 ring-white/30 hover:shadow-amber-400/50 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
+          >
+            <UtensilsCrossed size={20} strokeWidth={2.5} className="shrink-0" />
+            Hungry? Order Food Fast
+            <ArrowRight size={22} strokeWidth={3} className="shrink-0" />
+          </Link>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center flex-col gap-2 justify-center mb-2 sm:mb-3">
               <div className="flex text-yellow-400 text-sm sm:text-xl">

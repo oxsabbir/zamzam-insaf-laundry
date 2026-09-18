@@ -1,7 +1,13 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "motion/react";
-import { Clock, MapPin, UtensilsCrossed, ArrowRight } from "lucide-react";
+import {
+  Clock,
+  MapPin,
+  UtensilsCrossed,
+  ArrowRight,
+  Flame,
+} from "lucide-react";
 import { managerInfo } from "@/constants";
 import foodBanner from "@/assets/food-banner.webp";
 import deliveryImage from "@/assets/food-delivery.webp";
@@ -9,10 +15,23 @@ import broastImg from "@/assets/food-broast.webp";
 import burgerImg from "@/assets/food-burger.webp";
 import shawarmaImg from "@/assets/food-shawarma.webp";
 import friesImg from "@/assets/food-fries.webp";
+import kabsaImg from "@/assets/food-kabsa.webp";
+import chickenImg from "@/assets/food-chiken-fry.webp";
+import sambousaImg from "@/assets/food-sambousa.webp";
+import pizzaImg from "@/assets/food-pizza.webp";
+import brandKfcImg from "@/assets/brand-kfc.webp";
+import brandAlTazajImg from "@/assets/brand-Al_Tazaj.webp";
+import brandAlbaikImg from "@/assets/brand-albaik.webp";
+import brandAlromansiahImg from "@/assets/brand-alromansiah.webp";
 
 const FOOD_WHATSAPP = managerInfo.onlyNumber.whatsApp;
 
 const foodItems = [
+  {
+    image: kabsaImg,
+    title: "Chicken Kabsa",
+    description: "Saudi rice & meat feast, rich with spices",
+  },
   {
     image: broastImg,
     title: "Crispy Broast",
@@ -29,9 +48,24 @@ const foodItems = [
     description: "Toasted wraps packed with meat",
   },
   {
+    image: sambousaImg,
+    title: "Sambousa",
+    description: "Crisp golden pastries, stuffed & spiced",
+  },
+  {
+    image: pizzaImg,
+    title: "Hot Crust Pizza",
+    description: "Cheesy, oven-baked pizzas, fresh slices",
+  },
+  {
     image: friesImg,
-    title: "Crispy Fries & Sides",
+    title: "Crispy Fries",
     description: "Hot, salted golden potato fries",
+  },
+  {
+    image: chickenImg,
+    title: "Golden Fried Chicken",
+    description: "Crispy, juicy fried chicken pieces",
   },
 ];
 
@@ -106,6 +140,103 @@ const FoodDelivery = () => {
                 loading="eager"
               />
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Brands Section */}
+      <section className="relative py-16 overflow-hidden">
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-primary-500/10 blur-3xl rounded-full" />
+        <div className="relative container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12"
+          >
+            <span className="inline-flex items-center gap-2 text-primary-600 font-semibold text-sm sm:text-base mb-4 bg-primary-50 dark:bg-primary-950 px-4 py-1.5 rounded-full border border-primary-200 dark:border-primary-800">
+              <UtensilsCrossed size={16} />
+              Top Restaurant Brands
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">
+              We Bring Your Favorite{" "}
+              <span className="text-primary-600">Chains to You</span>
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg mt-4 max-w-2xl mx-auto">
+              From KFC to Al Baik and Al Tazaj, order the brands you know and
+              love — delivered hot to your hotel room.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                image: brandKfcImg,
+                name: "KFC",
+                tagline: "Colonel's Original Recipe",
+                accent: "from-red-600/90 to-red-500",
+                badge: null,
+              },
+              {
+                image: brandAlTazajImg,
+                name: "Al Tazaj",
+                tagline: "Saudi roast chicken favorite",
+                accent: "from-emerald-700/90 to-emerald-600",
+                badge: null,
+              },
+              {
+                image: brandAlbaikImg,
+                name: "Al Baik",
+                tagline: "Makkah's legendary broast",
+                accent: "from-orange-600/90 to-amber-500",
+              },
+              {
+                image: brandAlromansiahImg,
+                name: "Al Romansiah",
+                tagline: "Rice & roasted chicken classic",
+                accent: "from-primary-700/90 to-primary-600",
+                badge: null,
+              },
+            ].map((brand, index) => (
+              <motion.div
+                key={brand.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -6 }}
+                className="group relative rounded-2xl bg-gradient-to-b from-white via-white to-primary-50/60 dark:from-card dark:via-card dark:to-primary-950/40 border border-border shadow-lg hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-300 overflow-hidden"
+              >
+                <div
+                  className={`absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r ${brand.accent}`}
+                />
+                <div className="flex flex-col items-center text-center p-6 sm:p-7">
+                  <div className="relative mb-5">
+                    <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-primary-500/10 to-primary-500/0 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-white dark:bg-white border border-border shadow-md p-3 group-hover:scale-105 group-hover:shadow-xl transition-all duration-300">
+                      <img
+                        src={brand.image}
+                        alt={`${brand.name} logo`}
+                        className="w-full h-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    {brand.badge && (
+                      <span className="absolute -top-2 -right-2 inline-flex items-center rounded-full bg-accent text-accent-foreground text-[10px] font-bold px-2.5 py-1 shadow-md animate-pulse">
+                        {brand.badge}
+                      </span>
+                    )}
+                  </div>
+                  <b className="block text-lg sm:text-xl font-extrabold text-foreground mb-1">
+                    {brand.name}
+                  </b>
+                  <span className="text-xs sm:text-sm text-muted-foreground leading-snug">
+                    {brand.tagline}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
