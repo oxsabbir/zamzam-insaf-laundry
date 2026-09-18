@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Users, Heart, Leaf, Clock, Award, Target } from "lucide-react";
-import aboutServiceImage from "@/assets/about_zam.webp";
+import aboutServiceImage from "@/assets/about-laundry-hs.webp";
 import { managerInfo } from "@/constants";
 
 const About = () => {
@@ -42,7 +42,7 @@ const About = () => {
               <img
                 src={aboutServiceImage}
                 alt="Professional laundry service in Makkah"
-                className="rounded-2xl shadow-lg w-full h-[400px] object-cover"
+                className="rounded-2xl shadow-lg w-full h-[400px] object-cover object-top"
               />
             </motion.div>
             <motion.div
@@ -55,9 +55,9 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Makkah Laundry HS is a trusted pickup-and-delivery
-                laundry provider, looking after residents, guests, and visitors
-                across the city with consistency and care.
+                Makkah Laundry HS is a trusted pickup-and-delivery laundry
+                provider, looking after residents, guests, and visitors across
+                the city with consistency and care.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Base in the Aziziyah district, close to the heart of the holy
@@ -89,11 +89,11 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Our Mission
             </h2>
-<p className="text-lg text-muted-foreground leading-relaxed">
-                To deliver laundry care that respects your time, your fabrics,
-                and the environment — so you can focus on what matters most
-                during your time in Makkah.
-              </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              To deliver laundry care that respects your time, your fabrics, and
+              the environment — so you can focus on what matters most during
+              your time in Makkah.
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

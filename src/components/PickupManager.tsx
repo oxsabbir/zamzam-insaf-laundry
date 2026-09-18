@@ -15,7 +15,7 @@ import { whatsappMessages } from "@/constants/messages";
 export default function PickupManager() {
   return (
     <section
-      className="relative py-12 sm:py-20 bg-slate-50 overflow-hidden"
+      className="relative py-12 sm:py-24 bg-slate-50 overflow-hidden"
       aria-labelledby="manager-heading"
     >
       {/* Background Abstract Shapes */}
@@ -34,7 +34,9 @@ export default function PickupManager() {
             className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
           >
             Personal, Direct Service. <br className="hidden sm:block" />
-            <span className="text-primary-600">Your Trusted Laundry Neighbor.</span>
+            <span className="text-primary-600">
+              Your Trusted Laundry Neighbor.
+            </span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Enjoy laundry handled with a human touch and a single point of

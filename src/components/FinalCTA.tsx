@@ -15,7 +15,7 @@ export default function FinalCTA() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="py-10 sm:py-16 relative overflow-hidden"
+      className="py-10 sm:py-24 relative overflow-hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-tl from-blue-500/20 to-black/80 "></div>
       <div className="relative container mx-auto px-3 sm:px-4">
@@ -211,9 +211,7 @@ export default function FinalCTA() {
                 <div className="text-lg sm:text-xl font-bold text-accent">
                   15 Min
                 </div>
-                <div className="text-xs text-white sm:text-sm">
-                  Fast Reach
-                </div>
+                <div className="text-xs text-white sm:text-sm">Fast Reach</div>
               </div>
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-accent">

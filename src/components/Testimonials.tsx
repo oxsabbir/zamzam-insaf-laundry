@@ -12,7 +12,7 @@ const testimonials = [
     rating: 5,
     service: "Ihram Care",
     review:
-      "Booked in the morning and my clothes were back by afternoon. Just what a busy guest in Makkah needs. Polite, quick, and well-priced.",
+      "Booked Makkah Laundry HS in the morning and my clothes were back by afternoon. Just what a busy guest in Makkah needs. Polite, quick, and well-priced.",
     avatar: "KA",
     flag: "🇸🇦",
   },
@@ -24,7 +24,7 @@ const testimonials = [
     service: "Regular Service",
 
     review:
-      "Great value for money! Pickup took under ten minutes and everything came back neatly pressed. Far better than what my hotel offered.",
+      "Great value for money! Makkah Laundry HS picked up in under ten minutes and everything came back neatly pressed. Far better than what my hotel offered.",
     avatar: "MT",
     flag: "🇪🇬",
   },
@@ -36,7 +36,7 @@ const testimonials = [
 
     rating: 5,
     review:
-      "My dress shirts came back crisp and spotless for a work event. They understood the timeline and delivered without delays. Highly satisfied.",
+      "Makkah Laundry HS returned my dress shirts crisp and spotless for a work event. They understood the timeline and delivered without delays. Highly satisfied.",
     avatar: "IQ",
     flag: "🇵🇰",
   },
@@ -47,7 +47,7 @@ const testimonials = [
     service: "Bulky Items",
     rating: 5,
     review:
-      "Handled my blankets and curtains beautifully. Available late at night too — a real lifesaver when I needed help at short notice. Thank you!",
+      "Makkah Laundry HS handled my blankets and curtains beautifully. Available late at night too — a real lifesaver when I needed help at short notice. Thank you!",
     avatar: "LK",
     flag: "🇦🇪",
   },
@@ -58,7 +58,7 @@ const testimonials = [
     service: "Regular Service",
     rating: 5,
     review:
-      "Easy WhatsApp booking and very fair prices. My clothes smelled fresh and were returned the same day. I recommend them to every guest in Makkah.",
+      "Easy WhatsApp booking with Makkah Laundry HS and very fair prices. My clothes smelled fresh and were returned the same day. I recommend them to every guest in Makkah.",
     avatar: "RS",
     flag: "🇮🇩",
   },
@@ -70,7 +70,7 @@ const testimonials = [
 
     rating: 5,
     review:
-      "They cared for my delicate abayas with real attention to detail. Quick pickup, gentle handling, and lovely results each time. My go-to in Makkah!",
+      "They cared for my delicate abayas with real attention to detail. Quick pickup, gentle handling, and lovely results each time. Makkah Laundry HS is my go-to!",
     avatar: "SA",
     flag: "🇲🇾",
   },
@@ -81,7 +81,7 @@ const testimonials = [
     rating: 5,
     service: "Ihram Care",
     review:
-      "During Umrah this service made things effortless. They took care of my Ihram with great respect and returned it spotless. Truly helpful team.",
+      "During Umrah Makkah Laundry HS made things effortless. They took care of my Ihram with great respect and returned it spotless. Truly helpful team.",
     avatar: "YP",
     flag: "🇬🇧",
   },
@@ -92,7 +92,7 @@ const testimonials = [
     rating: 5,
     service: "Delicate Items",
     review:
-      "I was impressed by how carefully they handled every item. The pickups are prompt and the communication is clear. I trust them fully with my clothes.",
+      "I was impressed by how carefully Makkah Laundry HS handled every item. The pickups are prompt and the communication is clear. I trust them fully with my clothes.",
     avatar: "NZ",
     flag: "🇯🇴",
   },
@@ -103,7 +103,7 @@ const testimonials = [
     rating: 5,
     service: "Regular Service",
     review:
-      "I've used many laundry services over the years — this one stands out for consistency and care. Friendly team, fair prices, and always on time.",
+      "I've used many laundry services over the years — Makkah Laundry HS stands out for consistency and care. Friendly team, fair prices, and always on time.",
     avatar: "TA",
     flag: "🇧🇩",
   },
@@ -133,7 +133,7 @@ const Testimonials = () => {
             }
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            What Our Guests Say
+            What Our Customers Say
           </motion.h2>
           <motion.p
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
@@ -141,8 +141,8 @@ const Testimonials = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Thousands of happy guests across Makkah trust us with their
-            wardrobe
+            Thousands of happy customers across Makkah trust Makkah Laundry HS
+            with their wardrobe
           </motion.p>
           <motion.div
             className="flex items-center justify-center gap-2 mt-4"
