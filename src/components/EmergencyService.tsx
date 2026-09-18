@@ -32,7 +32,7 @@ export default function EmergencyService() {
             <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
               No stress. Whether it's a mishap before an event or an
               early-morning flight, our <strong>Quick Response Crew</strong>{" "}
-              works fast — without ever cutting corners.
+              works fast without ever cutting corners.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function EmergencyService() {
                 Day or Night
               </h3>
               <p className="text-slate-600 text-sm">
-                Late hours or public holidays — our lines stay open and we pick
+                Late hours or public holidays, our lines stay open and we pick
                 up and return while you rest.
               </p>
             </div>

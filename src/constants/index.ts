@@ -1,5 +1,5 @@
 export const managerInfo = {
-  fullName: "Makkah Laundry HS",
+  fullName: "Hasan Sharif",
   phoneNumber: "+966 55 659 3250",
   whatsApp: "+966 55 659 3250",
   onlyNumber: {

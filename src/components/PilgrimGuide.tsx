@@ -96,8 +96,8 @@ export default function PilgrimGuide() {
             The Smart Pilgrim's Laundry Guide
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Keep your visit focused and your wardrobe fresh — practical fabric
-            care tips for Hajj &amp; Umrah.
+            Keep your visit focused and your wardrobe fresh with practical
+            fabric care tips for Hajj &amp; Umrah.
           </p>
         </header>
 

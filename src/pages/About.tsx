@@ -91,7 +91,7 @@ const About = () => {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               To deliver laundry care that respects your time, your fabrics, and
-              the environment — so you can focus on what matters most during
+              the environment, so you can focus on what matters most during
               your time in Makkah.
             </p>
           </motion.div>

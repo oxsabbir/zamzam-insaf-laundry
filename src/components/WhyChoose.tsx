@@ -9,7 +9,7 @@ const reasons = [
   {
     icon: DollarSign,
     title: "Fair, Local Pricing",
-    description: "Rates from just 20 SAR/kg with FREE pickup and delivery — genuine savings versus hotel laundry.",
+    description: "Rates from just 20 SAR/kg with FREE pickup and delivery, genuine savings versus hotel laundry.",
   },
   {
     icon: Clock,
@@ -24,7 +24,7 @@ const reasons = [
   {
     icon: Languages,
     title: "Speaks Your Language",
-    description: "Arabic, English, or Urdu — our team communicates the way you feel most comfortable.",
+    description: "Arabic, English, or Urdu. Our team communicates the way you feel most comfortable.",
   },
   {
     icon: Users,
@@ -42,7 +42,7 @@ const WhyChoose = () => {
             Why Guests Pick Makkah Laundry HS
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional, dependable service — trusted by thousands across the city
+            Professional, dependable service, trusted by thousands across the city
           </p>
         </div>
 

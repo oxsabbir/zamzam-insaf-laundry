@@ -88,7 +88,7 @@ const Footer = () => {
                   Fresh Clothes, Delivered to Your Door
                 </h3>
                 <p className="text-primary-50/90 text-sm sm:text-base">
-                  Book your first pickup in under a minute — we'll handle the
+                  Book your first pickup in under a minute. We'll handle the
                   rest. Spotless results with no hassle.
                 </p>
               </div>

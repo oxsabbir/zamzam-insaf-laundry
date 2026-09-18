@@ -39,7 +39,7 @@ export default function Faq() {
                 Q: Are you open late and on holidays?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We run 24/7, including weekends and public holidays — a
+                A: We run 24/7, including weekends and public holidays, a
                 lifesaver for late-night needs and packed schedules.
               </p>
             </div>
@@ -75,7 +75,7 @@ export default function Faq() {
                 Q: How fast do large family orders come back?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: Family batches are prioritized — most are completed within
+                A: Family batches are prioritized. Most are completed within
                 24-48 hours depending on the items and services.
               </p>
             </div>

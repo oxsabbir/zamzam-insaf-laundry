@@ -47,7 +47,7 @@ const testimonials = [
     service: "Bulky Items",
     rating: 5,
     review:
-      "Makkah Laundry HS handled my blankets and curtains beautifully. Available late at night too — a real lifesaver when I needed help at short notice. Thank you!",
+      "Makkah Laundry HS handled my blankets and curtains beautifully. Available late at night too, a real lifesaver when I needed help at short notice. Thank you!",
     avatar: "LK",
     flag: "🇦🇪",
   },
@@ -103,7 +103,7 @@ const testimonials = [
     rating: 5,
     service: "Regular Service",
     review:
-      "I've used many laundry services over the years — Makkah Laundry HS stands out for consistency and care. Friendly team, fair prices, and always on time.",
+      "I've used many laundry services over the years. Makkah Laundry HS stands out for consistency and care. Friendly team, fair prices, and always on time.",
     avatar: "TA",
     flag: "🇧🇩",
   },
@@ -200,7 +200,7 @@ const Testimonials = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-xl text-foreground font-semibold mb-4">
-            Experience the difference — join the guests who trust us with their
+            Experience the difference. Join the guests who trust us with their
             laundry!
           </p>
           <button

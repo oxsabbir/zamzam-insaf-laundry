@@ -47,14 +47,14 @@ const FoodDeliverySection = () => {
         >
           <span className="inline-flex items-center gap-2 text-primary-600 font-semibold text-base mb-3">
             <UtensilsCrossed size={18} />
-            MAKKAH LAUNDRY HS — EXPRESS FAST FOOD
+            MAKKAH LAUNDRY HS EXPRESS FAST FOOD
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-3">
             Hungry After Umrah?{" "}
             <span className="text-primary-600">Get Fast Food Delivered.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Skip the street lines outside your hotel — our riders deliver hot,
+            Skip the street lines outside your hotel. Our riders deliver hot,
             crispy favorites straight to your room in 35-45 minutes.
           </p>
         </motion.div>

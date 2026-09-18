@@ -53,7 +53,7 @@ const FoodDelivery = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-flex items-center gap-2 text-primary-200 font-semibold text-base mb-4">
-                Makkah Laundry HS — Express Fast Food Delivery
+                Makkah Laundry HS Express Fast Food Delivery
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-5">
                 Tired After Umrah? Get Fast Food{" "}
@@ -65,7 +65,7 @@ const FoodDelivery = () => {
                   Makkah Laundry HS Fast Food
                 </strong>{" "}
                 delivers your favorite crispy fast food meals directly to your
-                room. Hot, fresh, and lightning fast — so you can rest and
+                room. Hot, fresh, and lightning fast, so you can rest and
                 recharge comfortably.
               </p>
               <div className="flex flex-wrap gap-4">

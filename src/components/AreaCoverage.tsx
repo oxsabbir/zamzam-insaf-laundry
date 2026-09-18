@@ -86,7 +86,7 @@ const AreaCoverage = () => {
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
             From busy hotel zones to family residences, our express pickup
-            network spans every corner of Makkah — so fresh laundry is never far
+            network spans every corner of Makkah, so fresh laundry is never far
             away.
           </p>
         </div>

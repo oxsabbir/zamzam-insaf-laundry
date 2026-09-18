@@ -55,7 +55,7 @@ const Comparison = () => {
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Compare how we stack up against ordinary laundry providers in
-            Makkah — and see why guests keep coming back.
+            Makkah and see why guests keep coming back.
           </p>
         </header>
         <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
@@ -126,8 +126,8 @@ const Comparison = () => {
                 Open All Hours
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Laundry needs don't keep office hours, and neither do we —
-                available 24/7, even late at night.
+                Laundry needs don't keep office hours, and neither do we. Available
+                24/7, even late at night.
               </p>
             </div>
           </div>

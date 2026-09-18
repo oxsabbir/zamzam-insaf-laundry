@@ -14,7 +14,7 @@ const urgentServices = [
     price: "35 Riyals",
     unit: "Kg",
     description:
-      "Priority wash, dry, and finish with your choice of folding or hanger — rushed straight back to you.",
+      "Priority wash, dry, and finish with your choice of folding or hanger, rushed straight back to you.",
     highlight: "Priority Service – Makkah Wide",
     deliveryTime: "Within 1 Hour",
   },
@@ -72,7 +72,7 @@ export default function OurServices() {
             <strong className="text-primary font-semibold">
               pickup and delivery
             </strong>{" "}
-            cover hotels, apartments, and every neighborhood near the Haram —
+            cover hotels, apartments, and every neighborhood near the Haram,
             making laundry effortless and worry-free.
           </p>
         </div>
