@@ -15,6 +15,12 @@ import brandKfcImg from "@/assets/brand-kfc.webp";
 import brandAlTazajImg from "@/assets/brand-Al_Tazaj.webp";
 import brandAlbaikImg from "@/assets/brand-albaik.webp";
 import brandAlromansiahImg from "@/assets/brand-alromansiah.webp";
+import brandBurgerKingImg from "@/assets/brand-burgerking.webp";
+import whopperImg from "@/assets/food-Crunchy-Whopper.webp";
+import frenchFriesImg from "@/assets/food-French-Fries.webp";
+import haveItYourWayImg from "@/assets/food-Have-It-Your-Way-Box.webp";
+import onionRingsImg from "@/assets/food-Onion-Rings.webp";
+import veggieBurgerImg from "@/assets/food-Veggie-Burger.webp";
 
 const FOOD_WHATSAPP = managerInfo.onlyNumber.whatsApp;
 
@@ -58,6 +64,31 @@ const foodItems = [
     image: chickenImg,
     title: "Golden Fried Chicken",
     description: "Crispy, juicy fried chicken pieces",
+  },
+  {
+    image: whopperImg,
+    title: "Crunchy Whopper",
+    description: "Flame-grilled patty, crisp & loaded",
+  },
+  {
+    image: frenchFriesImg,
+    title: "French Fries",
+    description: "Golden, salted fries, perfectly crispy",
+  },
+  {
+    image: haveItYourWayImg,
+    title: "Have It Your Way Box",
+    description: "Combo box built around your cravings",
+  },
+  {
+    image: onionRingsImg,
+    title: "Onion Rings",
+    description: "Golden-battered, crunchy onion rings",
+  },
+  {
+    image: veggieBurgerImg,
+    title: "Veggie Burger",
+    description: "Hearty plant-based patty in a soft bun",
   },
 ];
 
@@ -128,7 +159,7 @@ const FoodDeliverySection = () => {
               We Deliver From Top Brands
             </span>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5">
             {[
               {
                 image: brandKfcImg,
@@ -153,6 +184,12 @@ const FoodDeliverySection = () => {
                 name: "Al Romansiah",
                 glow: "group-hover:shadow-primary-500/40",
                 base: "from-primary-700 to-primary-500",
+              },
+              {
+                image: brandBurgerKingImg,
+                name: "Burger King",
+                glow: "group-hover:shadow-orange-500/40",
+                base: "from-red-600 to-orange-500",
               },
             ].map((brand, index) => (
               <motion.div

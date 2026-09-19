@@ -23,6 +23,12 @@ import brandKfcImg from "@/assets/brand-kfc.webp";
 import brandAlTazajImg from "@/assets/brand-Al_Tazaj.webp";
 import brandAlbaikImg from "@/assets/brand-albaik.webp";
 import brandAlromansiahImg from "@/assets/brand-alromansiah.webp";
+import brandBurgerKingImg from "@/assets/brand-burgerking.webp";
+import whopperImg from "@/assets/food-Crunchy-Whopper.webp";
+import frenchFriesImg from "@/assets/food-French-Fries.webp";
+import haveItYourWayImg from "@/assets/food-Have-It-Your-Way-Box.webp";
+import onionRingsImg from "@/assets/food-Onion-Rings.webp";
+import veggieBurgerImg from "@/assets/food-Veggie-Burger.webp";
 
 const FOOD_WHATSAPP = managerInfo.onlyNumber.whatsApp;
 
@@ -66,6 +72,31 @@ const foodItems = [
     image: chickenImg,
     title: "Golden Fried Chicken",
     description: "Crispy, juicy fried chicken pieces",
+  },
+  {
+    image: whopperImg,
+    title: "Crunchy Whopper",
+    description: "Flame-grilled patty, crisp & loaded",
+  },
+  {
+    image: frenchFriesImg,
+    title: "French Fries",
+    description: "Golden, salted fries, perfectly crispy",
+  },
+  {
+    image: haveItYourWayImg,
+    title: "Have It Your Way Box",
+    description: "Combo box built around your cravings",
+  },
+  {
+    image: onionRingsImg,
+    title: "Onion Rings",
+    description: "Golden-battered, crunchy onion rings",
+  },
+  {
+    image: veggieBurgerImg,
+    title: "Veggie Burger",
+    description: "Hearty plant-based patty in a soft bun",
   },
 ];
 
@@ -164,12 +195,12 @@ const FoodDelivery = () => {
               <span className="text-primary-600">Chains to You</span>
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg mt-4 max-w-2xl mx-auto">
-              From KFC to Al Baik and Al Tazaj, order the brands you know and
-              love — delivered hot to your hotel room.
+              From KFC to Al Baik, Al Tazaj and Burger King, order the brands
+              you know and love — delivered hot to your hotel room.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {[
               {
                 image: brandKfcImg,
@@ -196,6 +227,13 @@ const FoodDelivery = () => {
                 name: "Al Romansiah",
                 tagline: "Rice & roasted chicken classic",
                 accent: "from-primary-700/90 to-primary-600",
+                badge: null,
+              },
+              {
+                image: brandBurgerKingImg,
+                name: "Burger King",
+                tagline: "Flame-grilled since 1954",
+                accent: "from-red-700/90 to-orange-500",
                 badge: null,
               },
             ].map((brand, index) => (
