@@ -31,9 +31,6 @@ const Index = () => {
 
       <Comparison />
       <OurServices />
-      <div id="pricing">
-        <PricingGrid />
-      </div>
       <HowItWorks />
       <PricingSection />
       <PilgrimGuide />
