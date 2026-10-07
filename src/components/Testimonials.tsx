@@ -81,7 +81,7 @@ const testimonials = [
     rating: 5,
     service: "Ihram Cleaning",
     review:
-      "During my Umrah, Zamzam Insaf Laundry was a lifesaver! Their prompt service and attention to detail for my Ihram clothes were exceptional. Truly a 5-star experience.",
+      "During my Umrah, Misk Clean Laundry was a lifesaver! Their prompt service and attention to detail for my Ihram clothes were exceptional. Truly a 5-star experience.",
     avatar: "OF",
     flag: "🇬🇧",
   },
@@ -92,7 +92,7 @@ const testimonials = [
     rating: 5,
     service: "Abaya Cleaning",
     review:
-      "I was so impressed with Zamzam Insaf Laundry's efficiency. They picked up my abayas and returned them perfectly clean and pressed, allowing me to focus completely on my worship. Highly recommend their services to all pilgrims.",
+      "I was so impressed with Misk Clean Laundry's efficiency. They picked up my abayas and returned them perfectly clean and pressed, allowing me to focus completely on my worship. Highly recommend their services to all pilgrims.",
     avatar: "HB",
     flag: "🇯🇴",
   },
@@ -103,7 +103,7 @@ const testimonials = [
     rating: 5,
     service: "Regular Customer",
     review:
-      "As a frequent visitor for Hajj and Umrah, I've tried many laundry services. Zamzam Insaf Laundry stands out for its quality and reliability. Their 24/7 service is a blessing. Will definitely use them again!",
+      "As a frequent visitor for Hajj and Umrah, I've tried many laundry services. Misk Clean Laundry stands out for its quality and reliability. Their 24/7 service is a blessing. Will definitely use them again!",
     avatar: "FR",
     flag: "🇧🇩",
   },

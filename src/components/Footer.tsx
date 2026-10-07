@@ -108,7 +108,7 @@ const Footer = () => {
                 {/* Ensure logo works on dark bg, or use a white version */}
                 <img
                   src={brandLogo}
-                  alt="Zamzam laundry logo"
+                  alt="Misk Clean Laundry logo"
                   className="w-full h-auto "
                 />
               </div>
