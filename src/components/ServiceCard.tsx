@@ -1,4 +1,5 @@
 import { handleWhatsApp } from "@/lib/utils";
+import { whatsappMessages } from "@/constants/messages";
 import { Button } from "./ui/button";
 
 interface ServiceCardProps {
@@ -33,12 +34,7 @@ const ServiceCard = ({
       <div className=" mt-auto">
         <Button
           onClick={() =>
-            handleWhatsApp(
-              `Hi, I would like to book your ${encodeURIComponent(title)}. 
-Please share the pickup details and available timing.
-Thank you.`,
-              true
-            )
+            handleWhatsApp(whatsappMessages.pickup, true)
           }
           id="generate_lead"
           className=" bg-primary"

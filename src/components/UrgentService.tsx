@@ -2,11 +2,8 @@ import { whatsappMessages } from "@/constants/messages";
 import { handleWhatsApp } from "@/lib/utils";
 
 export default function UrgentService() {
-  const handleBooking = (hourDetails: string, service: string) => {
-    const message = whatsappMessages.booking
-      .replace("<bookingHour>", hourDetails)
-      .replace("<bookingService>", service);
-    handleWhatsApp(message, true);
+  const handleBooking = () => {
+    handleWhatsApp(whatsappMessages.pickup, true);
   };
   return (
     <section
@@ -43,7 +40,7 @@ export default function UrgentService() {
             </p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("1 Hour", "Emergency Service")}
+              onClick={() => handleBooking()}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
               Book Now
@@ -62,7 +59,7 @@ export default function UrgentService() {
             </p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("5 Hour", "Express Service")}
+              onClick={() => handleBooking()}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
               Book Now
@@ -81,7 +78,7 @@ export default function UrgentService() {
             </p>
             <button
               id="generate_lead"
-              onClick={() => handleBooking("12 Hour", "Same Day Service")}
+              onClick={() => handleBooking()}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2 w-full"
             >
               Book Now

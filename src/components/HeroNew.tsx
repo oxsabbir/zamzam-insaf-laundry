@@ -47,7 +47,7 @@ const HeroNew = () => {
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
-              ZamZam Insaf Laundry Service <br /> <span>Makkah</span>
+              Misk Clean Laundry <br /> <span>Makkah</span>
             </span>
             <span className="text-accent inline-block ">15 Minutes</span>{" "}
             Express Pickup - Best Laundry Near Haram!

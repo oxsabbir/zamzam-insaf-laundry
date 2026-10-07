@@ -124,12 +124,7 @@ const AreaCoverage = () => {
               <div className="text-center mt-auto pt-6">
                 <Button
                   onClick={() =>
-                    handleWhatsApp(
-                      `Hi I need laundry service in ${encodeURIComponent(
-                        area.title,
-                      )}. Could you please share the pickup details and timing? Thank you! `,
-                      true,
-                    )
+                    handleWhatsApp(whatsappMessages.pickup, true)
                   }
                   id="generate_lead"
                   className=" bg-success"

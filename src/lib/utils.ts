@@ -14,7 +14,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const handleWhatsApp = (message?: string, isBooking?: boolean) => {
   const defaultMessage = encodeURIComponent(
-    "Hi! I need laundry service in Makkah. Please send pickup details."
+    "Hi! I need laundry service in Makkah. Could you please share the pickup details and timing? Thank you!"
   );
 
   // doing booking intent
