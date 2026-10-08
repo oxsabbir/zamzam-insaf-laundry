@@ -3,9 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
-import logo_light from "@/assets/logo_light.png";
-import logo_dark from "@/assets/logo_dark.png";
-import logo from "@/assets/logo_zam_zam.webp";
+import logo_light from "@/assets/logo-misk-dark.webp";
+import logo_dark from "@/assets/logo-misk-light.webp";
 
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -92,7 +91,7 @@ const Navigation = () => {
               <div className="w-fit h-[60px] md:h-[75px]">
                 <a href="/">
                   <img
-                    src={logo}
+                    src={!isScrolled ? logo_light : logo_dark}
                     alt="Misk Clean Laundry logo"
                     width={200}
                     height={100}
@@ -149,7 +148,7 @@ const Navigation = () => {
                   <div className="w-fit h-[60px]">
                     <a href="/">
                       <img
-                        src={logo}
+                        src={isScrolled ? logo_light : logo_dark}
                         alt="Misk Clean Laundry logo"
                         width={200}
                         height={100}

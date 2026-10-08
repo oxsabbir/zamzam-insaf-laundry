@@ -17,7 +17,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { motion } from "motion/react"; // Ensure this matches your installed package (framer-motion vs motion)
-import brandLogo from "@/assets/logo_zam_zam.webp"; // Ensure you have a version that looks good on dark bg, or use filter invert
+import brandLogo from "@/assets/logo-misk-dark.webp"; // Ensure you have a version that looks good on dark bg, or use filter invert
 import { managerInfo } from "@/constants";
 // import SnapChatIcon from "./icons/SnapChat";
 

@@ -1,5 +1,5 @@
 import { Zap, Clock, Quote, CircleDollarSign } from "lucide-react";
-import heroImage from "@/assets/misk-laundry-hero.webp";
+import heroImage from "@/assets/hero-misk-laundry.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { useEffect, useState } from "react";
 import { handleWhatsApp } from "@/lib/utils";
