@@ -167,7 +167,7 @@ const Contact = () => {
             {/* Map */}
             <div className="relative h-[400px] rounded-2xl overflow-hidden border border-border shadow-lg group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1855.312843271923!2d39.8202008857488!3d21.42186292841074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b679347f05%3A0x50f5f4304df897e6!2sHilton%20Suites%20Jabal%20Omar%20Makkah!5e0!3m2!1sen!2sbd!4v1771903409889!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233261.76429077206!2d89.2043264!3d24.0058368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c2051108982105%3A0x19ef83c8def4f231!2sMisk%20Clean%20Laundry!5e0!3m2!1sen!2sbd!4v1791881170155!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
